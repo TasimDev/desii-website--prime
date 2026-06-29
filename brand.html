@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ексклузивна марка · БоПромас</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #10151B;
+    --navy-mid: #1B242E;
+    --navy-soft: #263240;
+    --gold: #C8A45D;
+    --gold-light: #E5C77B;
+    --cream: #F6F8FA;
+    --silver: #8998A8;
+    --silver-light: #D3DAE2;
+    --white: #FFFFFF;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--navy);
+    color: var(--cream);
+    line-height: 1.6;
+    font-size: 15px;
+  }
+
+  a { color: inherit; }
+
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(12,15,19,0.92);
+    backdrop-filter: blur(12px);
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(200,164,93,0.1);
+  }
+
+  .nav-brand {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .nav-brand img {
+    display: block;
+    width: 154px;
+    height: 44px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .nav-back {
+    color: var(--silver-light);
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+  }
+
+  .nav-back:hover { color: var(--gold); }
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 74vh;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+    align-items: center;
+    gap: 64px;
+    padding: 92px 40px 78px;
+    background:
+      radial-gradient(ellipse 55% 45% at 15% 30%, rgba(200,164,93,0.12), transparent 60%),
+      radial-gradient(ellipse 45% 50% at 85% 70%, rgba(137,152,168,0.12), transparent 62%),
+      linear-gradient(150deg, var(--navy) 0%, #151B22 52%, #202A35 100%);
+  }
+
+  .hero-inner {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    display: contents;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(46px, 8vw, 92px);
+    line-height: 0.96;
+    color: var(--white);
+    margin-bottom: 22px;
+  }
+
+  .lead {
+    max-width: 650px;
+    color: var(--silver-light);
+    font-size: clamp(17px, 2vw, 21px);
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+
+  .meta-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+
+  .meta-pill {
+    border: 1px solid rgba(200,164,93,0.24);
+    background: rgba(200,164,93,0.08);
+    color: var(--cream);
+    padding: 10px 14px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 14px 24px;
+    border: 1px solid var(--gold);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+  }
+
+  .btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+  }
+
+  .brand-stage {
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .brand-stage::before {
+    content: '';
+    position: absolute;
+    width: min(76vw, 460px);
+    aspect-ratio: 1;
+    border: 1px solid rgba(200,164,93,0.18);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,164,93,0.14), transparent 60%);
+  }
+
+  .brand-stage img {
+    position: relative;
+    z-index: 1;
+    max-width: min(320px, 70vw);
+    max-height: 430px;
+    object-fit: contain;
+    border-radius: 6px;
+    filter: drop-shadow(0 40px 42px rgba(0,0,0,0.56));
+  }
+
+  section {
+    padding: 80px 40px;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .section-eyebrow {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.15;
+    color: var(--white);
+    margin-bottom: 18px;
+  }
+
+  .section-title em {
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  .story-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+    gap: 54px;
+  }
+
+  .story-text {
+    color: var(--silver-light);
+    margin-bottom: 18px;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .highlight-list {
+    display: grid;
+    gap: 2px;
+    list-style: none;
+  }
+
+  .highlight-list li {
+    background: rgba(255,255,255,0.04);
+    border-left: 3px solid rgba(200,164,93,0.55);
+    padding: 16px 18px;
+    color: var(--cream);
+    font-size: 13px;
+  }
+
+  .products-band {
+    max-width: none;
+    background: var(--navy-mid);
+  }
+
+  .products-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2px;
+    margin-top: 34px;
+  }
+
+  .empty-products {
+    margin-top: 28px;
+    padding: 24px;
+    background: rgba(255,255,255,0.04);
+    border-left: 3px solid rgba(200,164,93,0.55);
+    color: var(--silver-light);
+  }
+
+  .product-card {
+    display: block;
+    min-height: 370px;
+    color: inherit;
+    text-decoration: none;
+    background:
+      linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.012) 42%),
+      var(--navy);
+    border: 1px solid rgba(255,255,255,0.055);
+    border-left: 3px solid rgba(200,164,93,0.16);
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(200,164,93,0.3);
+    border-left-color: var(--gold);
+    background:
+      linear-gradient(145deg, rgba(255,255,255,0.074), rgba(255,255,255,0.018) 42%),
+      var(--navy-soft);
+    box-shadow: 0 26px 66px rgba(0,0,0,0.32);
+  }
+
+  .product-image {
+    height: 174px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    position: relative;
+  }
+
+  .product-image::before {
+    content: '';
+    position: absolute;
+    width: 160px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,164,93,0.26), rgba(200,164,93,0.08) 54%, transparent 72%);
+  }
+
+  .product-image img {
+    position: relative;
+    z-index: 1;
+    max-width: 164px;
+    max-height: 170px;
+    object-fit: contain;
+    filter: drop-shadow(0 28px 25px rgba(0,0,0,0.54));
+  }
+
+  .product-tag {
+    color: var(--gold);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .product-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--white);
+    line-height: 1.16;
+    margin-bottom: 10px;
+  }
+
+  .product-meta {
+    color: var(--silver-light);
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  .product-price {
+    color: var(--gold-light);
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .footer {
+    background: #0C0F13;
+    padding: 32px 40px;
+    text-align: center;
+    border-top: 1px solid rgba(200,164,93,0.1);
+  }
+
+  .footer p {
+    font-size: 12px;
+    color: var(--silver);
+    letter-spacing: 1px;
+  }
+
+  .footer a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+
+  @media (max-width: 850px) {
+    .hero {
+      grid-template-columns: 1fr;
+      gap: 28px;
+      padding: 80px 24px 62px;
+    }
+
+    .story-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    section { padding: 60px 24px; }
+    .products-inner { padding: 0 24px; }
+    .nav { padding: 14px 24px; }
+    .brand-stage { min-height: 330px; }
+  }
+  .call-button {
+    position: fixed; right: 24px; bottom: 24px; z-index: 90;
+    display: inline-flex; align-items: center; gap: 10px;
+    min-height: 54px; padding: 0 20px; border-radius: 999px;
+    border: 1px solid rgba(229,199,123,0.7);
+    background: var(--gold); color: var(--navy);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: background .25s ease, transform .25s ease, box-shadow .25s ease;
+  }
+  .call-button:hover { background: var(--gold-light); transform: translateY(-3px); box-shadow: 0 14px 34px rgba(0,0,0,.45); }
+  .call-button:focus-visible { outline: 3px solid var(--white); outline-offset: 3px; }
+  .call-button svg { width: 21px; height: 21px; fill: currentColor; flex-shrink: 0; }
+  @media (max-width: 768px) {
+    .call-button { right: 16px; bottom: 16px; width: 56px; height: 56px; min-height: 56px; justify-content: center; padding: 0; }
+    .call-button span { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav-brand" href="bar_offer.html" aria-label="BoProMas">
+    <img src="assets/brand/bopromas-logo-transparent.png" alt="BoProMas">
+  </a>
+  <a class="nav-back" href="bar_offer.html#exclusive">Обратно към марките</a>
+</nav>
+
+<main id="brandPage"></main>
+
+<footer class="footer">
+  <p>© 2026 „БоПромас" ООД · <a href="bar_offer.html">Каталог</a> · <a href="monthly-offers.html">Месечни промоции</a></p>
+</footer>
+
+<script src="product-data.js"></script>
+<script src="brand-data.js"></script>
+<script>
+(() => {
+  const params = new URLSearchParams(window.location.search);
+  const aliases = {
+    natterjack: 'natterjack-irish-whiskey',
+    hetman: 'hetman-vodka',
+    'peats-beast': 'peats-beast-whiskey',
+    'gold-of-mauritius': 'mauritius-rum',
+    'castro-craft': 'castro-liquor'
+  };
+  const requestedBrandId = params.get('b') || 'natterjack-irish-whiskey';
+  const brandId = aliases[requestedBrandId] || requestedBrandId;
+  const brands = window.EXCLUSIVE_BRANDS || {};
+  const products = window.PRODUCTS || {};
+  const brand = brands[brandId] || brands['natterjack-irish-whiskey'] || Object.values(brands)[0];
+  const page = document.getElementById('brandPage');
+
+  if (!brand) {
+    page.innerHTML = '<section><div class="section-title">Марката не е намерена.</div></section>';
+    return;
+  }
+
+  document.title = `${brand.name} · БоПромас`;
+  function brandPlaceholderImage(name, category, accent = []) {
+    const escapeXml = value => String(value || '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+    const title = escapeXml(name);
+    const label = escapeXml(category);
+    const dark = escapeXml(accent[0] || '#10151B');
+    const mid = escapeXml(accent[1] || '#C8A45D');
+    const light = escapeXml(accent[2] || '#E5C77B');
+    const svg = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 820">
+        <defs>
+          <radialGradient id="glow" cx="50%" cy="38%" r="62%">
+            <stop offset="0%" stop-color="${light}" stop-opacity=".32"/>
+            <stop offset="70%" stop-color="${mid}" stop-opacity=".12"/>
+            <stop offset="100%" stop-color="${dark}" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="${mid}" stop-opacity=".34"/>
+            <stop offset="100%" stop-color="${dark}" stop-opacity=".82"/>
+          </linearGradient>
+        </defs>
+        <rect width="700" height="820" fill="transparent"/>
+        <circle cx="350" cy="338" r="260" fill="url(#glow)" stroke="${mid}" stroke-opacity=".25"/>
+        <rect x="140" y="250" width="420" height="300" rx="18" fill="url(#panel)" stroke="${mid}" stroke-opacity=".42"/>
+        <text x="350" y="372" text-anchor="middle" fill="#ffffff" font-family="Georgia, serif" font-size="48" font-weight="700">${title}</text>
+        <text x="350" y="438" text-anchor="middle" fill="${light}" font-family="Arial, sans-serif" font-size="18" letter-spacing="4">${label}</text>
+        <line x1="210" y1="482" x2="490" y2="482" stroke="${mid}" stroke-opacity=".55"/>
+      </svg>
+    `;
+    return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+  }
+
+  const brandImage = brand.image || brandPlaceholderImage(brand.name, brand.category, brand.accent);
+  const productCards = (brand.products || [])
+    .map(productId => {
+      const product = products[productId];
+      if (!product) return '';
+      const image = product.images?.[0]?.src || brand.image;
+      return `
+        <a class="product-card" href="product.html?p=${encodeURIComponent(productId)}">
+          <div class="product-image"><img src="${image}" alt="${product.name}"></div>
+          <div class="product-tag">${product.category || brand.category}</div>
+          <div class="product-name">${product.name}</div>
+          <div class="product-meta">${product.volume || ''} · ${product.abv || ''} · ${product.origin || brand.origin}</div>
+          <div class="product-price">${product.price ? `${product.price} €` : 'по оферта'}</div>
+        </a>
+      `;
+    })
+    .join('');
+  const productsContent = productCards || '<div class="empty-products">Продуктите за тази марка ще бъдат добавени скоро. За актуална наличност и цени се свържете с нас директно.</div>';
+
+  page.innerHTML = `
+    <section class="hero" style="--accent:${brand.accent?.[1] || '#C8A45D'};">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Ексклузивна марка</div>
+          <h1>${brand.name}</h1>
+          <p class="lead">${brand.short}</p>
+          <div class="meta-row">
+            <span class="meta-pill">${brand.category}</span>
+            <span class="meta-pill">${brand.origin}</span>
+            <span class="meta-pill">${brand.products?.length || 0} продукта</span>
+          </div>
+          <a class="btn btn-primary" href="#products">Виж продуктите</a>
+        </div>
+        <div class="brand-stage">
+          <img src="${brandImage}" alt="${brand.name}">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="story-grid">
+        <div>
+          <div class="section-eyebrow">За марката</div>
+          <div class="section-title">Какво прави <em>${brand.name}</em> специална</div>
+          ${(brand.story || []).map(text => `<p class="story-text">${text}</p>`).join('')}
+        </div>
+        <div>
+          <div class="section-eyebrow">Барова стойност</div>
+          <ul class="highlight-list">
+            ${(brand.highlights || []).map(text => `<li>${text}</li>`).join('')}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-band" id="products">
+      <div class="products-inner">
+        <div class="section-eyebrow">Предлагани от нас</div>
+        <div class="section-title">Продукти от <em>${brand.name}</em></div>
+        ${productCards ? `<div class="products-grid">${productsContent}</div>` : productsContent}
+      </div>
+    </section>
+  `;
+})();
+</script>
+<a class="call-button" href="tel:+359897898245" aria-label="Обадете се на +359 897 898 245">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z"/></svg>
+  <span>+359 897 898 245</span>
+</a>
+</body>
+</html>

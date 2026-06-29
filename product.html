@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ексклузивен продукт · БоПромас</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #10151B;
+    --navy-mid: #1B242E;
+    --navy-soft: #263240;
+    --gold: #C8A45D;
+    --gold-light: #E5C77B;
+    --cream: #F6F8FA;
+    --cream-dark: #E6EBF0;
+    --silver: #8998A8;
+    --silver-light: #D3DAE2;
+    --white: #FFFFFF;
+    --ink: #0C0F13;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--navy);
+    color: var(--cream);
+    line-height: 1.6;
+    font-size: 15px;
+  }
+
+  a { color: inherit; }
+
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(12,15,19,0.92);
+    backdrop-filter: blur(12px);
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(200,164,93,0.1);
+  }
+
+  .nav-brand {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .nav-brand img {
+    display: block;
+    width: 154px;
+    height: 44px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .nav-back {
+    color: var(--silver-light);
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+  }
+
+  .nav-back:hover { color: var(--gold); }
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 78vh;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+    align-items: center;
+    gap: 64px;
+    padding: 92px 40px 80px;
+    background:
+      radial-gradient(ellipse 55% 45% at 15% 30%, rgba(200,164,93,0.12), transparent 60%),
+      radial-gradient(ellipse 45% 50% at 85% 70%, rgba(137,152,168,0.12), transparent 62%),
+      linear-gradient(150deg, var(--navy) 0%, #151B22 52%, #202A35 100%);
+  }
+
+  .hero-inner {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    display: contents;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(44px, 7vw, 84px);
+    line-height: 0.98;
+    letter-spacing: -1px;
+    color: var(--white);
+    max-width: 780px;
+    margin-bottom: 22px;
+  }
+
+  .lead {
+    max-width: 650px;
+    color: var(--silver-light);
+    font-size: clamp(17px, 2vw, 21px);
+    line-height: 1.7;
+    margin-bottom: 34px;
+  }
+
+  .meta-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+  }
+
+  .meta-pill {
+    border: 1px solid rgba(200,164,93,0.24);
+    background: rgba(200,164,93,0.08);
+    color: var(--cream);
+    padding: 10px 14px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .cta-row {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 14px 24px;
+    border: 1px solid var(--gold);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+  }
+
+  .btn-primary:hover { background: var(--gold-light); }
+
+  .btn-secondary {
+    color: var(--gold);
+    background: transparent;
+  }
+
+  .btn-secondary:hover {
+    background: rgba(200,164,93,0.1);
+    color: var(--gold-light);
+  }
+
+  .bottle-stage {
+    min-height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .bottle-stage::before {
+    content: '';
+    position: absolute;
+    width: min(78vw, 460px);
+    aspect-ratio: 1;
+    border: 1px solid rgba(200,164,93,0.18);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,164,93,0.12), transparent 58%);
+  }
+
+  .bottle {
+    position: relative;
+    z-index: 1;
+    width: 178px;
+    height: 438px;
+    border-radius: 48px 48px 28px 28px;
+    background:
+      linear-gradient(90deg, rgba(255,255,255,0.08), transparent 18%, rgba(255,255,255,0.12) 42%, transparent 72%),
+      linear-gradient(160deg, var(--accent-dark), var(--accent), var(--accent-soft));
+    box-shadow: 0 34px 80px rgba(0,0,0,0.42), inset 0 0 0 1px rgba(255,255,255,0.12);
+  }
+
+  .bottle::before {
+    content: '';
+    position: absolute;
+    left: 55px;
+    top: -92px;
+    width: 68px;
+    height: 120px;
+    border-radius: 24px 24px 10px 10px;
+    background:
+      linear-gradient(90deg, rgba(255,255,255,0.10), transparent 36%),
+      linear-gradient(160deg, var(--accent-dark), var(--accent));
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.12);
+  }
+
+  .bottle::after {
+    content: '';
+    position: absolute;
+    left: 48px;
+    top: -118px;
+    width: 82px;
+    height: 34px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  }
+
+  .bottle-label {
+    position: absolute;
+    left: 22px;
+    right: 22px;
+    top: 142px;
+    min-height: 142px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 18px 10px;
+    border: 1px solid rgba(200,164,93,0.46);
+    background: rgba(12,15,19,0.74);
+  }
+
+  .bottle-label strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    line-height: 1.05;
+    color: var(--white);
+  }
+
+  .bottle-label span {
+    margin-top: 10px;
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .price-card {
+    position: absolute;
+    z-index: 2;
+    right: max(24px, 8%);
+    bottom: 62px;
+    background: rgba(12,15,19,0.86);
+    border: 1px solid rgba(200,164,93,0.28);
+    padding: 20px 24px;
+    min-width: 172px;
+    backdrop-filter: blur(14px);
+  }
+
+  .price-label {
+    color: var(--silver);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .price-value {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .price-note {
+    color: var(--silver-light);
+    font-size: 11px;
+  }
+
+  .product-gallery {
+    min-height: 560px;
+    display: grid;
+    align-content: center;
+    gap: 18px;
+    position: relative;
+  }
+
+  .gallery-main {
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid rgba(200,164,93,0.18);
+    background:
+      radial-gradient(circle at 50% 45%, rgba(200,164,93,0.18), transparent 58%),
+      linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015));
+    overflow: hidden;
+    cursor: zoom-in;
+  }
+
+  .gallery-main::before {
+    content: '';
+    position: absolute;
+    width: min(78vw, 430px);
+    aspect-ratio: 1;
+    border: 1px solid rgba(200,164,93,0.2);
+    border-radius: 50%;
+  }
+
+  .gallery-main img {
+    position: relative;
+    z-index: 1;
+    max-width: min(86%, 430px);
+    max-height: 430px;
+    object-fit: contain;
+    filter: drop-shadow(0 32px 42px rgba(0,0,0,0.5));
+    transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%);
+    transition: transform 0.45s cubic-bezier(.16,1,.3,1), filter 0.35s ease;
+  }
+
+  .gallery-main:hover img {
+    transform: scale(1.35);
+    filter: drop-shadow(0 42px 54px rgba(0,0,0,0.6));
+  }
+
+  .gallery-caption {
+    position: absolute;
+    left: 22px;
+    bottom: 20px;
+    z-index: 2;
+    color: var(--silver-light);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .gallery-secondary {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .gallery-side-shot {
+    min-height: 142px;
+    border: 1px solid rgba(200,164,93,0.16);
+    background:
+      radial-gradient(circle at 18% 50%, rgba(200,164,93,0.12), transparent 42%),
+      rgba(255,255,255,0.035);
+    cursor: pointer;
+    padding: 14px 18px;
+    display: grid;
+    grid-template-columns: 110px minmax(0, 1fr);
+    align-items: center;
+    gap: 18px;
+    text-align: left;
+    color: var(--white);
+    overflow: hidden;
+    transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+  }
+
+  .gallery-side-shot:hover,
+  .gallery-side-shot:focus-visible {
+    border-color: var(--gold);
+    background:
+      radial-gradient(circle at 18% 50%, rgba(200,164,93,0.2), transparent 48%),
+      rgba(200,164,93,0.08);
+    transform: translateY(-2px);
+    outline: none;
+  }
+
+  .gallery-side-shot img {
+    width: 100%;
+    height: 112px;
+    object-fit: contain;
+    filter: drop-shadow(0 18px 22px rgba(0,0,0,0.42));
+    transform-origin: center;
+    transition: transform 0.35s cubic-bezier(.16,1,.3,1);
+  }
+
+  .gallery-side-shot:hover img,
+  .gallery-side-shot:focus-visible img {
+    transform: scale(1.16);
+  }
+
+  .side-shot-kicker {
+    display: block;
+    color: var(--gold);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .side-shot-title {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .side-shot-hint {
+    display: block;
+    color: var(--silver);
+    font-size: 11px;
+    line-height: 1.5;
+    margin-top: 7px;
+  }
+
+  .related-variants {
+    border: 1px solid rgba(200,164,93,0.18);
+    background: rgba(255,255,255,0.025);
+    padding: 18px;
+  }
+
+  .related-variants-title {
+    color: var(--gold);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .related-variants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 8px;
+  }
+
+  .related-variant {
+    display: grid;
+    grid-template-columns: 72px minmax(0, 1fr);
+    align-items: center;
+    gap: 12px;
+    padding: 13px 14px;
+    border: 1px solid rgba(200,164,93,0.14);
+    background: rgba(12,15,19,0.48);
+    color: var(--white);
+    text-decoration: none;
+    transition: border-color .25s ease, background .25s ease, transform .25s ease;
+  }
+
+  .related-variant:hover,
+  .related-variant:focus-visible {
+    border-color: var(--gold);
+    background: rgba(200,164,93,0.1);
+    transform: translateY(-2px);
+    outline: none;
+  }
+
+  .related-variant-image {
+    width: 72px;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .related-variant-image img {
+    max-width: 100%;
+    max-height: 86px;
+    object-fit: contain;
+    filter: drop-shadow(0 12px 16px rgba(0,0,0,0.45));
+    transition: transform .3s ease;
+  }
+
+  .related-variant:hover .related-variant-image img,
+  .related-variant:focus-visible .related-variant-image img {
+    transform: scale(1.08);
+  }
+
+  .related-variant-info {
+    display: grid;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .related-variant-volume {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .related-variant-detail,
+  .related-variant-price {
+    color: var(--silver-light);
+    font-size: 11px;
+  }
+
+  .related-variant-price {
+    color: var(--gold-light);
+    font-weight: 700;
+  }
+
+  .image-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+    background: rgba(3,8,14,0.88);
+    backdrop-filter: blur(18px);
+  }
+
+  .image-lightbox.open {
+    display: flex;
+  }
+
+  .lightbox-frame {
+    position: relative;
+    width: min(92vw, 980px);
+    height: min(86vh, 780px);
+    border: 1px solid rgba(200,164,93,0.22);
+    background:
+      radial-gradient(circle at 50% 48%, rgba(200,164,93,0.16), transparent 55%),
+      rgba(12,15,19,0.72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .lightbox-frame img {
+    max-width: 92%;
+    max-height: 88%;
+    object-fit: contain;
+    cursor: zoom-in;
+    transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%);
+    transition: transform 0.35s cubic-bezier(.16,1,.3,1);
+    filter: drop-shadow(0 42px 54px rgba(0,0,0,0.58));
+  }
+
+  .lightbox-frame:hover img {
+    transform: scale(1.7);
+  }
+
+  .lightbox-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 2;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(200,164,93,0.32);
+    background: rgba(12,15,19,0.78);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .lightbox-caption {
+    position: absolute;
+    left: 18px;
+    bottom: 16px;
+    z-index: 2;
+    color: var(--silver-light);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .content {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 78px 40px 88px;
+  }
+
+  .product-offers {
+    background:
+      radial-gradient(circle at 78% 45%, rgba(200,164,93,0.16), transparent 34%),
+      var(--navy-mid);
+    border-top: 1px solid rgba(200,164,93,0.18);
+    border-bottom: 1px solid rgba(200,164,93,0.18);
+    padding: 34px 40px;
+  }
+
+  .product-offers-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    gap: 14px;
+  }
+
+  .product-offer {
+    display: grid;
+    grid-template-columns: 132px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 28px;
+    padding: 22px 26px;
+    border: 1px solid rgba(200,164,93,0.2);
+    background: rgba(12,15,19,0.5);
+  }
+
+  .product-offer-image {
+    height: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-offer-image img {
+    max-width: 120px;
+    max-height: 116px;
+    object-fit: contain;
+    filter: drop-shadow(0 18px 20px rgba(0,0,0,.48));
+  }
+
+  .product-offer-badge {
+    color: var(--gold);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .product-offer-title {
+    margin: 5px 0 6px;
+    color: var(--white);
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(23px, 3vw, 32px);
+    line-height: 1.1;
+  }
+
+  .product-offer-meta {
+    color: var(--silver-light);
+    font-size: 13px;
+  }
+
+  .product-offer-price {
+    display: block;
+    color: var(--gold-light);
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 5px;
+  }
+
+  .package-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 120;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(3,8,14,0.88);
+    backdrop-filter: blur(16px);
+  }
+
+  .package-modal.open { display: flex; }
+
+  .package-modal-card {
+    position: relative;
+    width: min(940px, 100%);
+    max-height: min(760px, 92vh);
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    gap: 36px;
+    padding: 58px 42px 42px;
+    border: 1px solid rgba(200,164,93,.28);
+    background:
+      radial-gradient(circle at 18% 16%, rgba(200,164,93,.12), transparent 32%),
+      linear-gradient(145deg, #18202A, #0C0F13);
+    box-shadow: 0 36px 110px rgba(0,0,0,.6);
+  }
+
+  #package-modal-content { display: contents; }
+
+  .package-modal-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 2;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(200,164,93,.3);
+    background: rgba(12,15,19,.8);
+    color: var(--white);
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .package-modal-image {
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: rgba(255,255,255,.035);
+    border: 1px solid rgba(255,255,255,.055);
+  }
+
+  .package-modal-image::before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,164,93,.3), rgba(200,164,93,.08) 56%, transparent 74%);
+  }
+
+  .package-modal-image img {
+    position: relative;
+    z-index: 1;
+    max-width: 250px;
+    max-height: 330px;
+    object-fit: contain;
+    filter: drop-shadow(0 30px 28px rgba(0,0,0,.55));
+  }
+
+  .package-modal-title {
+    margin: 8px 0 8px;
+    color: var(--white);
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 5vw, 46px);
+    line-height: 1.05;
+  }
+
+  .package-modal-period {
+    color: var(--gold-light);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+
+  .package-modal-prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 22px;
+  }
+
+  .package-modal-price {
+    padding: 14px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.07);
+  }
+
+  .package-modal-price span {
+    display: block;
+    color: var(--silver);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .package-modal-price strong {
+    display: block;
+    margin-top: 4px;
+    color: var(--gold-light);
+    font-size: 16px;
+  }
+
+  .package-modal-description {
+    color: var(--silver-light);
+    margin-bottom: 18px;
+  }
+
+  .package-modal-list {
+    list-style: none;
+    display: grid;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .package-modal-list li {
+    color: var(--white);
+    padding: 12px 14px;
+    background: rgba(200,164,93,.075);
+    border-left: 3px solid rgba(200,164,93,.55);
+    font-size: 13px;
+  }
+
+  .package-modal-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .btn-viber {
+    border-color: rgba(72,184,120,.7);
+    color: var(--white);
+    background: rgba(72,184,120,.16);
+  }
+
+  .btn-viber:hover {
+    background: rgba(72,184,120,.28);
+    border-color: #48B878;
+    transform: translateY(-2px);
+  }
+
+  .section-head {
+    max-width: 720px;
+    margin-bottom: 36px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 4vw, 48px);
+    color: var(--white);
+    line-height: 1.12;
+    margin-bottom: 14px;
+  }
+
+  .section-desc {
+    color: var(--silver-light);
+    max-width: 680px;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+    gap: 48px;
+    align-items: start;
+  }
+
+  .panel {
+    background: var(--navy-mid);
+    border: 1px solid rgba(200,164,93,0.12);
+    padding: 34px;
+  }
+
+  .panel + .panel { margin-top: 18px; }
+
+  .panel h2,
+  .panel h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--white);
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+
+  .panel p {
+    color: var(--silver-light);
+    margin-bottom: 16px;
+  }
+
+  .panel p:last-child { margin-bottom: 0; }
+
+  .taste-list,
+  .use-list,
+  .facts-list,
+  .source-list {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+  }
+
+  .taste-list li,
+  .use-list li,
+  .facts-list li {
+    color: var(--silver-light);
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .taste-list li::before,
+  .use-list li::before,
+  .facts-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 7px;
+    height: 7px;
+    background: var(--gold);
+  }
+
+  .facts-list strong {
+    color: var(--white);
+    font-weight: 700;
+  }
+
+  .source-list a {
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .source-list a:hover { color: var(--gold-light); }
+
+  .serve-box {
+    margin-top: 22px;
+    padding: 22px;
+    background: rgba(200,164,93,0.08);
+    border-left: 3px solid var(--gold);
+  }
+
+  .serve-box .serve-label {
+    color: var(--silver);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .serve-box .serve-text {
+    color: var(--white);
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    line-height: 1.35;
+  }
+
+  .detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+  }
+
+  .detail-item {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 16px;
+  }
+
+  .detail-item span {
+    display: block;
+    color: var(--silver);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .detail-item strong {
+    display: block;
+    color: var(--white);
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+  .all-products {
+    background: var(--navy-mid);
+    padding: 78px 40px 90px;
+  }
+
+  .all-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2px;
+  }
+
+  .product-card {
+    display: block;
+    min-height: 190px;
+    padding: 28px;
+    background: var(--navy);
+    border-left: 3px solid transparent;
+    text-decoration: none;
+    transition: all 0.25s ease;
+  }
+
+  .product-card .mini-image {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 18px;
+  }
+
+  .product-card .mini-image img {
+    max-width: 96px;
+    max-height: 96px;
+    object-fit: contain;
+    filter: drop-shadow(0 18px 24px rgba(0,0,0,0.4));
+  }
+
+  .product-card:hover {
+    border-left-color: var(--gold);
+    background: #152030;
+    transform: translateY(-2px);
+  }
+
+  .product-card .tag {
+    color: var(--gold);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .product-card .name {
+    font-family: 'Playfair Display', serif;
+    color: var(--white);
+    font-size: 22px;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+
+  .product-card .small {
+    color: var(--silver-light);
+    font-size: 13px;
+  }
+
+  .footer {
+    background: #0C0F13;
+    padding: 32px 40px;
+    text-align: center;
+    border-top: 1px solid rgba(200,164,93,0.1);
+  }
+
+  .footer p {
+    font-size: 12px;
+    color: var(--silver);
+    letter-spacing: 1px;
+  }
+
+  .footer a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+
+  @media (max-width: 860px) {
+    .nav { padding: 14px 24px; }
+    .hero {
+      min-height: auto;
+      grid-template-columns: 1fr;
+      gap: 44px;
+      padding: 72px 24px 54px;
+    }
+    .bottle-stage { min-height: 460px; }
+    .product-gallery { min-height: auto; }
+    .gallery-main { min-height: 390px; }
+    .price-card { right: 24px; bottom: 40px; }
+    .content { padding: 58px 24px 68px; }
+    .info-grid { grid-template-columns: 1fr; gap: 22px; }
+    .panel { padding: 26px; }
+    .all-products { padding: 58px 24px 70px; }
+    .product-offer { grid-template-columns: 100px minmax(0, 1fr); }
+    .product-offer .btn { grid-column: 1 / -1; }
+    .package-modal-card { grid-template-columns: 1fr; gap: 12px; padding: 50px 26px 28px; }
+    .package-modal-image { min-height: 220px; }
+    .package-modal-actions .btn { width: 100%; }
+  }
+
+  @media (max-width: 520px) {
+    .nav-back { font-size: 10px; letter-spacing: 1px; }
+    .meta-pill { width: 100%; }
+    .btn { width: 100%; }
+    .gallery-main { min-height: 340px; }
+    .gallery-main img { max-height: 320px; }
+    .gallery-side-shot {
+      min-height: 126px;
+      grid-template-columns: 86px minmax(0, 1fr);
+      padding: 12px;
+      gap: 12px;
+    }
+    .gallery-side-shot img { height: 96px; }
+    .side-shot-title { font-size: 15px; }
+    .side-shot-hint { display: none; }
+    .image-lightbox { padding: 16px; }
+    .lightbox-frame { height: min(82vh, 620px); }
+    .bottle { width: 142px; height: 356px; }
+    .bottle::before { left: 43px; width: 56px; height: 98px; top: -78px; }
+    .bottle::after { left: 36px; width: 70px; top: -104px; }
+    .bottle-label { left: 16px; right: 16px; top: 112px; min-height: 122px; }
+    .bottle-label strong { font-size: 18px; }
+    .price-card { right: 14px; bottom: 14px; min-width: 154px; padding: 16px 18px; }
+    .gallery-caption { top: 16px; bottom: auto; }
+    .product-offers { padding: 24px; }
+    .product-offer { grid-template-columns: 1fr; padding: 22px; text-align: center; }
+    .product-offer-image { height: 128px; }
+    .product-offer .btn { grid-column: auto; }
+    .package-modal { padding: 12px; }
+    .package-modal-prices { grid-template-columns: 1fr; }
+  }
+  .call-button {
+    position: fixed; right: 24px; bottom: 24px; z-index: 90;
+    display: inline-flex; align-items: center; gap: 10px;
+    min-height: 54px; padding: 0 20px; border-radius: 999px;
+    border: 1px solid rgba(229,199,123,0.7);
+    background: var(--gold); color: var(--navy);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: background .25s ease, transform .25s ease, box-shadow .25s ease;
+  }
+  .call-button:hover { background: var(--gold-light); transform: translateY(-3px); box-shadow: 0 14px 34px rgba(0,0,0,.45); }
+  .call-button:focus-visible { outline: 3px solid var(--white); outline-offset: 3px; }
+  .call-button svg { width: 21px; height: 21px; fill: currentColor; flex-shrink: 0; }
+  @media (max-width: 768px) {
+    .call-button { right: 16px; bottom: 16px; width: 56px; height: 56px; min-height: 56px; justify-content: center; padding: 0; }
+    .call-button span { display: none; }
+  }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="nav-brand" href="bar_offer.html">
+    <img src="assets/brand/bopromas-logo-transparent.png" alt="BoProMas">
+  </a>
+  <a class="nav-back" href="bar_offer.html#exclusive">← Обратно към офертата</a>
+</nav>
+
+<main id="app"></main>
+
+<footer class="footer">
+  <p>© 2026 „БоПромас" ООД · <a href="https://www.bopromas.bg">www.bopromas.bg</a> · <a href="https://www.drinkme.bg">www.drinkme.bg</a></p>
+</footer>
+
+<script src="product-data.js"></script>
+<script src="whiskey-research-data.js"></script>
+<script src="monthly-offers-data.js"></script>
+<script>
+const products = window.PRODUCTS || {};
+function slugifyProduct(value) {
+  return value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/№/g, 'no')
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9а-я]+/gi, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function categoryAccent(category) {
+  const accents = {
+    whiskey: ["#161B22", "#5D6B7A", "#C8A45D"],
+    vodka: ["#10151B", "#8998A8", "#D3DAE2"],
+    rum: ["#1B1514", "#6E6048", "#E5C77B"],
+    gin: ["#141B20", "#526171", "#8998A8"],
+    liquor: ["#1D1718", "#716149", "#C8A45D"],
+    rakia: ["#181B20", "#647382", "#E5C77B"],
+    sparkling: ["#151B22", "#8998A8", "#D3DAE2"],
+    vermouth: ["#1B1720", "#526171", "#C8A45D"]
+  };
+  return accents[category] || ["#263240", "#8998A8", "#C8A45D"];
+}
+
+function categoryImage(item) {
+  const escapeXml = value => value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+  const title = escapeXml(item.name.length > 24 ? `${item.name.slice(0, 24)}...` : item.name);
+  const cat = escapeXml(item.category.length > 26 ? `${item.category.slice(0, 26)}...` : item.category);
+  const svg = `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+      <defs>
+        <radialGradient id="g" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stop-color="#C8A45D" stop-opacity=".32"/>
+          <stop offset="65%" stop-color="#1B242E" stop-opacity=".2"/>
+          <stop offset="100%" stop-color="#10151B" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="b" x1="0" x2="1">
+          <stop offset="0%" stop-color="#ffffff" stop-opacity=".16"/>
+          <stop offset="45%" stop-color="#C8A45D" stop-opacity=".28"/>
+          <stop offset="100%" stop-color="#ffffff" stop-opacity=".08"/>
+        </linearGradient>
+      </defs>
+      <circle cx="450" cy="430" r="315" fill="url(#g)" stroke="#C8A45D" stroke-opacity=".22"/>
+      <path d="M395 190h110v130c52 30 82 84 82 150v230c0 56-45 101-101 101h-72c-56 0-101-45-101-101V470c0-66 30-120 82-150V190z" fill="url(#b)" stroke="#C8A45D" stroke-opacity=".42" stroke-width="3"/>
+      <rect x="385" y="145" width="130" height="56" rx="10" fill="#C8A45D"/>
+      <rect x="342" y="418" width="216" height="170" fill="#0C0F13" fill-opacity=".78" stroke="#C8A45D" stroke-opacity=".55"/>
+      <text x="450" y="480" text-anchor="middle" fill="#ffffff" font-family="Georgia, serif" font-size="34" font-weight="700">${title}</text>
+      <text x="450" y="535" text-anchor="middle" fill="#C8A45D" font-family="Arial, sans-serif" font-size="20" letter-spacing="4">${cat}</text>
+    </svg>
+  `;
+  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+}
+
+function buildGenericProduct(params, slug) {
+  const name = params.get('name') || slug.replace(/-/g, ' ');
+  const category = params.get('category') || 'Каталог';
+  const cat = params.get('cat') || 'catalog';
+  const volume = params.get('volume') || '0.700л';
+  const abv = params.get('abv') || '40%';
+  const price = params.get('price') || '';
+  const bgn = params.get('bgn') || '';
+  const detail = params.get('detail') || '';
+  const drinkmeSearch = `https://drinkme.bg/search?query=${encodeURIComponent(name)}`;
+  const isWineStyle = cat === 'sparkling' || cat === 'vermouth';
+  const categoryLabel = isWineStyle ? 'Стил' : 'Алк.';
+  const catalogImages = window.CATALOG_PRODUCT_IMAGES || {};
+  const imageSrc = catalogImages[slug] || catalogImages[slugifyProduct(name)] || categoryImage({ name, category });
+
+  const tasteByCat = {
+    whiskey: ["Аромат: малц, дъб, ванилия и лека подправка според стила.", "Вкус: плътен спиртен профил, подходящ както за чисто сервиране, така и за коктейли.", "Финал: топъл, сух и достатъчно структуриран за барова употреба."],
+    vodka: ["Аромат: чист, неутрален и свеж.", "Вкус: мек, гладък и лесен за миксиране.", "Финал: чист, кратък и подходящ за коктейлна база."],
+    rum: ["Аромат: захарна тръстика, карамел, тропически плод или подправка според стила.", "Вкус: сладък, заоблен и подходящ за tiki, sour и long drinks.", "Финал: мек, топъл и коктейлно ориентиран."],
+    gin: ["Аромат: хвойна, цитрус и билкови нюанси.", "Вкус: сух, свеж и ясен в Gin & Tonic или sour стил.", "Финал: чист, ароматен и лесен за балансиране."],
+    liquor: ["Аромат: изразен основен вкус и сладост.", "Вкус: плътен, десертен или bitter профил според продукта.", "Финал: подходящ за modifier, spritz или десертни коктейли."],
+    rakia: ["Аромат: плод, дървесина или балкански дестилатен характер.", "Вкус: директен, топъл и ясен.", "Финал: сух, плодов и подходящ за чисто сервиране."],
+    sparkling: ["Аромат: свеж плод, цветя и лека хлебна или цитрусова нотка.", "Вкус: свеж, пенлив и аперитивен.", "Финал: чист, сух и подходящ за welcome drink."],
+    vermouth: ["Аромат: билки, цитрус, вино и подправки.", "Вкус: сладко-горчив или сух профил според стила.", "Финал: аперитивен, ароматен и много полезен в класически коктейли."]
+  };
+
+  const usesByCat = {
+    whiskey: ["House pour, highball или класически whiskey cocktails.", "Подходящ за upsell според стила и цената.", "Работи добре в Whiskey Sour, Old Fashioned или long drink меню."],
+    vodka: ["Vodka Martini, Mule, Espresso Martini и long drinks.", "Добра неутрална база за свежи коктейли.", "Лесно се продава като чисто охладено сервиране."],
+    rum: ["Daiquiri, Mojito, Rum Old Fashioned или tiki вариации.", "Подходящ за тропически и десертни коктейли.", "Добър избор за signature rum секция."],
+    gin: ["Gin & Tonic, Negroni, Collins и Gimlet.", "Лесно се комбинира с citrus, herbs и premium tonic.", "Подходящ за бърза барова продажба."],
+    liquor: ["Modifier за signature коктейли.", "Spritz, sour, dessert cocktails или shot сервиране.", "Полезен за сезонни менюта и бързи twist рецепти."],
+    rakia: ["Чисто сервиране, дегустационна селекция или балкански коктейл.", "Добра връзка с локална кухня и мезета.", "Може да се използва в sour вариации."],
+    sparkling: ["Welcome drink, Spritz основа или by-the-glass предложение.", "Подходящо за brunch, събития и premium bottle service.", "Работи с Aperol, Limoncello, elderflower и bitters."],
+    vermouth: ["Negroni, Martini, Americano, Spritz и нискоалкохолни коктейли.", "Добър aperitif serve върху лед.", "Полезен за класическо и модерно бар меню."]
+  };
+
+  return {
+    name,
+    tag: `${category}${detail ? ` · ${detail}` : ''}`,
+    category,
+    origin: 'Ценова листа',
+    volume,
+    abv,
+    price,
+    accent: categoryAccent(cat),
+    label: detail || category,
+    isGeneric: true,
+    images: [{ src: imageSrc, label: name }],
+    lead: `${name} е част от ценовата листа на БоПромас за коктейл барове. Продуктът е позициониран като практичен избор за професионална барова употреба, с цена ${price ? `${price} €` : 'по оферта'} с ДДС${bgn ? ` (${bgn} лв)` : ''}.`,
+    story: [
+      `Този профил е генериран от данните в ценовата листа, за да може всеки артикул да има собствена страница за бърза справка от бар екипа.`,
+      `За финални маркетингови описания и официални продуктови снимки може да се добави точната DrinkMe продуктова страница, ако искате да полираме каталога продукт по продукт.`
+    ],
+    tasting: tasteByCat[cat] || tasteByCat.whiskey,
+    details: [[categoryLabel, abv], ["Разфасовка", volume], ["Цена EUR", price ? `${price} € с ДДС` : "по оферта"], ["Цена BGN", bgn ? `${bgn} лв` : "по оферта"]],
+    uses: usesByCat[cat] || usesByCat.whiskey,
+    serve: isWineStyle ? "Охладено сервиране в подходяща чаша. За коктейли: използвайте като aperitif, spritz основа или част от low-ABV секция." : "Сервирайте според категорията: чисто, върху лед или като база в класически коктейл. За заявка използвайте директния телефон от страницата.",
+    facts: [["Категория", category], ["Разфасовка", volume], [categoryLabel, abv], ["Барова роля", "Каталожен продукт за бърза заявка"]],
+    sources: [["Търсене в DrinkMe", drinkmeSearch]]
+  };
+}
+
+const app = document.getElementById('app');
+const params = new URLSearchParams(window.location.search);
+function decodeProductSlug(value) {
+  let decoded = value || '';
+  try {
+    while (/%[0-9a-f]{2}/i.test(decoded)) {
+      const next = decodeURIComponent(decoded);
+      if (next === decoded) break;
+      decoded = next;
+    }
+  } catch (error) {
+    console.warn('Невалиден продуктов адрес:', value);
+  }
+  return decoded;
+}
+const slug = decodeProductSlug(params.get('p'));
+const baseProduct = products[slug];
+const productRecord = (window.PRODUCT_DATABASE || {})[slug];
+const product = baseProduct
+  ? {
+      ...baseProduct,
+      ...(params.get('variant') === '1' ? {
+        volume: params.get('volume') || baseProduct.volume,
+        abv: params.get('abv') || baseProduct.abv,
+        price: params.get('price') || baseProduct.price,
+        label: params.get('detail') || baseProduct.label
+      } : {})
+    }
+  : {
+      ...buildGenericProduct(params, slug || 'product'),
+      brand: productRecord?.brand || params.get('name') || 'Каталог',
+      isExclusive: productRecord?.isExclusive || false,
+      variants: productRecord?.variants || [],
+      relatedProductSlugs: productRecord?.relatedProductSlugs || [],
+      packageOfferIds: productRecord?.packageOfferIds || []
+    };
+const verifiedResearch = (window.WHISKEY_RESEARCH || {})[slug];
+
+if (verifiedResearch && !baseProduct) {
+  product.lead = verifiedResearch.summary;
+  product.origin = verifiedResearch.origin || product.origin;
+  product.brand = verifiedResearch.brand || product.brand;
+  product.category = verifiedResearch.style || product.category;
+  if (verifiedResearch.image && verifiedResearch.imageVerified) {
+    product.images = [{ src: verifiedResearch.image, label: verifiedResearch.name || product.name }];
+  }
+  product.story = [verifiedResearch.summary];
+  product.tasting = [];
+  product.uses = [];
+  product.serve = '';
+  product.details = [
+    ['Стил', verifiedResearch.style || 'Уиски'],
+    ['Произход', verifiedResearch.origin || 'Непосочен'],
+    ['Марка', verifiedResearch.brand || product.brand],
+    ['Проверени данни', verifiedResearch.verifiedAt]
+  ];
+  product.facts = [
+    ['Разфасовка', product.volume],
+    ['Алк.', product.abv],
+    ['Източник', verifiedResearch.source.label],
+    ['Статус', 'Проверен продуктов профил']
+  ];
+  product.sources = [[verifiedResearch.source.label, verifiedResearch.source.url]];
+}
+
+function escapeJs(value) {
+  return String(value).replace(/\\/g, "\\\\").replace(/'/g, "\\'").replace(/\n/g, "\\n");
+}
+
+function getProductGallery(item) {
+  const images = item.images && item.images.length ? item.images : [{ src: categoryImage(item), label: item.name }];
+  return images.slice(0, 2);
+}
+
+function normalizeProductName(value) {
+  return String(value || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+}
+
+function catalogItems() {
+  return (window.CATALOG_CATEGORIES || []).flatMap(category =>
+    category.items.map(item => ({
+      ...item,
+      categoryId: category.id,
+      categoryName: category.name
+    }))
+  );
+}
+
+function variantHref(item) {
+  const itemSlug = item.slug || slugifyProduct(item.name);
+  const variantParams = new URLSearchParams({
+    p: itemSlug,
+    name: item.name,
+    category: item.categoryName,
+    cat: item.categoryId,
+    volume: item.volume,
+    abv: item.abv,
+    price: item.eurVat,
+    bgn: item.bgnVat,
+    detail: item.packaging && item.packaging !== 'Стандартна' ? item.packaging : '',
+    variant: '1'
+  });
+  return `product.html?${variantParams.toString()}`;
+}
+
+function variantImage(item, currentProduct) {
+  const images = window.CATALOG_PRODUCT_IMAGES || {};
+  const itemSlug = item.slug || slugifyProduct(item.name);
+  return images[itemSlug] ||
+    images[slugifyProduct(item.name)] ||
+    currentProduct.images?.[0]?.src ||
+    categoryImage({ name: item.name, category: item.categoryName });
+}
+
+function relatedVariants(item, activeSlug) {
+  const record = (window.PRODUCT_DATABASE || {})[activeSlug];
+  const unique = (record?.variants || []).filter((candidate, index, list) =>
+    list.findIndex(other =>
+      other.volume === candidate.volume &&
+      other.packaging === candidate.packaging &&
+      other.eurVat === candidate.eurVat
+    ) === index
+  );
+
+  if (unique.length < 2) return [];
+
+  const selectedVolume = params.get('volume') || item.volume;
+  const selectedPrice = params.get('price') || item.price;
+  const selectedDetail = params.get('detail') || '';
+
+  return unique.filter(candidate => !(
+    candidate.volume === selectedVolume &&
+    candidate.eurVat === selectedPrice &&
+    (candidate.packaging === 'Стандартна' ? '' : candidate.packaging) === selectedDetail
+  ));
+}
+
+function renderRelatedVariants(item, activeSlug) {
+  const variants = relatedVariants(item, activeSlug);
+  if (!variants.length) return '';
+
+  return `
+    <div class="related-variants">
+      <div class="related-variants-title">Свързани разфасовки</div>
+      <div class="related-variants-grid">
+        ${variants.map(variant => `
+          <a class="related-variant" href="${variantHref(variant)}">
+            <span class="related-variant-image">
+              <img src="${variantImage(variant, item)}" alt="${variant.name} ${variant.volume}" loading="lazy">
+            </span>
+            <span class="related-variant-info">
+              <span class="related-variant-volume">${variant.volume}</span>
+              <span class="related-variant-detail">${variant.packaging || 'Стандартна'} · ${variant.abv}</span>
+              <span class="related-variant-price">${variant.eurVat} € с ДДС</span>
+            </span>
+          </a>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function productPackageOffers(activeSlug, currentProduct) {
+  const offers = window.MONTHLY_OFFERS_DATA?.offers || [];
+  const normalizedSlug = activeSlug || slugifyProduct(params.get('name') || '');
+  const catalogMatch = catalogItems().find(item =>
+    (item.slug || slugifyProduct(item.name)) === normalizedSlug &&
+    (!params.get('volume') || item.volume === params.get('volume'))
+  );
+  const offerIds = currentProduct.packageOfferIds || catalogMatch?.packageOfferIds || [];
+  return offerIds
+    .map(offerId => offers.find(offer => offer.id === offerId))
+    .filter(Boolean);
+}
+
+function renderProductOffers(activeSlug, currentProduct) {
+  const offers = productPackageOffers(activeSlug, currentProduct);
+  if (!offers.length) return '';
+
+  return `
+    <section class="product-offers" aria-label="Пакетни оферти за продукта">
+      <div class="product-offers-inner">
+        ${offers.map(offer => `
+          <article class="product-offer">
+            <div class="product-offer-image">
+              <img src="${offer.image}" alt="${offer.title}" loading="lazy">
+            </div>
+            <div>
+              <div class="product-offer-badge">${offer.badge || 'Пакетна оферта'} · ${offer.period}</div>
+              <h2 class="product-offer-title">${offer.title}</h2>
+              <div class="product-offer-meta">${offer.quantity} · ${offer.short}</div>
+              <span class="product-offer-price">${offer.promoUnitPrice} за бутилка</span>
+            </div>
+            <button class="btn btn-primary" type="button" onclick="openPackageOffer('${escapeJs(offer.id)}')">Виж пакетната оферта</button>
+          </article>
+        `).join('')}
+      </div>
+    </section>
+  `;
+}
+
+function openPackageOffer(offerId) {
+  const offer = (window.MONTHLY_OFFERS_DATA?.offers || []).find(item => item.id === offerId);
+  if (!offer) return;
+  const offerData = window.MONTHLY_OFFERS_DATA || {};
+  const phoneHref = `tel:${offerData.phoneHref || '+359897898245'}`;
+  const viberHref = offerData.viberHref || 'viber://chat?number=%2B359897898245';
+
+  document.getElementById('package-modal-content').innerHTML = `
+    <div class="package-modal-image"><img src="${offer.image}" alt="${offer.title}"></div>
+    <div>
+      <div class="product-offer-badge">${offer.badge || 'Пакетна оферта'}</div>
+      <h2 class="package-modal-title" id="package-modal-title">${offer.title}</h2>
+      <div class="package-modal-period">${offer.period}</div>
+      <div class="package-modal-prices">
+        <div class="package-modal-price"><span>Количество</span><strong>${offer.quantity}</strong></div>
+        <div class="package-modal-price"><span>Цена за бутилка</span><strong>${offer.promoUnitPrice}</strong></div>
+        <div class="package-modal-price"><span>Спестявате</span><strong>${offer.saving}</strong></div>
+      </div>
+      <div>${(offer.description || []).map(text => `<p class="package-modal-description">${text}</p>`).join('')}</div>
+      <ul class="package-modal-list">${(offer.includes || []).map(text => `<li>${text}</li>`).join('')}</ul>
+      <div class="package-modal-actions">
+        <a class="btn btn-primary" href="${phoneHref}">Поискай оферта</a>
+        <a class="btn btn-viber" href="${viberHref}">Пиши във Viber</a>
+      </div>
+    </div>
+  `;
+
+  const modal = document.getElementById('package-modal');
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  modal.querySelector('.package-modal-close').focus();
+}
+
+function closePackageOffer(event) {
+  if (event && event.target !== event.currentTarget && !event.target.classList.contains('package-modal-close')) return;
+  const modal = document.getElementById('package-modal');
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+function renderProduct(item) {
+  const galleryImages = getProductGallery(item);
+  const mainImage = galleryImages[0];
+  const secondaryImage = galleryImages[1];
+  const secondaryMarkup = secondaryImage ? `
+          <div class="gallery-secondary">
+            <button class="gallery-side-shot" type="button" onclick="openImageLightbox('${escapeJs(secondaryImage.src)}', '${escapeJs(secondaryImage.label)}')" aria-label="Увеличи ${secondaryImage.label}">
+              <img src="${secondaryImage.src}" alt="${secondaryImage.label}">
+              <span>
+                <span class="side-shot-kicker">Втори кадър</span>
+                <span class="side-shot-title">${secondaryImage.label}</span>
+                <span class="side-shot-hint">Клик за голям изглед. При hover снимката се доближава.</span>
+              </span>
+            </button>
+          </div>` : '';
+  document.title = `${item.name} · БоПромас`;
+  document.documentElement.style.setProperty('--accent-dark', item.accent[0]);
+  document.documentElement.style.setProperty('--accent', item.accent[1]);
+  document.documentElement.style.setProperty('--accent-soft', item.accent[2]);
+
+  app.innerHTML = `
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">${item.isExclusive ? 'Ексклузивен продукт' : 'Продукт от ценова листа'} · ${item.brand || item.origin}</div>
+          <h1>${item.name}</h1>
+          <p class="lead">${item.lead}</p>
+          <div class="meta-row">
+            <div class="meta-pill">${item.category}</div>
+            <div class="meta-pill">${item.volume}</div>
+            <div class="meta-pill">${item.abv}</div>
+            <div class="meta-pill">Доставка София</div>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="tel:+359897898245">Заяви продукт</a>
+            <a class="btn btn-secondary" href="bar_offer.html#catalog">${item.isGeneric ? 'Към ценовата листа' : 'Други ексклузивни'}</a>
+          </div>
+        </div>
+        <div class="product-gallery" aria-label="${item.name}">
+          <div class="gallery-main" onclick="openImageLightbox('${escapeJs(mainImage.src)}', '${escapeJs(mainImage.label)}')" onmousemove="trackImageZoom(event, this)" onmouseleave="resetImageZoom(this)" role="button" tabindex="0" aria-label="Увеличи ${mainImage.label}">
+            <img id="gallery-main-img" src="${mainImage.src}" alt="${mainImage.label}">
+            <div id="gallery-caption" class="gallery-caption">${mainImage.label}</div>
+            <div class="price-card">
+              <div class="price-label">Цена с ДДС</div>
+              <div class="price-value">${item.price} €</div>
+              <div class="price-note">${item.volume} · ${item.abv}</div>
+            </div>
+          </div>
+          ${renderRelatedVariants(item, slug)}
+          ${secondaryMarkup}
+        </div>
+      </div>
+    </section>
+
+    ${renderProductOffers(slug, item)}
+
+    <section class="content">
+      <div class="section-head">
+        <div class="eyebrow">Продуктов профил</div>
+        <div class="section-title">Защо да стои на вашия back bar</div>
+        <p class="section-desc">Кратък, продаваем профил за екипа: какво е, как се обяснява на гост и къде работи най-добре в менюто.</p>
+      </div>
+      <div class="info-grid">
+        <div>
+          <article class="panel">
+            <h2>История и позициониране</h2>
+            ${item.story.map(paragraph => `<p>${paragraph}</p>`).join('')}
+          </article>
+          ${item.tasting.length ? `<article class="panel">
+            <h2>Вкусов профил</h2>
+            <ul class="taste-list">
+              ${item.tasting.map(point => `<li>${point}</li>`).join('')}
+            </ul>
+          </article>` : ''}
+          <article class="panel">
+            <h2>Детайлни характеристики</h2>
+            <div class="detail-grid">
+              ${item.details.map(([label, value]) => `<div class="detail-item"><span>${label}</span><strong>${value}</strong></div>`).join('')}
+            </div>
+          </article>
+        </div>
+        <aside>
+          <div class="panel">
+            <h3>Бързи факти</h3>
+            <ul class="facts-list">
+              ${item.facts.map(([label, value]) => `<li><strong>${label}:</strong> ${value}</li>`).join('')}
+            </ul>
+          </div>
+          ${item.uses.length ? `<div class="panel">
+            <h3>Идеи за бар меню</h3>
+            <ul class="use-list">
+              ${item.uses.map(point => `<li>${point}</li>`).join('')}
+            </ul>
+            ${item.serve ? `<div class="serve-box">
+              <div class="serve-label">Препоръчано сервиране</div>
+              <div class="serve-text">${item.serve}</div>
+            </div>` : ''}
+          </div>` : ''}
+          <div class="panel">
+            <h3>Източници</h3>
+            <ul class="source-list">
+              ${item.sources.map(([label, url]) => `<li><a href="${url}" target="_blank" rel="noopener">${label} →</a></li>`).join('')}
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+    ${renderAllProducts(slug)}
+    <div class="package-modal" id="package-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="package-modal-title" onclick="closePackageOffer(event)">
+      <div class="package-modal-card">
+        <button class="package-modal-close" type="button" onclick="closePackageOffer(event)" aria-label="Затвори">×</button>
+        <div id="package-modal-content"></div>
+      </div>
+    </div>
+    <div class="image-lightbox" id="image-lightbox" onclick="closeImageLightbox(event)">
+      <div class="lightbox-frame" onmousemove="trackImageZoom(event, this)" onmouseleave="resetImageZoom(this)">
+        <button class="lightbox-close" type="button" onclick="closeImageLightbox(event)" aria-label="Затвори">×</button>
+        <img id="lightbox-image" src="${mainImage.src}" alt="${mainImage.label}">
+        <div class="lightbox-caption" id="lightbox-caption">${mainImage.label}</div>
+      </div>
+    </div>
+  `;
+}
+
+function renderAllProducts(activeSlug) {
+  const database = window.PRODUCT_DATABASE || {};
+  const activeRecord = database[activeSlug];
+  if (!activeRecord?.relatedProductSlugs?.length) return '';
+
+  const cards = activeRecord.relatedProductSlugs.map(relatedSlug => {
+    const record = database[relatedSlug];
+    const detailedProduct = products[relatedSlug];
+    const variant = record?.variants?.[0];
+    if (!record || (!detailedProduct && !variant)) return '';
+
+    const href = detailedProduct
+      ? `product.html?p=${encodeURIComponent(relatedSlug)}`
+      : variantHref(variant);
+    const image = detailedProduct?.images?.[0]?.src || variantImage(variant, product);
+    const category = detailedProduct?.tag || variant.categoryName;
+    const volume = detailedProduct?.volume || variant.volume;
+    const abv = detailedProduct?.abv || variant.abv;
+    const price = detailedProduct?.price || variant.eurVat;
+
+    return `
+      <a class="product-card" href="${href}">
+        <div class="mini-image"><img src="${image}" alt="${record.name}"></div>
+        <div class="tag">${record.isExclusive ? 'Ексклузивен' : category}</div>
+        <div class="name">${record.name}</div>
+        <div class="small">${volume} · ${abv} · ${price} € с ДДС</div>
+      </a>
+    `;
+  }).join('');
+
+  return `
+    <section class="all-products">
+      <div class="all-inner">
+        <div class="section-head">
+          <div class="eyebrow">Свързани продукти</div>
+          <div class="section-title">Още от ${activeRecord.brand}</div>
+        </div>
+        <div class="product-grid">${cards}</div>
+      </div>
+    </section>
+  `;
+}
+
+function trackImageZoom(event, container) {
+  const rect = container.getBoundingClientRect();
+  const x = ((event.clientX - rect.left) / rect.width) * 100;
+  const y = ((event.clientY - rect.top) / rect.height) * 100;
+  container.style.setProperty('--zoom-x', `${x}%`);
+  container.style.setProperty('--zoom-y', `${y}%`);
+}
+
+function resetImageZoom(container) {
+  container.style.setProperty('--zoom-x', '50%');
+  container.style.setProperty('--zoom-y', '50%');
+}
+
+function openImageLightbox(src, label) {
+  const lightbox = document.getElementById('image-lightbox');
+  const image = document.getElementById('lightbox-image');
+  const caption = document.getElementById('lightbox-caption');
+  image.src = src;
+  image.alt = label;
+  caption.textContent = label;
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeImageLightbox(event) {
+  if (event && event.target.closest('.lightbox-frame') && !event.target.classList.contains('lightbox-close')) return;
+  const lightbox = document.getElementById('image-lightbox');
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') {
+    closeImageLightbox();
+    closePackageOffer();
+  }
+});
+
+renderProduct(product);
+</script>
+<a class="call-button" href="tel:+359897898245" aria-label="Обадете се на +359 897 898 245">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z"/></svg>
+  <span>+359 897 898 245</span>
+</a>
+</body>
+</html>
