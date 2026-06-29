@@ -1,4 +1,4 @@
-// Exclusive brand content shared by bar_offer.html and brand.html.
+// Exclusive brand content shared by index.html and brand.html.
 // Edit brand names, descriptions, images and product ids here.
 // If image is empty, the site generates a branded placeholder automatically.
 
