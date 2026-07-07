@@ -244,6 +244,94 @@
     font-size: 13px;
   }
 
+  .brand-info-band {
+    max-width: none;
+    background: #0C0F13;
+    border-top: 1px solid rgba(200,164,93,0.08);
+    border-bottom: 1px solid rgba(200,164,93,0.08);
+  }
+
+  .brand-info-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .brand-info-grid,
+  .sales-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2px;
+    margin-top: 30px;
+  }
+
+  .brand-panel {
+    background:
+      linear-gradient(145deg, rgba(255,255,255,0.055), rgba(255,255,255,0.015)),
+      var(--navy-mid);
+    border: 1px solid rgba(255,255,255,0.055);
+    padding: 26px;
+    min-height: 210px;
+  }
+
+  .brand-panel-label {
+    color: var(--gold);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .brand-panel-title {
+    color: var(--white);
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    line-height: 1.12;
+    margin-bottom: 12px;
+  }
+
+  .brand-panel-text {
+    color: var(--silver-light);
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .range-list {
+    display: grid;
+    gap: 2px;
+    margin-top: 30px;
+  }
+
+  .range-item {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.55fr) minmax(0, 1fr) auto;
+    gap: 22px;
+    align-items: center;
+    background: rgba(255,255,255,0.035);
+    border-left: 3px solid rgba(200,164,93,0.45);
+    padding: 18px 20px;
+  }
+
+  .range-name {
+    color: var(--white);
+    font-weight: 800;
+    line-height: 1.25;
+  }
+
+  .range-desc {
+    color: var(--silver-light);
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .range-meta {
+    color: var(--gold-light);
+    font-size: 12px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
   .products-band {
     max-width: none;
     background: var(--navy-mid);
@@ -383,8 +471,19 @@
       gap: 30px;
     }
 
+    .brand-info-grid,
+    .sales-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .range-item {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
     section { padding: 60px 24px; }
     .products-inner { padding: 0 24px; }
+    .brand-info-inner { padding: 0 24px; }
     .nav { padding: 14px 24px; }
     .brand-stage { min-height: 330px; }
   }
@@ -433,12 +532,16 @@
     hetman: 'hetman-vodka',
     'peats-beast': 'peats-beast-whiskey',
     'gold-of-mauritius': 'mauritius-rum',
-    'castro-craft': 'castro-liquor'
+    'castro-craft': 'castro-liquor',
+    'william-lenson-whiskey': 'william-lawsons-whiskey',
+    'frand-torino': 'gran-torino',
+    'glen-scanlan': 'glen-scanlan-whiskey'
   };
   const requestedBrandId = params.get('b') || 'natterjack-irish-whiskey';
   const brandId = aliases[requestedBrandId] || requestedBrandId;
   const brands = window.EXCLUSIVE_BRANDS || {};
   const products = window.PRODUCTS || {};
+  const productDatabase = window.PRODUCT_DATABASE || {};
   const brand = brands[brandId] || brands['natterjack-irish-whiskey'] || Object.values(brands)[0];
   const page = document.getElementById('brandPage');
 
@@ -484,23 +587,138 @@
   }
 
   const brandImage = brand.image || brandPlaceholderImage(brand.name, brand.category, brand.accent);
+  function productSlug(record, productId) {
+    return record?.slug || productId;
+  }
+
+  function primaryVariant(record) {
+    return (record?.variants || [])[0] || null;
+  }
+
+  function productHref(productId, record, product) {
+    if (product) return `product.html?p=${encodeURIComponent(productId)}`;
+    const variant = primaryVariant(record);
+    if (!variant) return `product.html?p=${encodeURIComponent(productId)}`;
+    const params = new URLSearchParams({
+      p: productSlug(record, productId),
+      name: variant.name || record.name || productId,
+      category: variant.categoryName || brand.category,
+      cat: variant.categoryId || 'catalog',
+      volume: variant.volume || '',
+      abv: variant.abv || '',
+      price: variant.eurVat || '',
+      bgn: variant.bgnVat || '',
+      detail: variant.packaging && variant.packaging !== 'Стандартна' ? variant.packaging : '',
+      variant: '1'
+    });
+    return `product.html?${params.toString()}`;
+  }
+
   const productCards = (brand.products || [])
     .map(productId => {
       const product = products[productId];
-      if (!product) return '';
-      const image = product.images?.[0]?.src || brand.image;
+      const record = productDatabase[productId];
+      const variant = primaryVariant(record);
+      if (!product && !record) return '';
+      const image = product?.images?.[0]?.src || record?.image || variant?.image || brand.image;
+      const name = product?.name || record?.name || variant?.name || productId;
+      const category = product?.category || variant?.categoryName || brand.category;
+      const volume = product?.volume || variant?.volume || '';
+      const abv = product?.abv || variant?.abv || '';
+      const origin = product?.origin || brand.origin;
+      const price = product?.price || variant?.eurVat || '';
       return `
-        <a class="product-card" href="product.html?p=${encodeURIComponent(productId)}">
-          <div class="product-image"><img src="${image}" alt="${product.name}"></div>
-          <div class="product-tag">${product.category || brand.category}</div>
-          <div class="product-name">${product.name}</div>
-          <div class="product-meta">${product.volume || ''} · ${product.abv || ''} · ${product.origin || brand.origin}</div>
-          <div class="product-price">${product.price ? `${product.price} €` : 'по оферта'}</div>
+        <a class="product-card" href="${productHref(productId, record, product)}">
+          <div class="product-image"><img src="${image}" alt="${name}"></div>
+          <div class="product-tag">${category}</div>
+          <div class="product-name">${name}</div>
+          <div class="product-meta">${volume} · ${abv} · ${origin}</div>
+          <div class="product-price">${price ? `${price} €` : 'по оферта'}</div>
         </a>
       `;
     })
     .join('');
   const productsContent = productCards || '<div class="empty-products">Продуктите за тази марка ще бъдат добавени скоро. За актуална наличност и цени се свържете с нас директно.</div>';
+  const brandProductRows = (brand.products || [])
+    .map(productId => {
+      const product = products[productId];
+      const record = productDatabase[productId];
+      const variant = primaryVariant(record);
+      if (!product && !record) return null;
+      return {
+        id: productId,
+        name: product?.name || record?.name || variant?.name || productId,
+        category: product?.category || variant?.categoryName || brand.category,
+        volume: product?.volume || variant?.volume || '',
+        abv: product?.abv || variant?.abv || '',
+        price: product?.price || variant?.eurVat || '',
+        lead: product?.lead || record?.lead || '',
+        uses: product?.uses || record?.uses || [],
+        tasting: product?.tasting || record?.tasting || []
+      };
+    })
+    .filter(Boolean);
+
+  function categoryPreset(brand, rows) {
+    const haystack = `${brand.category} ${brand.name} ${rows.map(row => row.category).join(' ')}`.toLowerCase();
+    if (/champagne|prosecco|wine|вино|пенлив/.test(haystack)) {
+      return {
+        guest: 'Гости, които търсят по-елегантно сервиране, welcome drink, празнична бутилка или pairing към храна.',
+        menu: 'Позиционирайте марката в aperitif, by-the-bottle и събитийни предложения. При по-широка винена листа може да стои като отделен premium избор.',
+        serve: 'Дръжте добре охладено, сервирайте в чисти wine/flute чаши и използвайте кратко обяснение за стил, произход и повод.',
+        sales: 'Най-лесният аргумент е поводът: празник, маса с гости, pairing или premium welcome drink.'
+      };
+    }
+    if (/vodka|водка/.test(haystack)) {
+      return {
+        guest: 'Гости, които търсят чиста, студена и лесна за разбиране напитка, както и база за Martini, Mule, Soda или Espresso Martini.',
+        menu: 'Дръжте марката като premium well или отделна vodka секция. Разделете чисто сервиране, highball и коктейлни приложения.',
+        serve: 'Работи най-добре силно охладена, с много лед или в чисти long drinks, където качеството на содата/тоника личи.',
+        sales: 'Продажбата е проста: чист профил, различна марка от масовите имена и гъвкавост за почти всеки vodka drink.'
+      };
+    }
+    if (/whisky|whiskey|scotch|уиски/.test(haystack)) {
+      return {
+        guest: 'Гости, които искат драм, highball или по-интересна whisky алтернатива според стила на марката.',
+        menu: 'Разделете ролите: house highball, smoky serve, premium neat или cocktail whisky. Така екипът продава по ситуация, не само по цена.',
+        serve: 'За blended стилове работят highballs и long drinks; за single malt и cask strength използвайте neat serve, голям лед или няколко капки вода.',
+        sales: 'Най-силен аргумент е профилът: мек ирландски, опушен торфен, house Scotch или premium single malt.'
+      };
+    }
+    if (/rum|ром/.test(haystack)) {
+      return {
+        guest: 'Гости, които харесват по-богати, тропически, десертни или oak-driven напитки.',
+        menu: 'Позиционирайте марката в premium rum секция, signature Daiquiri, Rum Old Fashioned и after-dinner serves.',
+        serve: 'Сервирайте neat, върху голям лед или в коктейли с demerara, citrus и bitters.',
+        sales: 'Разкажете произхода и профила: ром от Мавриций, мекота, тропически плод и premium усещане.'
+      };
+    }
+    if (/liqueur|liquor|ликьор|ouzo|узо|aperitivo|vermouth|bitter/.test(haystack)) {
+      return {
+        guest: 'Гости, които търсят aperitif, digestif, spritz, shot или по-ароматен signature cocktail.',
+        menu: 'Използвайте марката като modifier секция: Spritz, Sour, Espresso Martini, Mediterranean drinks и нискоалкохолни сервирания.',
+        serve: 'Работи добре охладено, върху лед или като 10-30 мл ароматен слой в коктейл.',
+        sales: 'Обяснявайте през вкуса: кафе, лимон, мастиха, анасон, bitter портокал или билков профил.'
+      };
+    }
+    return {
+      guest: 'Гости, които търсят различна марка, ясна история и надежден продукт за барово сервиране.',
+      menu: 'Позиционирайте марката според основната категория и ценовия диапазон.',
+      serve: 'Сервирайте според стила на продукта и използвайте кратко, конкретно описание към госта.',
+      sales: 'Най-добре работи като ексклузивна алтернатива на масовите имена.'
+    };
+  }
+
+  const preset = categoryPreset(brand, brandProductRows);
+  const rangeRows = brandProductRows
+    .map(row => `
+      <div class="range-item">
+        <div class="range-name">${row.name}</div>
+        <div class="range-desc">${row.lead || `${row.category} от ексклузивната селекция на БоПромас.`}</div>
+        <div class="range-meta">${row.volume}${row.abv ? ` · ${row.abv}` : ''}</div>
+      </div>
+    `)
+    .join('');
 
   page.innerHTML = `
     <section class="hero" style="--accent:${brand.accent?.[1] || '#C8A45D'};">
@@ -534,6 +752,61 @@
           <ul class="highlight-list">
             ${(brand.highlights || []).map(text => `<li>${text}</li>`).join('')}
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-info-band">
+      <div class="brand-info-inner">
+        <div class="section-eyebrow">Позициониране в меню</div>
+        <div class="section-title">Как да работи <em>${brand.name}</em> в заведението</div>
+        <div class="brand-info-grid">
+          <article class="brand-panel">
+            <div class="brand-panel-label">За кой гост</div>
+            <div class="brand-panel-title">Правилният момент</div>
+            <p class="brand-panel-text">${preset.guest}</p>
+          </article>
+          <article class="brand-panel">
+            <div class="brand-panel-label">Меню роля</div>
+            <div class="brand-panel-title">Къде да стои</div>
+            <p class="brand-panel-text">${preset.menu}</p>
+          </article>
+          <article class="brand-panel">
+            <div class="brand-panel-label">Сервиране</div>
+            <div class="brand-panel-title">Как да се подаде</div>
+            <p class="brand-panel-text">${preset.serve}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-eyebrow">Асортимент</div>
+      <div class="section-title">Какво включва <em>марката</em></div>
+      <p class="story-text">${brand.name} има ${brandProductRows.length || 0} активни продукта в каталога. Всеки продукт е вързан към собствена страница с цена, снимка, характеристики и сервиране.</p>
+      ${rangeRows ? `<div class="range-list">${rangeRows}</div>` : '<div class="empty-products">Ще добавим продуктите към тази марка при следващото обновяване на каталога.</div>'}
+    </section>
+
+    <section class="brand-info-band">
+      <div class="brand-info-inner">
+        <div class="section-eyebrow">Продажбен сценарий</div>
+        <div class="section-title">Как екипът да я <em>предлага</em></div>
+        <div class="sales-grid">
+          <article class="brand-panel">
+            <div class="brand-panel-label">Първо изречение</div>
+            <div class="brand-panel-title">Кратко обяснение</div>
+            <p class="brand-panel-text">${brand.short}</p>
+          </article>
+          <article class="brand-panel">
+            <div class="brand-panel-label">Аргумент</div>
+            <div class="brand-panel-title">Защо точно тя</div>
+            <p class="brand-panel-text">${preset.sales}</p>
+          </article>
+          <article class="brand-panel">
+            <div class="brand-panel-label">Практика</div>
+            <div class="brand-panel-title">Какво да предложим</div>
+            <p class="brand-panel-text">${brand.highlights?.join(' · ') || 'Използвайте марката като ексклузивна алтернатива в съответната категория.'}</p>
+          </article>
         </div>
       </div>
     </section>

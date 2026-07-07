@@ -2466,7 +2466,9 @@ function renderExclusiveBrandCarousel() {
   if (!carousel || !Object.keys(brands).length) return;
 
   carousel.textContent = '';
-  Object.entries(brands).forEach(([brandId, brand]) => {
+  Object.entries(brands)
+    .filter(([, brand]) => (brand.products || []).length)
+    .forEach(([brandId, brand]) => {
     const card = document.createElement('a');
     card.className = 'excl-card brand-card';
     card.href = `brand.html?b=${encodeURIComponent(brandId)}`;
@@ -2617,6 +2619,7 @@ function renderCatalog() {
       row.dataset.previewVolume = item.volume;
       row.dataset.previewAbv = item.abv;
       row.dataset.previewPrice = item.eurVat;
+      if (item.image) row.dataset.previewImage = item.image;
       if (item.slug) row.dataset.previewSlug = item.slug;
 
       const productCell = document.createElement('td');
@@ -2745,10 +2748,11 @@ function showCatalogPreview(row, event) {
   const abv = row.dataset.previewAbv || '';
   const price = row.dataset.previewPrice || '';
   const slug = row.dataset.previewSlug || '';
+  const variantImage = row.dataset.previewImage || '';
   const catalogImages = window.CATALOG_PRODUCT_IMAGES || {};
   const research = window.WHISKEY_RESEARCH?.[slug];
   const researchedImage = research?.imageVerified ? research.image : '';
-  const image = researchedImage || catalogPreviewImages[slug] || catalogImages[slug] || categoryPreviewImage(name, category);
+  const image = variantImage || researchedImage || catalogPreviewImages[slug] || catalogImages[slug] || categoryPreviewImage(name, category);
 
   preview.querySelector('.catalog-hover-image img').src = image;
   preview.querySelector('.catalog-hover-image img').alt = name;
@@ -2818,7 +2822,7 @@ function catalogProductImage(item) {
   const slug = item.slug || slugifyProduct(item.name);
   const research = window.WHISKEY_RESEARCH?.[slug];
   const researchedImage = research?.imageVerified ? research.image : '';
-  return researchedImage || catalogPreviewImages[slug] || catalogImages[slug] || categoryPreviewImage(item.name, item.categoryName);
+  return item.image || researchedImage || catalogPreviewImages[slug] || catalogImages[slug] || categoryPreviewImage(item.name, item.categoryName);
 }
 
 function renderSearchSuggestions(query) {

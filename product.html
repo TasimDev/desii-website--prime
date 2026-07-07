@@ -1328,6 +1328,17 @@ if (verifiedResearch && !baseProduct) {
   product.sources = [[verifiedResearch.source.label, verifiedResearch.source.url]];
 }
 
+const activeCatalogVariant = productRecord?.variants?.length
+  ? productRecord.variants.find(candidate =>
+      candidate.packaging === (params.get('detail') || 'Стандартна') &&
+      candidate.volume === (params.get('volume') || '')
+    )
+  : null;
+if (activeCatalogVariant?.image) {
+  product.images = [{ src: activeCatalogVariant.image, label: activeCatalogVariant.name || product.name }];
+  product.productUrl = activeCatalogVariant.productUrl || product.productUrl;
+}
+
 function escapeJs(value) {
   return String(value).replace(/\\/g, "\\\\").replace(/'/g, "\\'").replace(/\n/g, "\\n");
 }
@@ -1376,7 +1387,8 @@ function variantHref(item) {
 function variantImage(item, currentProduct) {
   const images = window.CATALOG_PRODUCT_IMAGES || {};
   const itemSlug = item.slug || slugifyProduct(item.name);
-  return images[itemSlug] ||
+  return item.image ||
+    images[itemSlug] ||
     images[slugifyProduct(item.name)] ||
     currentProduct.images?.[0]?.src ||
     categoryImage({ name: item.name, category: item.categoryName });
@@ -1609,12 +1621,6 @@ function renderProduct(item) {
               <div class="serve-text">${item.serve}</div>
             </div>` : ''}
           </div>` : ''}
-          <div class="panel">
-            <h3>Източници</h3>
-            <ul class="source-list">
-              ${item.sources.map(([label, url]) => `<li><a href="${url}" target="_blank" rel="noopener">${label} →</a></li>`).join('')}
-            </ul>
-          </div>
         </aside>
       </div>
     </section>

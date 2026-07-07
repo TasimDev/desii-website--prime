@@ -15,9 +15,9 @@ const img = {
   "peatsCask": "https://drinkme.bg/cdn/img/products/429/peats-beast-batch-strenght-68ada9e20f57a.jpeg?height=800&v=1777632372&width=800",
   "peatsPx": "https://drinkme.bg/cdn/img/products/428/peats-beast-batch-strenght-px-sherry-wood-finish-68ada81a17fc4.jpeg?height=800&v=1777632371&width=800",
   "peatsMenu": "https://drinkme.bg/cdn/img/products/430/peats-beast-single-malt-68adab333b41b.jpeg?height=800&v=1777632372&width=800",
-  "goldVelvet": "https://drinkme.bg/cdn/img/products/693/gold-of-mauritius-emerald-edition-69676a8e4533a.png?height=800&v=1777632371&width=800",
+  "goldVelvet": "https://www.topdrinks.nl/media/catalog/product/L/_/L_66_983_00_1_9485.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460",
   "goldDark": "https://drinkme.bg/cdn/img/products/5/gold-of-mauritius-dark-rum-image_68e4f0ecab683.jpeg?height=800&v=1777632366&width=800",
-  "goldMenu": "https://drinkme.bg/cdn/img/products/693/gold-of-mauritius-emerald-edition-69676a8e4533a.png?height=800&v=1777632371&width=800",
+  "goldMenu": "https://www.topdrinks.nl/media/catalog/product/L/_/L_66_983_00_1_9485.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460",
   "hetmanPremium": "https://drinkme.bg/cdn/img/products/513/hetman-premium-68b5d947142a6.png?height=800&v=1777632369&width=800",
   "hetmanMenu": "https://drinkme.bg/cdn/img/products/513/hetman-premium-68b5d947142a6.png?height=800&v=1777632369&width=800",
   "glenScanlan": "https://drinkme.bg/cdn/img/products/388/glen-scanlan-5-yo-68d67647c9dd3.jpeg?height=800&v=1777632372&width=800",
@@ -477,7 +477,7 @@ const products = {
     "label": "Velvet Edition",
     "images": [
       {
-        "src": "https://drinkme.bg/cdn/img/products/693/gold-of-mauritius-emerald-edition-69676a8e4533a.png?height=800&v=1777632371&width=800",
+        "src": "https://www.topdrinks.nl/media/catalog/product/L/_/L_66_983_00_1_9485.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460",
         "label": "Velvet Edition"
       }
     ],
@@ -3028,7 +3028,7 @@ const catalogCategories = [
         "slug": ""
       },
       {
-        "name": "CANNABIS SATIVA VODKA",
+        "name": "CANNABIS SATIVA Fibre Hemp Vodka",
         "packaging": "Стандартна",
         "volume": "0.700л",
         "abv": "37.5%",
@@ -3037,7 +3037,7 @@ const catalogCategories = [
         "eurVat": "19.49",
         "bgnVat": "38.12",
         "badges": [],
-        "slug": ""
+        "slug": "cannabis-sativa-vodka"
       },
       {
         "name": "IGANOFF",
@@ -3088,7 +3088,7 @@ const catalogCategories = [
         "slug": ""
       },
       {
-        "name": "PLATINIUM PET",
+        "name": "PLATINIUM Premium Vodka PET",
         "packaging": "Стандартна",
         "volume": "0.200л",
         "abv": "37.5%",
@@ -3097,7 +3097,7 @@ const catalogCategories = [
         "eurVat": "1.33",
         "bgnVat": "2.60",
         "badges": [],
-        "slug": ""
+        "slug": "platinium-pet"
       },
       {
         "name": "ABSOLUT",
@@ -3535,7 +3535,7 @@ const catalogCategories = [
     "description": "Caribbean · Mauritius · Premium",
     "items": [
       {
-        "name": "CANNABIS SATIVA JAMAICA RUM",
+        "name": "CANNABIS SATIVA Jamaican Rum",
         "packaging": "Стандартна",
         "volume": "0.700л",
         "abv": "37.5%",
@@ -3544,7 +3544,7 @@ const catalogCategories = [
         "eurVat": "19.49",
         "bgnVat": "38.12",
         "badges": [],
-        "slug": ""
+        "slug": "cannabis-sativa-jamaica-rum"
       },
       {
         "name": "GOLD OF MAURITIUS DARK RUM",
@@ -3765,7 +3765,7 @@ const catalogCategories = [
     "description": "London Dry · Premium",
     "items": [
       {
-        "name": "CANNABIS SATIVA GIN",
+        "name": "CANNABIS SATIVA Fibre Hemp Gin",
         "packaging": "Стандартна",
         "volume": "0.700л",
         "abv": "40%",
@@ -3774,7 +3774,7 @@ const catalogCategories = [
         "eurVat": "19.49",
         "bgnVat": "38.12",
         "badges": [],
-        "slug": ""
+        "slug": "cannabis-sativa-gin"
       },
       {
         "name": "SIXT'th SENSE PET",
@@ -3896,7 +3896,7 @@ const catalogCategories = [
         "eurVat": "1.59",
         "bgnVat": "3.11",
         "badges": [],
-        "slug": ""
+        "slug": "beefeater-gyn-47"
       },
       {
         "name": "BOMBAY SAPPHIRE PET",
@@ -3942,7 +3942,7 @@ const catalogCategories = [
     "description": "Craft · Classic · Mediterranean",
     "items": [
       {
-        "name": "CANNABIS SATIVA LIQUOR",
+        "name": "CANNABIS SATIVA Fibre Hemp Liquor",
         "packaging": "Стандартна",
         "volume": "0.700л",
         "abv": "14.5%",
@@ -3951,7 +3951,7 @@ const catalogCategories = [
         "eurVat": "19.49",
         "bgnVat": "38.12",
         "badges": [],
-        "slug": ""
+        "slug": "cannabis-sativa-liquor"
       },
       {
         "name": "CASTRO Cubes Coffee",
@@ -4285,7 +4285,7 @@ const catalogCategories = [
         "eurVat": "4.80",
         "bgnVat": "9.39",
         "badges": [],
-        "slug": ""
+        "slug": "мента-пещера"
       },
       {
         "name": "МЕНТА ПЕЩЕРА PET",
@@ -4297,7 +4297,7 @@ const catalogCategories = [
         "eurVat": "1.82",
         "bgnVat": "3.57",
         "badges": [],
-        "slug": ""
+        "slug": "мента-пещера-pet"
       },
       {
         "name": "NONINO AMARO QUINTESSENTIA DI ERBE",
@@ -4874,7 +4874,7 @@ const catalogCategories = [
         "eurVat": "25.99",
         "bgnVat": "50.83",
         "badges": [],
-        "slug": ""
+        "slug": "absente-55"
       },
       {
         "name": "PERNOD ABSENTE 68",
@@ -5064,7 +5064,7 @@ const catalogCategories = [
         "slug": ""
       },
       {
-        "name": "МАКЕДОНСКА ЖЪЛТА РАКИЯ 10г.",
+        "name": "STARA KUKA Zolta 10 YO / Стара Кука Жълта ракия 10г.",
         "packaging": "Стандартна",
         "volume": "0.700л",
         "abv": "40%",
@@ -5073,10 +5073,10 @@ const catalogCategories = [
         "eurVat": "13.79",
         "bgnVat": "26.97",
         "badges": [],
-        "slug": ""
+        "slug": "македонска-жълта-ракия-10г"
       },
       {
-        "name": "МАКЕДОНСКА БЯЛА РАКИЯ",
+        "name": "STARA KUKA Bela / Стара Кука Бяла ракия",
         "packaging": "Стандартна",
         "volume": "0.700л",
         "abv": "40%",
@@ -5085,7 +5085,7 @@ const catalogCategories = [
         "eurVat": "13.79",
         "bgnVat": "26.97",
         "badges": [],
-        "slug": ""
+        "slug": "македонска-бяла-ракия"
       },
       {
         "name": "\"TIKVES\" - жълта",
@@ -6054,7 +6054,7 @@ const catalogCategories = [
     "description": "Бели · Червени · Розе",
     "items": [
       {
-        "name": "JUNIQUE JUNIPER & WINE",
+        "name": "JUNIQUE Juniper & Wine",
         "packaging": "Стандартна",
         "volume": "0.750л",
         "abv": "17%",
@@ -6063,7 +6063,7 @@ const catalogCategories = [
         "eurVat": "21.59",
         "bgnVat": "42.23",
         "badges": [],
-        "slug": ""
+        "slug": "junique-juniper-and-wine"
       },
       {
         "name": "GRANDE ALBERONE BIANCO - Chardone & Catarato",
@@ -7528,7 +7528,7 @@ const catalogCategories = [
 const catalogProductImages = {
   "aberlour-12-yo-non-chill-filtered": "https://drinkme.bg/cdn/img/products/9/aberlour-12-yo-non-chill-filtered-684897efee336.jpeg?width=600&height=600&v=1777632366",
   "aberlour-14-yo-double-cask": "https://drinkme.bg/cdn/img/products/11/aberlour-68500b5dd1ed1.jpeg?width=600&height=600&v=1777632366",
-  "absente-55": "https://drinkme.bg/cdn/img/products/340/pernod-absinthe-6891f1772dd46.jpeg?width=600&height=600&v=1777632368",
+  "absente-55": "https://img.esanitex.net/image/8b0a9837-8d48-492c-973a-78bdf9a7d191.jpg?auto=format&fm=avif&w=320",
   "absolut": "https://drinkme.bg/cdn/img/products/83/absolut-685e9329da08b.jpeg?width=600&height=600&v=1777632366",
   "absolut-люлка": "https://drinkme.bg/cdn/img/products/83/absolut-685e9329da08b.jpeg?width=600&height=600&v=1777632366",
   "aftershock-black": "https://drinkme.bg/cdn/img/products/260/aftershock-black-688ca0c406b46.jpeg?width=600&height=600&v=1777632367",
@@ -7554,8 +7554,8 @@ const catalogProductImages = {
   "baileys-the-original-irish-cream": "https://drinkme.bg/cdn/img/products/256/baileys-irish-cream-688c9cd8cea53.jpeg?width=600&height=600&v=1777632371",
   "balblair-12-yo": "https://drinkme.bg/cdn/img/products/35/balblair-6852a6abe5788.jpeg?width=600&height=600&v=1777632367",
   "ballantine-s": "https://drinkme.bg/cdn/img/products/702/ballantines-finest-6995b1716939f.png?width=600&height=600&v=1777632373",
-  "ballantine-s-12-yo": "https://drinkme.bg/cdn/img/products/702/ballantines-finest-6995b1716939f.png?width=600&height=600&v=1777632373",
-  "ballantine-s-2-glasses": "https://drinkme.bg/cdn/img/products/702/ballantines-finest-6995b1716939f.png?width=600&height=600&v=1777632373",
+  "ballantine-s-12-yo": "https://drinkme.bg/cdn/img/products/410/ballantines-12-yo-68a87e60b7b0a.jpeg?width=600&height=600&v=1777632367",
+  "ballantine-s-2-glasses": "https://drinkme.bg/cdn/img/products/509/ballantines-finest--2casi-68b5d18540e7f.png?width=600&height=600&v=1777632372",
   "ballantine-s-finest-pet": "https://drinkme.bg/cdn/img/products/702/ballantines-finest-6995b1716939f.png?width=600&height=600&v=1777632373",
   "ballantine-s-люлка": "https://drinkme.bg/cdn/img/products/702/ballantines-finest-6995b1716939f.png?width=600&height=600&v=1777632373",
   "banana": "https://drinkme.bg/cdn/img/products/269/castro-banana-688caa643aea8.jpeg?width=600&height=600&v=1777632368",
@@ -7570,13 +7570,14 @@ const catalogProductImages = {
   "barbanera-toscana-vecciano-rosso-2021": "https://drinkme.bg/cdn/img/products/536/barbanera-vecciano-68c2822f78828.png?width=600&height=600&v=1777632368",
   "beefeater": "https://drinkme.bg/cdn/img/products/42/beefeater-6855306d3974b.jpeg?width=600&height=600&v=1777632368",
   "beefeater-gyn": "https://drinkme.bg/cdn/img/products/42/beefeater-6855306d3974b.jpeg?width=600&height=600&v=1777632368",
+  "beefeater-gyn-47": "https://images-svetnapojov-cdn.rshop.sk/gallery-big/products/064f6b0b750d7d1f22b6a6e9c3e17914.jpg",
   "beefeater-pink": "https://drinkme.bg/cdn/img/products/223/beefeater-pink-strawberry-688c63bf142ac.jpeg?width=600&height=600&v=1777632368",
   "bell-s-pet": "https://drinkme.bg/cdn/img/products/486/bells-original-68aede05e9cb3.jpeg?width=600&height=600&v=1777632369",
   "beluga-nobel": "https://drinkme.bg/cdn/img/products/63/beluga-685e473004621.jpeg?width=600&height=600&v=1777632367",
   "beluga-nobel-russian": "https://drinkme.bg/cdn/img/products/63/beluga-685e473004621.jpeg?width=600&height=600&v=1777632367",
   "beluga-nobel-winter-edition-russian": "https://drinkme.bg/cdn/img/products/63/beluga-685e473004621.jpeg?width=600&height=600&v=1777632367",
   "beluga-noble-люлка": "https://drinkme.bg/cdn/img/products/63/beluga-685e473004621.jpeg?width=600&height=600&v=1777632367",
-  "beluga-transatlantic-racing-sunglasses": "https://drinkme.bg/cdn/img/products/63/beluga-685e473004621.jpeg?width=600&height=600&v=1777632367",
+  "beluga-transatlantic-racing-sunglasses": "https://drinkme.bg/cdn/img/products/59/beluga-685d9ff08cb29.jpeg?width=600&height=600&v=1777632366",
   "beluga-transatlantic-raising-russian": "https://drinkme.bg/cdn/img/products/63/beluga-685e473004621.jpeg?width=600&height=600&v=1777632367",
   "bernard-remy-blanc-de-noirs": "https://drinkme.bg/cdn/img/products/126/bernard-remy-blanc-de-noirs-686f7331e2013.jpeg?width=600&height=600&v=1777632369",
   "bernard-remy-brut-rose": "https://drinkme.bg/cdn/img/products/125/bernard-remy-brut-rose-686f6db674d91.jpeg?width=600&height=600&v=1777632369",
@@ -7584,7 +7585,7 @@ const catalogProductImages = {
   "bernard-remy-grand-cru": "https://drinkme.bg/cdn/img/products/127/bernard-remy-grand-cru-686f742b04b6f.jpeg?width=600&height=600&v=1777632369",
   "bernard-remy-millesime-2016": "https://drinkme.bg/cdn/img/products/128/bernard-remy-millesime-2016-686f7566b7d37.jpeg?width=600&height=600&v=1777632369",
   "bernard-remy-prestige": "https://drinkme.bg/cdn/img/products/129/bernard-remy-prestige-686f76dc843c2.jpeg?width=600&height=600&v=1777632369",
-  "bg-black-ram": "https://drinkme.bg/cdn/img/products/721/black-ram-69ca74a39bb72.png?width=600&height=600&v=1777632371",
+  "bg-black-ram": "https://rimibaltic-res.cloudinary.com/image/upload/b_white%2Cc_limit%2Cdpr_auto%2Cf_auto%2Ch_480%2Cq_1%2Cw_480/d_ecommerce%3Abackend-fallback.png/MAT_7286753_PCE_EE",
   "bg-пещерска-гроздова": "https://drinkme.bg/cdn/img/products/715/peserska-grozdova-69ca727ddd398.png?width=600&height=600&v=1777632371",
   "bg-пещерска-отлежала": "https://drinkme.bg/cdn/img/products/715/peserska-grozdova-69ca727ddd398.png?width=600&height=600&v=1777632371",
   "bg-сливенска-перла": "https://drinkme.bg/cdn/img/products/707/slivenska-perla-69ca6b765db9d.png?width=600&height=600&v=1777632370",
@@ -7608,10 +7609,10 @@ const catalogProductImages = {
   "bushmills-original": "https://drinkme.bg/cdn/img/products/18/bushmills-68511d2f9f0c1.jpeg?width=600&height=600&v=1777632367",
   "bushmills-red-bush": "https://drinkme.bg/cdn/img/products/18/bushmills-68511d2f9f0c1.jpeg?width=600&height=600&v=1777632367",
   "campari-bitter": "https://drinkme.bg/cdn/img/products/371/campari-bitter-68930574d7e9f.jpeg?width=600&height=600&v=1777632370",
-  "cannabis-sativa-gin": "https://drinkme.bg/cdn/img/products/1268/casamigos-tequilla-anejo-6a2932e1d5136.png?width=600&height=600&v=1781084897",
-  "cannabis-sativa-jamaica-rum": "https://drinkme.bg/cdn/img/products/1265/casamigos-tequila-blanco-6a2a6b5b66cb0.png?width=600&height=600&v=1781164891",
-  "cannabis-sativa-liquor": "https://drinkme.bg/cdn/img/products/1265/casamigos-tequila-blanco-6a2a6b5b66cb0.png?width=600&height=600&v=1781164891",
-  "cannabis-sativa-vodka": "https://drinkme.bg/cdn/img/products/1268/casamigos-tequilla-anejo-6a2932e1d5136.png?width=600&height=600&v=1781084897",
+  "cannabis-sativa-gin": "https://www.topdrinks.de/media/catalog/product/L/_/L_55_497_00_1_4dbf.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460",
+  "cannabis-sativa-jamaica-rum": "https://www.topdrinks.de/media/catalog/product/L/_/L_53_598_00_1_5fee.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460",
+  "cannabis-sativa-liquor": "https://www.topdrinks.de/media/catalog/product/L/_/L_04_725_00_1_27bf.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460",
+  "cannabis-sativa-vodka": "https://www.topdrinks.de/media/catalog/product/L/_/L_09_002_00_1_63a3.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460",
   "cappuccino-craft-liquor": "https://drinkme.bg/cdn/img/products/432/alexandridi-cappuccino-craft-68adadfdb61f4.jpeg?width=600&height=600&v=1777632372",
   "captain-morgan-dark-rum": "https://drinkme.bg/cdn/img/products/32/captain-morgan-6851337f1a28a.jpeg?width=600&height=600&v=1777632366",
   "captain-morgan-original-spiced-gold": "https://drinkme.bg/cdn/img/products/32/captain-morgan-6851337f1a28a.jpeg?width=600&height=600&v=1777632366",
@@ -7667,7 +7668,7 @@ const catalogProductImages = {
   "glenfiddich-malt-master-s-edition": "https://drinkme.bg/cdn/img/products/581/glenfiddich-malt-masters-edition-6903520aa4035.png?width=600&height=600&v=1777632374",
   "glenfiddich-project-xx": "https://drinkme.bg/cdn/img/products/53/glenfiddich-685bcf526efac.jpeg?width=600&height=600&v=1777632370",
   "glenmorangie-10-yo": "https://drinkme.bg/cdn/img/products/49/glenmorangie-685bc5f58ed77.jpeg?width=600&height=600&v=1777632369",
-  "gold-mauritius-velvet": "https://drinkme.bg/cdn/img/products/693/gold-of-mauritius-emerald-edition-69676a8e4533a.png?width=600&height=600&v=1777632371",
+  "gold-mauritius-velvet": "https://www.topdrinks.nl/media/catalog/product/L/_/L_66_983_00_1_9485.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460",
   "gold-of-mauritius-dark-rum": "https://drinkme.bg/cdn/img/products/5/gold-of-mauritius-dark-rum-image_68e4f0ecab683.jpeg?width=600&height=600&v=1777632366",
   "gold-of-mauritius-emerald-edition": "https://drinkme.bg/cdn/img/products/693/gold-of-mauritius-emerald-edition-69676a8e4533a.png?width=600&height=600&v=1777632371",
   "gordon-s-gin": "https://drinkme.bg/cdn/img/products/229/gordons-london-dry-gin-688c73e539004.jpeg?width=600&height=600&v=1777632369",
@@ -7689,9 +7690,9 @@ const catalogProductImages = {
   "grande-alberone-rosso-d-italia": "https://drinkme.bg/cdn/img/products/146/grande-alberone-rosso-686f9d8692ee2.jpeg?width=600&height=600&v=1777632368",
   "grande-alberone-rosso-zinfandel": "https://drinkme.bg/cdn/img/products/680/grande-alberone-rosso-zinfandel-693ad87e623c6.png?width=600&height=600&v=1777632371",
   "grant-s": "https://drinkme.bg/cdn/img/products/407/grants-68a878387e638.jpeg?width=600&height=600&v=1777632371",
-  "grant-s-12-yo-2-glasses": "https://drinkme.bg/cdn/img/products/407/grants-68a878387e638.jpeg?width=600&height=600&v=1777632371",
-  "grant-s-2-glasses": "https://drinkme.bg/cdn/img/products/407/grants-68a878387e638.jpeg?width=600&height=600&v=1777632371",
-  "grant-s-8-yo-2-glasses": "https://drinkme.bg/cdn/img/products/407/grants-68a878387e638.jpeg?width=600&height=600&v=1777632371",
+  "grant-s-12-yo-2-glasses": "https://drinkme.bg/cdn/img/products/576/grants-triple-wood-12-yo--2-casi--grants-68cc06b75afb5.png?width=600&height=600&v=1777632372",
+  "grant-s-2-glasses": "https://drinkme.bg/cdn/img/products/577/grants-triple-wood--2-casi--grants-68cc07925375c.png?width=600&height=600&v=1777632372",
+  "grant-s-8-yo-2-glasses": "https://drinkme.bg/cdn/img/products/575/grants-triple-wood-8-yo--2-casi--grants-68cc055a1d5d3.png?width=600&height=600&v=1777632371",
   "grant-s-triple-wood": "https://drinkme.bg/cdn/img/products/407/grants-68a878387e638.jpeg?width=600&height=600&v=1777632371",
   "grant-s-triple-wood-12-yo": "https://drinkme.bg/cdn/img/products/694/grants-triple-wood-12-yo-696770c79595c.png?width=600&height=600&v=1777632372",
   "green-spot-triple-distilled": "https://drinkme.bg/cdn/img/products/440/spot-whiskey-green-spot-68add92e30027.jpeg?width=600&height=600&v=1777632369",
@@ -7721,12 +7722,12 @@ const catalogProductImages = {
   "jack-daniel-s-master-distiller-series-no-4": "https://drinkme.bg/cdn/img/products/385/jack-daniels-master-distiller-4-6895e84d815ed.jpeg?width=600&height=600&v=1777632368",
   "jack-daniel-s-master-distiller-series-no-5": "https://drinkme.bg/cdn/img/products/386/jack-daniels-master-distiller-5-6895ea61a85e0.jpeg?width=600&height=600&v=1777632368",
   "jack-daniel-s-master-distiller-series-no-6": "https://drinkme.bg/cdn/img/products/387/jack-daniels-master-distiller-6-6895eb4979682.jpeg?width=600&height=600&v=1777632368",
-  "jack-daniel-s-metal-box": "https://drinkme.bg/cdn/img/products/491/jack-daniels-68aee3147efa2.jpeg?width=600&height=600&v=1777632370",
+  "jack-daniel-s-metal-box": "https://www.exclusivedrinks.ro/imagini/produse/170-jack-daniel-s-tinbox-1-0-1.jpg",
   "jack-daniel-s-pet": "https://drinkme.bg/cdn/img/products/491/jack-daniels-68aee3147efa2.jpeg?width=600&height=600&v=1777632370",
   "jack-daniel-s-red-dog-saloon": "https://drinkme.bg/cdn/img/products/414/jack-daniels-red-dog-saloon-68ac427de5821.jpeg?width=600&height=600&v=1777632368",
   "jack-daniel-s-sinatra-select": "https://drinkme.bg/cdn/img/products/424/jack-daniels-sinatra-select-68ac79a392d19.jpeg?width=600&height=600&v=1777632371",
-  "jack-daniel-s-single-barrel-metal-cage": "https://drinkme.bg/cdn/img/products/421/jack-daniels-single-barrel-68ac73bbe5c9f.jpeg?width=600&height=600&v=1777632370",
-  "jack-daniel-s-single-barrel-select": "https://drinkme.bg/cdn/img/products/421/jack-daniels-single-barrel-68ac73bbe5c9f.jpeg?width=600&height=600&v=1777632370",
+  "jack-daniel-s-single-barrel-metal-cage": "https://drinkme.bg/cdn/img/products/682/jack-daniels-single-barrel-select-s-metalna-kutia-695d186de6f38.png?width=600&height=600&v=1777632370",
+  "jack-daniel-s-single-barrel-select": "https://drinkme.bg/cdn/img/products/682/jack-daniels-single-barrel-select-s-metalna-kutia-695d186de6f38.png?width=600&height=600&v=1777632370",
   "jack-daniel-s-white-rabbit-saloon": "https://drinkme.bg/cdn/img/products/415/jack-daniels-white-rabbit-saloon-68ac5b39ef2dc.jpeg?width=600&height=600&v=1777632369",
   "jack-daniel-s-люлка": "https://drinkme.bg/cdn/img/products/491/jack-daniels-68aee3147efa2.jpeg?width=600&height=600&v=1777632370",
   "jagermeister": "https://drinkme.bg/cdn/img/products/569/jagermeister-56-herbs-68cbf922e8875.png?width=600&height=600&v=1777632370",
@@ -7750,7 +7751,7 @@ const catalogProductImages = {
   "jose-cuervo-especial-reposado": "https://drinkme.bg/cdn/img/products/348/jose-cuervo-especial-reposado-6891fafe5a7d8.jpeg?width=600&height=600&v=1777632369",
   "jose-cuervo-especial-silver": "https://drinkme.bg/cdn/img/products/349/jose-cuervo-especial-silver-6891fc0ae3636.jpeg?width=600&height=600&v=1777632369",
   "juan-gil-etiqueta-plata": "https://drinkme.bg/cdn/img/products/191/juan-gil-etiqueta-plata-2021-6878e461e2283.jpeg?width=600&height=600&v=1777632368",
-  "junique-juniper-and-wine": "https://drinkme.bg/cdn/img/products/510/johnnie-walker-red-label-68b5d3ea54664.png?width=600&height=600&v=1777632373",
+  "junique-juniper-and-wine": "https://www.greeceandgrapes.com/image/cache/catalog/CastroSpirits/junique-juniper-and-wine-600x600h.png",
   "kahlua-coffe": "https://drinkme.bg/cdn/img/products/250/kahlua-coffee-liqueur-688c946a70463.jpeg?width=600&height=600&v=1777632369",
   "kavalan-king-car-conductor": "https://drinkme.bg/cdn/img/products/55/kavalan-685d7d19ad761.jpeg?width=600&height=600&v=1777632366",
   "ketel-one": "https://drinkme.bg/cdn/img/products/96/ketel-one-685eb88298085.jpeg?width=600&height=600&v=1777632368",
@@ -7842,7 +7843,7 @@ const catalogProductImages = {
   "pernod": "https://drinkme.bg/cdn/img/products/328/pernod-paris-6891e3fb8de1f.jpeg?width=600&height=600&v=1777632370",
   "pernod-absente-68": "https://drinkme.bg/cdn/img/products/340/pernod-absinthe-6891f1772dd46.jpeg?width=600&height=600&v=1777632368",
   "pernod-absinthe": "https://drinkme.bg/cdn/img/products/340/pernod-absinthe-6891f1772dd46.jpeg?width=600&height=600&v=1777632368",
-  "platinium-pet": "https://drinkme.bg/cdn/img/products/209/martini-prosecco-6880a17d3ec01.jpeg?width=600&height=600&v=1777632366",
+  "platinium-pet": "https://vinaritrade.com/UserFiles/products/BE667009-122D-5B83-BBA8-120FB8754353.jpg?q=100&cache&w=600",
   "plomari": "https://drinkme.bg/cdn/img/products/327/plomari-ouzo-68909ff636ec0.jpeg?width=600&height=600&v=1777632369",
   "podrum-pevac-гроздова-жълта": "https://drinkme.bg/cdn/img/products/533/pevac-zuta-loza-zuta--pevac-grozdova-zalta-68c18537b87a4.png?width=600&height=600&v=1777632373",
   "podrum-pevac-дюлева-бяла": "https://drinkme.bg/cdn/img/products/530/pevac-zuta-dunja--pevac-duleva-68be053f0d4c3.webp?width=600&height=600&v=1777632371",
@@ -7859,7 +7860,7 @@ const catalogProductImages = {
   "prosecco-doc-treviso-brut": "https://drinkme.bg/cdn/img/products/161/dal-bello-prosecco-doc-treviso-brut-686fbfa7af72b.png?width=600&height=600&v=1777632367",
   "prosecco-doc-treviso-extra-dry": "https://drinkme.bg/cdn/img/products/160/dal-bello-prosecco-doc-treviso-extra-dry-686fbe5aaa9e7.png?width=600&height=600&v=1777632367",
   "prosecco-gemma-di-luna-doc": "https://drinkme.bg/cdn/img/products/130/gemma-di-luna-prosecco-686f79c386df7.jpeg?width=600&height=600&v=1777632369",
-  "prosecco-gemma-di-luna-doc-2-glasses": "https://drinkme.bg/cdn/img/products/130/gemma-di-luna-prosecco-686f79c386df7.jpeg?width=600&height=600&v=1777632369",
+  "prosecco-gemma-di-luna-doc-2-glasses": "https://drinkme.bg/cdn/img/products/133/gemma-di-luna-prosecco-s-dve-casi-686f84fddf22e.jpeg?width=600&height=600&v=1777632366",
   "prosecco-moletto-doc-treviso-brut-gold": "https://drinkme.bg/cdn/img/products/559/moletto-prosecco-doc-treviso-brut-gold-68ca54db3c1a5.png?width=600&height=600&v=1777632372",
   "prosecco-san-leo": "https://drinkme.bg/cdn/img/products/209/martini-prosecco-6880a17d3ec01.jpeg?width=600&height=600&v=1777632366",
   "provinco-capo-zafferano-primitivo-2021": "https://drinkme.bg/cdn/img/products/548/capo-zafferano-primitivo-68c8f8f8b6845.png?width=600&height=600&v=1777632370",
@@ -7876,7 +7877,7 @@ const catalogProductImages = {
   "royal-brackla-12-yo-sherry-cask-finish": "https://drinkme.bg/cdn/img/products/403/royal-brackla-12-yo-6895ff3f6d5b4.jpeg?width=600&height=600&v=1777632371",
   "royal-salute-62-gun-american-oak-reserve": "https://drinkme.bg/cdn/img/products/403/royal-brackla-12-yo-6895ff3f6d5b4.jpeg?width=600&height=600&v=1777632371",
   "russian-standard": "https://drinkme.bg/cdn/img/products/516/russian-standard-68b5de10dcc76.png?width=600&height=600&v=1777632369",
-  "russian-standard-2-glasses": "https://drinkme.bg/cdn/img/products/516/russian-standard-68b5de10dcc76.png?width=600&height=600&v=1777632369",
+  "russian-standard-2-glasses": "https://drinkme.bg/cdn/img/products/691/russian-standard-original-gift-pack-6966350302300.png?width=600&height=600&v=1777632371",
   "san-zenone-chianti": "https://drinkme.bg/cdn/img/products/140/san-zenone-chianti-686f947c3ebb9.jpeg?width=600&height=600&v=1777632367",
   "she-s-pino-grigio-2022": "https://drinkme.bg/cdn/img/products/542/shes-pino-grigio-68c8022899a30.png?width=600&height=600&v=1777632369",
   "she-s-pinot-noir-rose": "https://drinkme.bg/cdn/img/products/543/shes-pinot-noir-rose-68c8058e29a83.png?width=600&height=600&v=1777632370",
@@ -7915,7 +7916,7 @@ const catalogProductImages = {
   "tikves-жълта": "https://drinkme.bg/cdn/img/products/533/pevac-zuta-loza-zuta--pevac-grozdova-zalta-68c18537b87a4.png?width=600&height=600&v=1777632373",
   "tridente-tempranillo": "https://drinkme.bg/cdn/img/products/184/tridente-tempranillo-6878bfe1028bd.jpeg?width=600&height=600&v=1777632367",
   "tullamore-dew": "https://drinkme.bg/cdn/img/products/470/tullamore-dew-68ae13b5432b1.jpeg?width=600&height=600&v=1777632369",
-  "tullamore-dew-2-highball-glasses": "https://drinkme.bg/cdn/img/products/470/tullamore-dew-68ae13b5432b1.jpeg?width=600&height=600&v=1777632369",
+  "tullamore-dew-2-highball-glasses": "https://drinkme.bg/cdn/img/products/574/tullamore-dew--2-casi--tulamor-68cc023de6d7d.png?width=600&height=600&v=1777632371",
   "tullamore-dew-honey": "https://drinkme.bg/cdn/img/products/471/tullamore-dew-honey-68ae148f5dd72.jpeg?width=600&height=600&v=1777632369",
   "vinedos-y-bodegas-la-planta": "https://drinkme.bg/cdn/img/products/183/la-planta-tempranillo-6878beb93861b.jpeg?width=600&height=600&v=1777632366",
   "vitis-nostra-spumante-brut": "https://drinkme.bg/cdn/img/products/159/vitis-nostra-spumante-brut-686fbbb79c252.jpeg?width=600&height=600&v=1777632366",
@@ -7966,13 +7967,13 @@ const catalogProductImages = {
   "жестока-земунска-дюлева": "https://drinkme.bg/cdn/img/products/605/dunavska-duleva-6931610b38628.png?width=600&height=600&v=1777632372",
   "жестока-земунска-крушова": "https://drinkme.bg/cdn/img/products/528/pevac-viljamovka--pevac-krusova-68bdff979e625.webp?width=600&height=600&v=1777632371",
   "жестока-земунска-сливова": "https://drinkme.bg/cdn/img/products/609/raduil-slivova-69316283ea662.png?width=600&height=600&v=1777632373",
-  "македонска-бяла-ракия": "https://drinkme.bg/cdn/img/products/597/vidinska-ga%CC%B1mza-rkaciteli-69315ee55e2cf.png?width=600&height=600&v=1777632372",
-  "македонска-жълта-ракия-10г": "https://drinkme.bg/cdn/img/products/533/pevac-zuta-loza-zuta--pevac-grozdova-zalta-68c18537b87a4.png?width=600&height=600&v=1777632373",
+  "македонска-бяла-ракия": "https://ogimarket.bg/image/cache/2451/rakiq-stara-kuka-700ml-350x350.jpg",
+  "македонска-жълта-ракия-10г": "https://shop.diony.bg/media/catalog/product/cache/57c6f197805c4c76c554c36e635ce278/3/9/39500.jpg",
   "малинова-ракия": "https://drinkme.bg/cdn/img/products/612/vidinska-ga%CC%B1mza-malinova-69316345ee7c0.png?width=600&height=600&v=1777632369",
   "мастика-пещера": "https://drinkme.bg/cdn/img/products/724/mastika-pesera-69cb5d3e7e195.png?width=600&height=600&v=1777632372",
   "мастика-пещера-pet": "https://drinkme.bg/cdn/img/products/724/mastika-pesera-69cb5d3e7e195.png?width=600&height=600&v=1777632372",
-  "мента-пещера": "https://drinkme.bg/cdn/img/products/724/mastika-pesera-69cb5d3e7e195.png?width=600&height=600&v=1777632372",
-  "мента-пещера-pet": "https://drinkme.bg/cdn/img/products/724/mastika-pesera-69cb5d3e7e195.png?width=600&height=600&v=1777632372",
+  "мента-пещера": "https://www.sid-shop.com/media/catalog/product/cache/5a44058c21b07e4f9b1b259091147119/m/e/mentap-700ml.jpg",
+  "мента-пещера-pet": "https://pirinmarket.bg/wp-content/uploads/2024/08/%D0%9C%D0%95%D0%9D%D0%A2%D0%90-%D0%9F%D0%95%D0%A9%D0%95%D0%A0%D0%90-1-600x542.png",
   "пещерска-гроздова-pet": "https://drinkme.bg/cdn/img/products/715/peserska-grozdova-69ca727ddd398.png?width=600&height=600&v=1777632371",
   "радуiл-попска-крушова-ракия-3г": "https://drinkme.bg/cdn/img/products/608/raduil-popska-krusa-6931626728a86.png?width=600&height=600&v=1777632373",
   "радуiл-сливова-ракия-3г": "https://drinkme.bg/cdn/img/products/609/raduil-slivova-69316283ea662.png?width=600&height=600&v=1777632373",
@@ -7987,7 +7988,7 @@ const catalogProductImages = {
 const catalogVariantData = {
   "aberlour-12-yo-non-chill-filtered|Gift Box|0.700л": {"image": "https://drinkme.bg/cdn/img/products/9/aberlour-12-yo-non-chill-filtered-684897efee336.jpeg?width=600&height=600&v=1777632366", "productUrl": "https://drinkme.bg/product/aberlour-12-yo-non-chill-filtered-whiskey", "officialAbv": "48.0%"},
   "aberlour-14-yo-double-cask|Gift Box|0.700л": {"image": "https://drinkme.bg/cdn/img/products/11/aberlour-68500b5dd1ed1.jpeg?width=600&height=600&v=1777632366", "productUrl": "https://drinkme.bg/product/aberlour14-yo-double-cask-whiskey", "officialAbv": "40.0%"},
-  "absente-55|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/logo/2/blank.png?height=800&v=1777461384&width=800", "productUrl": "", "sourceStatus": "not-listed-on-drinkme"},
+  "absente-55|Стандартна|0.700л": {"image": "https://img.esanitex.net/image/8b0a9837-8d48-492c-973a-78bdf9a7d191.jpg?auto=format&fm=avif&w=320", "productUrl": "https://www.butilkite.com/bg-product-details-282.html", "officialAbv": "55.0%", "sourceStatus": "verified-external"},
   "absolut-люлка|Gift Box|4.5л": {"image": "https://drinkme.bg/cdn/img/products/637/absolut--cradle-6932a6ac6af1f.png?width=1920&height=1920&v=1777632371", "productUrl": "https://drinkme.bg/product/absolut-cardle-vodka-4500l", "officialAbv": "40.0%"},
   "absolut|Стандартна|0.050л": {"image": "https://drinkme.bg/cdn/img/products/83/absolut-685e9329da08b.jpeg?width=600&height=600&v=1777632366", "productUrl": "https://drinkme.bg/product/absolut-vodka-005l", "officialAbv": "40.0%"},
   "absolut|Стандартна|0.200л": {"image": "https://drinkme.bg/cdn/img/products/701/absolut-6995b0b197fba.png?width=600&height=600&v=1777632373", "productUrl": "https://drinkme.bg/product/absolut-voska-02l", "officialAbv": "40.0%"},
@@ -8042,6 +8043,7 @@ const catalogVariantData = {
   "barbanera-toscana-vecciano-rose|Стандартна|0.750л": {"image": "https://drinkme.bg/cdn/img/products/554/barbanera-vecciano-rose-68c95b11a7ee1.png?width=600&height=600&v=1777632371", "productUrl": "https://drinkme.bg/product/barbanera-vecciano-rose", "officialAbv": "12.0%"},
   "barbanera-toscana-vecciano-rosso-2021|Стандартна|0.750л": {"image": "https://drinkme.bg/cdn/img/products/536/barbanera-vecciano-68c2822f78828.png?width=600&height=600&v=1777632368", "productUrl": "https://drinkme.bg/product/barbanera-vecciano-rosso-wine-italy", "officialAbv": "14.0%"},
   "beefeater-gyn|Стандартна|0.050л": {"image": "https://drinkme.bg/cdn/img/products/224/beefeater-london-dry-gin-688c66848bc13.jpeg?width=600&height=600&v=1777632368", "productUrl": "https://drinkme.bg/product/beefeater-london-dry-gin-005l", "officialAbv": "40.0%"},
+  "beefeater-gyn-47|Стандартна|0.050л": {"image": "https://images-svetnapojov-cdn.rshop.sk/gallery-big/products/064f6b0b750d7d1f22b6a6e9c3e17914.jpg", "productUrl": "https://www.bondston.com/beefeater-gin-mini-47-p7541", "officialAbv": "47.0%", "sourceStatus": "verified-external"},
   "beefeater-pink|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/223/beefeater-pink-strawberry-688c63bf142ac.jpeg?width=600&height=600&v=1777632368", "productUrl": "https://drinkme.bg/product/beefeater-pink-strawberry-gin", "officialAbv": "37.5%"},
   "beefeater-pink|Стандартна|1.000л": {"image": "https://drinkme.bg/cdn/img/products/223/beefeater-pink-strawberry-688c63bf142ac.jpeg?width=1920&height=1920&v=1777632368", "productUrl": "https://drinkme.bg/product/beefeater-pink-strawberry-gin", "officialAbv": "37.5%"},
   "beefeater|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/42/beefeater-6855306d3974b.jpeg?width=600&height=600&v=1777632368", "productUrl": "https://drinkme.bg/product/beefeater-london-dry-gin-07l", "officialAbv": "40.0%"},
@@ -8063,7 +8065,7 @@ const catalogVariantData = {
   "bernard-remy-grand-cru|Стандартна|0.750л": {"image": "https://drinkme.bg/cdn/img/products/127/bernard-remy-grand-cru-686f742b04b6f.jpeg?width=600&height=600&v=1777632369", "productUrl": "https://drinkme.bg/product/bernard-remy-grand-cru-champagne", "officialAbv": "12.0%"},
   "bernard-remy-millesime-2016|Стандартна|0.750л": {"image": "https://drinkme.bg/cdn/img/products/128/bernard-remy-millesime-2016-686f7566b7d37.jpeg?width=600&height=600&v=1777632369", "productUrl": "https://drinkme.bg/product/bernard-remy-millesime-2016-champagne", "officialAbv": "12.0%"},
   "bernard-remy-prestige|Стандартна|0.750л": {"image": "https://drinkme.bg/cdn/img/products/129/bernard-remy-prestige-686f76dc843c2.jpeg?width=600&height=600&v=1777632369", "productUrl": "https://drinkme.bg/product/bernard-remy-prestige-champagne", "officialAbv": "12.0%"},
-  "bg-black-ram|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/721/black-ram-69ca74a39bb72.png?width=600&height=600&v=1777632371", "productUrl": "https://drinkme.bg/product/black-ram", "officialAbv": "40.0%"},
+  "bg-black-ram|Стандартна|0.700л": {"image": "https://rimibaltic-res.cloudinary.com/image/upload/b_white%2Cc_limit%2Cdpr_auto%2Cf_auto%2Ch_480%2Cq_1%2Cw_480/d_ecommerce%3Abackend-fallback.png/MAT_7286753_PCE_EE", "productUrl": "https://www.rimi.ee/epood/en/products/alcohol/strong-alcohol/whiskey/whisky-black-ram-40-0-7l/p/7286753", "officialAbv": "40.0%", "sourceStatus": "verified-external"},
   "bg-пещерска-гроздова|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/715/peserska-grozdova-69ca727ddd398.png?width=600&height=600&v=1777632371", "productUrl": "https://drinkme.bg/product/peshterska-grozdova", "officialAbv": "40.0%"},
   "bg-пещерска-отлежала|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/715/peserska-grozdova-69ca727ddd398.png?width=600&height=600&v=1777632371", "productUrl": "https://drinkme.bg/product/peshterska-grozdova", "officialAbv": "40.0%"},
   "bg-сливенска-перла-barrel|Стандартна|0.500л": {"image": "https://drinkme.bg/cdn/img/products/710/slivenska-perla-barrel-69ca6ddac6135.png?width=600&height=600&v=1777632370", "productUrl": "https://drinkme.bg/product/slivenska-perla-barrel", "officialAbv": "40.0%"},
@@ -8089,10 +8091,10 @@ const catalogVariantData = {
   "bushmills-original|Стандартна|1.000л": {"image": "https://drinkme.bg/cdn/img/products/14/bushmills-685116dd1ee90.jpeg?width=600&height=600&v=1777632367", "productUrl": "https://drinkme.bg/product/bushmills-original-whiskey-1l", "officialAbv": "40.0%"},
   "bushmills-red-bush|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/18/bushmills-68511d2f9f0c1.jpeg?width=600&height=600&v=1777632367", "productUrl": "https://drinkme.bg/product/bushmills-red-bush-whiskey", "officialAbv": "40.0%"},
   "campari-bitter|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/371/campari-bitter-68930574d7e9f.jpeg?width=600&height=600&v=1777632370", "productUrl": "https://drinkme.bg/product/campari-bitter", "officialAbv": "25.0%"},
-  "cannabis-sativa-gin|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/logo/2/blank.png?height=800&v=1777461384&width=800", "productUrl": "", "sourceStatus": "not-listed-on-drinkme"},
-  "cannabis-sativa-jamaica-rum|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/logo/2/blank.png?height=800&v=1777461384&width=800", "productUrl": "", "sourceStatus": "not-listed-on-drinkme"},
-  "cannabis-sativa-liquor|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/logo/2/blank.png?height=800&v=1777461384&width=800", "productUrl": "", "sourceStatus": "not-listed-on-drinkme"},
-  "cannabis-sativa-vodka|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/logo/2/blank.png?height=800&v=1777461384&width=800", "productUrl": "", "sourceStatus": "not-listed-on-drinkme"},
+  "cannabis-sativa-gin|Стандартна|0.700л": {"image": "https://www.topdrinks.de/media/catalog/product/L/_/L_55_497_00_1_4dbf.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460", "productUrl": "https://drinkme.bg/product/cannabis-sativa-fibre-hemp-gin-07l", "officialAbv": "40.0%"},
+  "cannabis-sativa-jamaica-rum|Стандартна|0.700л": {"image": "https://www.topdrinks.de/media/catalog/product/L/_/L_53_598_00_1_5fee.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460", "productUrl": "https://drinkme.bg/product/cannabis-sativa-fibre-hemp-rum-07l", "officialAbv": "37.5%"},
+  "cannabis-sativa-liquor|Стандартна|0.700л": {"image": "https://www.topdrinks.de/media/catalog/product/L/_/L_04_725_00_1_27bf.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460", "productUrl": "https://drinkme.bg/product/cannabis-sativa-fibre-hemp-liqueur-07l", "officialAbv": "14.5%"},
+  "cannabis-sativa-vodka|Стандартна|0.700л": {"image": "https://www.topdrinks.de/media/catalog/product/L/_/L_09_002_00_1_63a3.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460", "productUrl": "https://drinkme.bg/product/cannabis-sativa-fibre-hemp-vodka-07l", "officialAbv": "37.5%"},
   "cappuccino-craft-liquor|Стандартна|0.500л": {"image": "https://drinkme.bg/cdn/img/products/432/alexandridi-cappuccino-craft-68adadfdb61f4.jpeg?width=600&height=600&v=1777632372", "productUrl": "https://drinkme.bg/product/alexandridi-cappuccino-craft-liquor", "officialAbv": "25.0%"},
   "captain-morgan-dark-rum|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/31/captain-morgan-6851329020992.jpeg?width=600&height=600&v=1780643714", "productUrl": "https://drinkme.bg/product/captain-morgan-dark-rum", "officialAbv": "40.0%"},
   "captain-morgan-original-spiced-gold|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/30/captain-morgan-68512e8997539.jpeg?width=600&height=600&v=1777632366", "productUrl": "https://drinkme.bg/product/captain-morgan-spiced-rum", "officialAbv": "35.0%"},
@@ -8153,7 +8155,7 @@ const catalogVariantData = {
   "glenfiddich-malt-master-s-edition|Gift Box|0.7л": {"image": "https://drinkme.bg/cdn/img/products/581/glenfiddich-malt-masters-edition-6903520aa4035.png?width=600&height=600&v=1777632374", "productUrl": "https://drinkme.bg/product/glenfiddich-malt-masters-edition", "officialAbv": "43.0%"},
   "glenfiddich-project-xx|Gift Box|0.7л": {"image": "https://drinkme.bg/cdn/img/products/53/glenfiddich-685bcf526efac.jpeg?width=600&height=600&v=1777632370", "productUrl": "https://drinkme.bg/product/glenfiddich-project-xx-with-2-glasses-whisky", "officialAbv": "47.0%"},
   "glenmorangie-10-yo|Gift Box|0.700л": {"image": "https://drinkme.bg/cdn/img/products/49/glenmorangie-685bc5f58ed77.jpeg?width=600&height=600&v=1777632369", "productUrl": "https://drinkme.bg/product/glenmorangie-10-yo-whisky", "officialAbv": "40.0%"},
-  "gold-mauritius-velvet|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/693/gold-of-mauritius-emerald-edition-69676a8e4533a.png?width=600&height=600&v=1777632371", "productUrl": "https://drinkme.bg/product/gold-of-mauritius-dark-rum-velvet-edition", "officialAbv": "43.0%"},
+  "gold-mauritius-velvet|Стандартна|0.700л": {"image": "https://www.topdrinks.nl/media/catalog/product/L/_/L_66_983_00_1_9485.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460", "productUrl": "https://drinkme.bg/product/gold-of-mauritius-dark-rum-velvet-edition", "officialAbv": "43.0%"},
   "gold-of-mauritius-dark-rum|Gift Box|0.700л": {"image": "https://drinkme.bg/cdn/img/products/5/gold-of-mauritius-dark-rum-image_68e4f0ecab683.jpeg?width=600&height=600&v=1777632366", "productUrl": "https://drinkme.bg/product/gold-of-mauritius-dark-rum", "officialAbv": "40.0%"},
   "gold-of-mauritius-emerald-edition|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/692/mauritsius-69676a234839c.png?width=1920&height=1920&v=1777632371", "productUrl": "https://drinkme.bg/product/gold-of-mauritius-dark-rum-emerald-edition", "officialAbv": "40.0%"},
   "gordon-s-gin-pet-pet|Стандартна|0.050л": {"image": "https://drinkme.bg/cdn/img/products/229/gordons-london-dry-gin-688c73e539004.jpeg?width=600&height=600&v=1777632369", "productUrl": "https://drinkme.bg/product/gordons-london-dry-gin-005l", "officialAbv": "37.5%"},
@@ -8214,7 +8216,7 @@ const catalogVariantData = {
   "jack-daniel-s-master-distiller-series-no-4|Gift Box|0.700л": {"image": "https://drinkme.bg/cdn/img/products/385/jack-daniels-master-distiller-4-6895e84d815ed.jpeg?width=600&height=600&v=1777632368", "productUrl": "https://drinkme.bg/product/jack-daniels-master-distiller-4-tennessee-whiskey", "officialAbv": "43.0%"},
   "jack-daniel-s-master-distiller-series-no-5|Gift Box|0.700л": {"image": "https://drinkme.bg/cdn/img/products/386/jack-daniels-master-distiller-5-6895ea61a85e0.jpeg?width=600&height=600&v=1777632368", "productUrl": "https://drinkme.bg/product/jack-daniels-master-distiller-5-tennessee-whiskey", "officialAbv": "43.0%"},
   "jack-daniel-s-master-distiller-series-no-6|Gift Box|0.700л": {"image": "https://drinkme.bg/cdn/img/products/387/jack-daniels-master-distiller-6-6895eb4979682.jpeg?width=600&height=600&v=1777632368", "productUrl": "https://drinkme.bg/product/jack-daniels-master-distiller-6-tennessee-whiskey", "officialAbv": "43.0%"},
-  "jack-daniel-s-metal-box|Стандартна|1.0л": {"image": "https://drinkme.bg/cdn/img/products/418/jack-daniels-tennessee-whisky-68ac6838ef1c4.jpeg?width=600&height=600&v=1777632370", "productUrl": "https://drinkme.bg/product/jack-daniels-tennessee-whisky-1l", "officialAbv": "40.0%"},
+  "jack-daniel-s-metal-box|Стандартна|1.0л": {"image": "https://www.exclusivedrinks.ro/imagini/produse/170-jack-daniel-s-tinbox-1-0-1.jpg", "productUrl": "https://www.exclusivedrinks.ro/produse/whisky/whisky-bourbon-american/jack-daniel-s-metal-box-1-0.html", "officialAbv": "40.0%", "sourceStatus": "verified-external"},
   "jack-daniel-s-pet|Стандартна|0.050л": {"image": "https://drinkme.bg/cdn/img/products/2/jack-daniels-tennessee-whisky-68487b7a92607.jpeg?width=600&height=600&v=1777632365", "productUrl": "https://drinkme.bg/product/jack-daniels-tennessee-whisky-005l", "officialAbv": "40.0%"},
   "jack-daniel-s-red-dog-saloon|Gift Box|0.700л": {"image": "https://drinkme.bg/cdn/img/products/414/jack-daniels-red-dog-saloon-68ac427de5821.jpeg?width=600&height=600&v=1777632368", "productUrl": "https://drinkme.bg/product/jack-daniels-red-dog-saloon-whisky", "officialAbv": "43.0%"},
   "jack-daniel-s-sinatra-select|Gift Box|1.0л": {"image": "https://drinkme.bg/cdn/img/products/424/jack-daniels-sinatra-select-68ac79a392d19.jpeg?width=600&height=600&v=1777632371", "productUrl": "https://drinkme.bg/product/jack-daniels-sinatra-select-whisky", "officialAbv": "45.0%"},
@@ -8260,7 +8262,7 @@ const catalogVariantData = {
   "jose-cuervo-especial-reposado|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/348/jose-cuervo-especial-reposado-6891fafe5a7d8.jpeg?width=600&height=600&v=1777632369", "productUrl": "https://drinkme.bg/product/jose-cuervo-especial-reposado-tequila", "officialAbv": "38.0%"},
   "jose-cuervo-especial-silver|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/349/jose-cuervo-especial-silver-6891fc0ae3636.jpeg?width=600&height=600&v=1777632369", "productUrl": "https://drinkme.bg/product/jose-cuervo-especial-silver-tequila", "officialAbv": "38.0%"},
   "juan-gil-etiqueta-plata|Стандартна|0.750л": {"image": "https://drinkme.bg/cdn/img/products/191/juan-gil-etiqueta-plata-2021-6878e461e2283.jpeg?width=600&height=600&v=1777632368", "productUrl": "https://drinkme.bg/product/juan-gil-etiqueta-plata-2021-red-wine", "officialAbv": "15.0%"},
-  "junique-juniper-and-wine|Стандартна|0.750л": {"image": "https://drinkme.bg/cdn/img/logo/2/blank.png?height=800&v=1777461384&width=800", "productUrl": "", "sourceStatus": "not-listed-on-drinkme"},
+  "junique-juniper-and-wine|Стандартна|0.750л": {"image": "https://www.greeceandgrapes.com/image/cache/catalog/CastroSpirits/junique-juniper-and-wine-600x600h.png", "productUrl": "https://www.greeceandgrapes.com/en/white-wine-junique-700ml-castro", "officialAbv": "17.0%", "sourceStatus": "verified-external"},
   "kahlua-coffe|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/250/kahlua-coffee-liqueur-688c946a70463.jpeg?width=600&height=600&v=1777632369", "productUrl": "https://drinkme.bg/product/kahlua-coffee-liqueur", "officialAbv": "16.0%"},
   "kavalan-king-car-conductor|Gift Box|0.700л": {"image": "https://drinkme.bg/cdn/img/products/55/kavalan-685d7d19ad761.jpeg?width=600&height=600&v=1777632366", "productUrl": "https://drinkme.bg/product/kavalan-king-car-conductor-whisky", "officialAbv": "46.0%"},
   "ketel-one|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/96/ketel-one-685eb88298085.jpeg?width=600&height=600&v=1777632368", "productUrl": "https://drinkme.bg/product/ketel-one-vodka", "officialAbv": "40.0%"},
@@ -8365,7 +8367,7 @@ const catalogVariantData = {
   "pernod-absente-68|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/340/pernod-absinthe-6891f1772dd46.jpeg?width=600&height=600&v=1777632368", "productUrl": "https://drinkme.bg/product/pernod-absinthe", "officialAbv": "68.0%"},
   "pernod-absinthe|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/340/pernod-absinthe-6891f1772dd46.jpeg?width=600&height=600&v=1777632368", "productUrl": "https://drinkme.bg/product/pernod-absinthe", "officialAbv": "68.0%"},
   "pernod|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/328/pernod-paris-6891e3fb8de1f.jpeg?width=600&height=600&v=1777632370", "productUrl": "https://drinkme.bg/product/pernod-paris", "officialAbv": "40.0%"},
-  "platinium-pet|Стандартна|0.200л": {"image": "https://drinkme.bg/cdn/img/logo/2/blank.png?height=800&v=1777461384&width=800", "productUrl": "", "sourceStatus": "not-listed-on-drinkme"},
+  "platinium-pet|Стандартна|0.200л": {"image": "https://vinaritrade.com/UserFiles/products/BE667009-122D-5B83-BBA8-120FB8754353.jpg?q=100&cache&w=600", "productUrl": "https://vinaritrade.com/bg/product/i2472/%D0%92%D0%BE%D0%B4%D0%BA%D0%B0-%D0%9F%D0%BB%D0%B0%D1%82%D0%B8%D0%BD%D1%83%D0%BC-0.2-%D0%BB.html", "officialAbv": "37.5%", "sourceStatus": "verified-external"},
   "plomari|Стандартна|0.200л": {"image": "https://drinkme.bg/cdn/img/products/325/plomari-ouzo-68909df1ec2f8.jpeg?width=600&height=600&v=1777632369", "productUrl": "https://drinkme.bg/product/plomari-ouzo-02l", "officialAbv": "40.0%"},
   "plomari|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/326/plomari-ouzo-68909ede8bedd.jpeg?width=600&height=600&v=1777632369", "productUrl": "https://drinkme.bg/product/plomari-ouzo-07l", "officialAbv": "40.0%"},
   "plomari|Стандартна|1.0л": {"image": "https://drinkme.bg/cdn/img/products/327/plomari-ouzo-68909ff636ec0.jpeg?width=600&height=600&v=1777632369", "productUrl": "https://drinkme.bg/product/plomari-ouzo-1l", "officialAbv": "40.0%"},
@@ -8504,13 +8506,13 @@ const catalogVariantData = {
   "жестока-земунска-дюлева|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/291/zestoka-zemunska-dunja-688cc2ff2b9b7.jpeg?width=1920&height=1920&v=1777632367", "productUrl": "https://drinkme.bg/product/zestoka-zemunska-dunja-rakiya", "officialAbv": "40.0%"},
   "жестока-земунска-крушова|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/292/zestoka-zemunska-vilyamovka-688cc407b9a8b.jpeg?width=1920&height=1920&v=1777632367", "productUrl": "https://drinkme.bg/product/zestoka-zemunska-vilyamovka-rakiya", "officialAbv": "40.0%"},
   "жестока-земунска-сливова|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/293/zestoka-zemunska-sljive-688cc4d9e5646.jpeg?width=1920&height=1920&v=1777632368", "productUrl": "https://drinkme.bg/product/zestoka-zemunska-sljive-rakiya", "officialAbv": "40.0%"},
-  "македонска-бяла-ракия|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/logo/2/blank.png?height=800&v=1777461384&width=800", "productUrl": "", "sourceStatus": "not-listed-on-drinkme"},
-  "македонска-жълта-ракия-10г|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/logo/2/blank.png?height=800&v=1777461384&width=800", "productUrl": "", "sourceStatus": "not-listed-on-drinkme"},
+  "македонска-бяла-ракия|Стандартна|0.700л": {"image": "https://ogimarket.bg/image/cache/2451/rakiq-stara-kuka-700ml-350x350.jpg", "productUrl": "https://drinkme.bg/product/stara-kuka-bela-rakiya", "officialAbv": "40.0%"},
+  "македонска-жълта-ракия-10г|Стандартна|0.700л": {"image": "https://shop.diony.bg/media/catalog/product/cache/57c6f197805c4c76c554c36e635ce278/3/9/39500.jpg", "productUrl": "https://drinkme.bg/product/stara-kuka-zolta-rakiya", "officialAbv": "40.0%"},
   "малинова-ракия|Стандартна|0.500л": {"image": "https://drinkme.bg/cdn/img/products/612/vidinska-ga%CC%B1mza-malinova-69316345ee7c0.png?width=600&height=600&v=1777632369", "productUrl": "https://drinkme.bg/product/vidinska-gamza-malinova-rakiya", "officialAbv": "40.0%"},
   "мастика-пещера-pet|Стандартна|0.200л": {"image": "https://drinkme.bg/cdn/img/products/724/mastika-pesera-69cb5d3e7e195.png?width=600&height=600&v=1777632372", "productUrl": "https://drinkme.bg/product/mastika-peshtera"},
   "мастика-пещера|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/724/mastika-pesera-69cb5d3e7e195.png?width=600&height=600&v=1777632372", "productUrl": "https://drinkme.bg/product/mastika-peshtera"},
-  "мента-пещера-pet|Стандартна|0.200л": {"image": "https://drinkme.bg/cdn/img/logo/2/blank.png?height=800&v=1777461384&width=800", "productUrl": "", "sourceStatus": "not-listed-on-drinkme"},
-  "мента-пещера|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/logo/2/blank.png?height=800&v=1777461384&width=800", "productUrl": "", "sourceStatus": "not-listed-on-drinkme"},
+  "мента-пещера-pet|Стандартна|0.200л": {"image": "https://pirinmarket.bg/wp-content/uploads/2024/08/%D0%9C%D0%95%D0%9D%D0%A2%D0%90-%D0%9F%D0%95%D0%A9%D0%95%D0%A0%D0%90-1-600x542.png", "productUrl": "https://pirinmarket.bg/product/%D0%BC%D0%B5%D0%BD%D1%82%D0%B0-%D0%BF%D0%B5%D1%89%D0%B5%D1%80%D0%B0-0-200%D0%BB-25/", "officialAbv": "25.0%", "sourceStatus": "verified-external"},
+  "мента-пещера|Стандартна|0.700л": {"image": "https://www.sid-shop.com/media/catalog/product/cache/5a44058c21b07e4f9b1b259091147119/m/e/mentap-700ml.jpg", "productUrl": "https://www.sid-shop.com/menta-0-70-l-25-peshtera-nov-band-2022", "officialAbv": "25.0%", "sourceStatus": "verified-external"},
   "пещерска-гроздова-pet|Стандартна|0.200л": {"image": "https://drinkme.bg/cdn/img/products/715/peserska-grozdova-69ca727ddd398.png?width=600&height=600&v=1777632371", "productUrl": "https://drinkme.bg/product/peshterska-grozdova", "officialAbv": "40.0%"},
   "радуiл-попска-крушова-ракия-3г|Стандартна|0.500л": {"image": "https://drinkme.bg/cdn/img/products/608/raduil-popska-krusa-6931626728a86.png?width=600&height=600&v=1777632373", "productUrl": "https://drinkme.bg/product/raduil-popska-krusha-rakiya", "officialAbv": "40.0%"},
   "радуiл-сливова-ракия-3г|Стандартна|0.500л": {"image": "https://drinkme.bg/cdn/img/products/609/raduil-slivova-69316283ea662.png?width=600&height=600&v=1777632373", "productUrl": "https://drinkme.bg/product/raduil-slivova-rakiya", "officialAbv": "40.0%"},
@@ -8521,6 +8523,803 @@ const catalogVariantData = {
   "шардоне-chateau-des-bergers|Стандартна|0.750л": {"image": "https://drinkme.bg/cdn/img/products/122/chateau-des-bergers-chardonnay-686f67f6ad396.jpeg?width=600&height=600&v=1777632368", "productUrl": "https://drinkme.bg/product/chateau-des-bergers-chardonnay-wine", "officialAbv": "13.5%"},
   "ямболска-гроздова-pet|Стандартна|0.200л": {"image": "https://drinkme.bg/cdn/img/products/718/ambolska-grozdova-69ca738c8a8df.png?width=600&height=600&v=1777632371", "productUrl": "https://drinkme.bg/product/yambolska-grozdova-1", "officialAbv": "40.0%"},
 };
+
+
+const productAuditNotes = {
+  reviewedAt: '2026-07-07',
+  scope: 'Patched high-risk image mismatches and official variant data for products that previously used unrelated images or blank placeholders.',
+  manualReviewNeeded: []
+};
+
+const verifiedProductProfiles = {
+  "prosecco-gemma-di-luna-doc-2-glasses": {
+    tag: "Prosecco DOC · gift pack с 2 чаши",
+    category: "Prosecco DOC",
+    origin: "Италия",
+    lead: "Gemma di Luna Prosecco DOC е свежо италианско пенливо вино в разпознаваема синя бутилка, тук в подаръчен комплект с две чаши за директно сервиране.",
+    story: [
+      "Този комплект е практичен избор за барове и събития, когато се търси визуално отличим prosecco serve без допълнителна подготовка. Стилът е лек, плодов и лесен за предлагане като aperitif, welcome drink или Spritz основа.",
+      "Бутилката е 0.750 л при 10.5% алк., а добавените чаши правят продукта подходящ както за подарък, така и за сезонни промоции в заведения."
+    ],
+    tasting: [
+      "Аромат: свежи бели плодове, цитрус и лека флоралност.",
+      "Вкус: леко тяло, фина пенливост, зелена ябълка, круша и чиста свежест.",
+      "Финал: сух, кратък до среден, с приятна киселинност."
+    ],
+    details: [["Стил", "Prosecco DOC"], ["Комплект", "Бутилка + 2 чаши"], ["Разфасовка", "0.750л"], ["Сила", "10.5% ABV"]],
+    uses: ["Welcome drink за събития и частни партита.", "Aperitif serve добре охладено.", "Подходящо за Aperol Spritz, Hugo и други prosecco коктейли."],
+    serve: "Сервирайте добре охладено, около 6-8°C, в flute или wine glass. Отваряйте непосредствено преди сервиране, за да се запази перлажът.",
+    facts: [["Категория", "Италианско пенливо вино"], ["Произход", "Италия"], ["Опаковка", "Gift Box с 2 чаши"], ["Барова роля", "Welcome drink / Spritz база"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/gemma-di-luna-prosecco-wine-1"], ["Gemma di Luna", "https://gemmadiluna.com/"]]
+  },
+  "beluga-transatlantic-racing-sunglasses": {
+    tag: "Vodka · gift pack със слънчеви очила",
+    category: "Premium Vodka",
+    origin: "Черна гора",
+    lead: "Beluga Transatlantic Racing е премиум водка с мек, чист профил, представена като подаръчен комплект със слънчеви очила.",
+    story: [
+      "Transatlantic Racing е по-леката, морска линия на Beluga, създадена около чисто сервиране и premium vodka коктейли. Подаръчният комплект добавя силен визуален повод за витрина или back bar.",
+      "В барова среда работи добре за Vodka Martini, Vodka Soda и premium long drinks, когато се търси неутрална, гладка база."
+    ],
+    tasting: ["Аромат: чист, мек, с деликатна зърнена сладост.", "Вкус: гладък, неутрален, с лека минералност.", "Финал: чист, сух и мек."],
+    details: [["Стил", "Premium Vodka"], ["Комплект", "Бутилка + sunglasses"], ["Разфасовка", "0.700л"], ["Сила", "40% ABV"]],
+    uses: ["Premium Vodka Martini.", "Vodka Soda с лайм или грейпфрут.", "Чисто, силно охладено сервиране."],
+    serve: "Сервирайте силно охладена. За bar serve: 50 мл Beluga, качествена сода, голям лед и тънка кора грейпфрут.",
+    facts: [["Категория", "Premium Vodka"], ["Опаковка", "Gift Box със слънчеви очила"], ["Сила", "40% ABV"], ["Барова роля", "Premium clean vodka serve"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/beluga-transatlantic-racing-vodka"], ["Beluga Vodka", "https://belugavodka.com/"]]
+  },
+  "russian-standard-2-glasses": {
+    tag: "Vodka · gift pack с 2 чаши",
+    category: "Vodka",
+    origin: "Русия",
+    lead: "Russian Standard Original е класическа чиста водка, тук в подаръчен комплект с две чаши за бързо и ясно сервиране.",
+    story: [
+      "Original линията е изградена около чист, неутрален профил и е лесна за използване както в shot сервиране, така и в базови барови коктейли.",
+      "Комплектът с чаши е особено практичен за промоции, подаръчни продажби и заведения, които искат готова визуална презентация без допълнителен POS материал."
+    ],
+    tasting: ["Аромат: чист и неутрален, с лека зърнена нотка.", "Вкус: мек, ясен, с гладка текстура.", "Финал: чист, сух и кратък."],
+    details: [["Стил", "Original Vodka"], ["Комплект", "Бутилка + 2 чаши"], ["Разфасовка", "0.700л"], ["Сила", "40% ABV"]],
+    uses: ["Shot serve силно охладено.", "Vodka Tonic и Vodka Soda.", "База за Moscow Mule, Cosmopolitan и Espresso Martini."],
+    serve: "Охладете добре. За чист serve: 40-50 мл в студена чаша; за long drink: 50 мл с тоник или сода и цитрус.",
+    facts: [["Категория", "Vodka"], ["Опаковка", "Gift Pack с 2 чаши"], ["Сила", "40% ABV"], ["Барова роля", "House vodka / mixed drinks"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/russian-standard-original-gift-pack"], ["Russian Standard", "https://russianstandardvodka.com/"]]
+  },
+  "ballantine-s-2-glasses": {
+    tag: "Blended Scotch · gift pack с 2 чаши",
+    category: "Blended Scotch Whisky",
+    origin: "Шотландия",
+    lead: "Ballantine's Finest е мек blended Scotch с медено-зърнен профил, представен в комплект с две чаши за лесно сервиране.",
+    story: [
+      "Finest е основната линия на Ballantine's: достъпна, балансирана и създадена да работи както чисто, така и в смесени напитки.",
+      "Комплектът с две чаши го прави удобен за подарък, но за бар е също силен инструмент за whisky highball, whisky cola и промоционални serves."
+    ],
+    tasting: ["Аромат: мед, ванилия, лека ябълка и зърнена сладост.", "Вкус: мек, балансиран, с карамел, малц и деликатна подправка.", "Финал: гладък, леко сладък и достъпен."],
+    details: [["Стил", "Blended Scotch"], ["Комплект", "Бутилка + 2 чаши"], ["Разфасовка", "0.700л"], ["Сила", "40% ABV"]],
+    uses: ["Whisky Highball.", "Whisky Cola или Ginger Ale serve.", "Лесен entry-level Scotch за широка публика."],
+    serve: "50 мл Ballantine's, много лед, охладена сода или cola. Гарнитура: лимонова кора или резен лайм.",
+    facts: [["Категория", "Blended Scotch Whisky"], ["Опаковка", "Gift Box с 2 чаши"], ["Сила", "40% ABV"], ["Барова роля", "Highball / mixed whisky"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/ballantines-finest-2chashi-whisky-07l"], ["Ballantine's", "https://www.ballantines.com/"]]
+  },
+  "grant-s-2-glasses": {
+    tag: "Blended Scotch · Triple Wood · 2 чаши",
+    category: "Blended Scotch Whisky",
+    origin: "Шотландия",
+    lead: "Grant's Triple Wood е blended Scotch с мек плодов профил и характер от три типа бъчви, тук в комплект с две чаши.",
+    story: [
+      "Triple Wood стилът използва комбинация от бъчви, която носи ванилия, подправка и мекота. Това го прави лесен за highball, whisky cola и непретенциозно чисто сервиране.",
+      "Gift pack форматът е подходящ за retail подарък и за барови промоции, където чашите добавят готова презентация."
+    ],
+    tasting: ["Аромат: ванилия, зрели плодове и лека дъбова подправка.", "Вкус: мек, сладко-зърнен, с ябълка, карамел и лек дъб.", "Финал: среден, гладък и леко пикантен."],
+    details: [["Стил", "Blended Scotch"], ["Комплект", "Бутилка + 2 чаши"], ["Разфасовка", "0.700л"], ["Сила", "40% ABV"]],
+    uses: ["Whisky Highball със сода.", "Whisky Ginger.", "Достъпен house Scotch serve."],
+    serve: "50 мл Grant's, голям лед и охладена сода или ginger ale. Гарнитура: ябълка или лимонова кора.",
+    facts: [["Категория", "Blended Scotch Whisky"], ["Профил", "Плодове, ванилия, мек дъб"], ["Опаковка", "Gift Box с 2 чаши"], ["Барова роля", "House Scotch / highball"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/grants-triple-wood-2-chashi-grants"], ["Grant's", "https://www.grantswhisky.com/"]]
+  },
+  "grant-s-8-yo-2-glasses": {
+    tag: "Blended Scotch · 8 YO · 2 чаши",
+    category: "Blended Scotch Whisky",
+    origin: "Шотландия",
+    lead: "Grant's 8 YO е по-отлежала версия на Triple Wood стила, с повече мекота, медена сладост и дъбова дълбочина.",
+    story: [
+      "Осемгодишното отлежаване добавя по-зрял профил спрямо базовия Grant's, без да го прави тежък или труден за смесване.",
+      "Комплектът с две чаши го позиционира добре за подарък и за upgrade serve от стандартен blended Scotch."
+    ],
+    tasting: ["Аромат: мед, ванилия, зряла ябълка и препечен дъб.", "Вкус: по-плътен от стандартния Grant's, с карамел, малц и лека подправка.", "Финал: гладък, топъл и умерено дълъг."],
+    details: [["Стил", "Blended Scotch"], ["Възраст", "8 години"], ["Комплект", "Бутилка + 2 чаши"], ["Сила", "40% ABV"]],
+    uses: ["Upgrade whisky highball.", "Чисто върху голям лед.", "Whisky Sour с по-мек профил."],
+    serve: "50 мл върху голям лед или с охладена сода. За cocktail serve: Whisky Sour с пресен лимон и захарен сироп.",
+    facts: [["Категория", "Blended Scotch Whisky"], ["Възраст", "8 YO"], ["Опаковка", "Gift Box с 2 чаши"], ["Барова роля", "Upgrade Scotch serve"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/grants-triple-wood-8-yo-2-chashi-grants"], ["Grant's", "https://www.grantswhisky.com/"]]
+  },
+  "grant-s-12-yo-2-glasses": {
+    tag: "Blended Scotch · 12 YO · 2 чаши",
+    category: "Blended Scotch Whisky",
+    origin: "Шотландия",
+    lead: "Grant's 12 YO е по-зрял blended Scotch с балансирани нотки на мед, плодове, ванилия и дъб, в подаръчен комплект с две чаши.",
+    story: [
+      "Дванадесетгодишният профил е подходящ за гости, които търсят по-мек и по-завършен blended Scotch, но без да влизат в single malt ценови диапазон.",
+      "Комплектът с чаши го прави добър premium gift избор и удобна бутилка за back bar презентация."
+    ],
+    tasting: ["Аромат: мед, ванилия, сушени плодове и мек дъб.", "Вкус: гладък, с карамел, малц, плодова сладост и подправка.", "Финал: топъл, по-дълъг и балансиран."],
+    details: [["Стил", "Blended Scotch"], ["Възраст", "12 години"], ["Комплект", "Бутилка + 2 чаши"], ["Сила", "40% ABV"]],
+    uses: ["Neat или върху голям лед.", "Premium whisky highball.", "Подходящ за upsell от стандартен blended Scotch."],
+    serve: "40-50 мл neat или върху голям лед. За highball: сода, портокалова кора и висок лед.",
+    facts: [["Категория", "Blended Scotch Whisky"], ["Възраст", "12 YO"], ["Опаковка", "Gift Box с 2 чаши"], ["Барова роля", "Premium blended Scotch"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/grants-triple-wood-12-yo-2-chashi-grants"], ["Grant's", "https://www.grantswhisky.com/"]]
+  },
+  "glenfiddich-15yo-solera-2-glasses": {
+    tag: "Single Malt Scotch · Solera · 2 чаши",
+    category: "Single Malt Scotch Whisky",
+    origin: "Шотландия, Speyside",
+    lead: "Glenfiddich 15 Year Old Solera е Speyside single malt с характерна Solera система, богат плодов профил и подаръчен комплект с две чаши.",
+    story: [
+      "15-годишният Solera стил е един от най-разпознаваемите Glenfiddich профили: топъл, плодов, подправъчен и по-плътен от класическите entry-level malt варианти.",
+      "Комплектът с чаши е силен premium gift продукт и добър избор за барове, които искат single malt serve с ясна история."
+    ],
+    tasting: ["Аромат: мед, стафиди, подправки, ванилия и зрели плодове.", "Вкус: копринен, с шери сладост, канела, марципан и дъб.", "Финал: дълъг, топъл и леко пикантен."],
+    details: [["Стил", "Speyside Single Malt"], ["Възраст", "15 години"], ["Комплект", "Бутилка + 2 чаши"], ["Сила", "40% ABV"]],
+    uses: ["Premium neat serve.", "Whisky flight със Speyside стил.", "Подаръчен upsell за single malt клиенти."],
+    serve: "40 мл neat в tulip чаша. По желание добавете няколко капки вода, за да се отвори плодовият и подправъчен профил.",
+    facts: [["Категория", "Single Malt Scotch"], ["Регион", "Speyside"], ["Метод", "Solera vat finishing style"], ["Барова роля", "Premium malt serve"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/glenfiddich-15-year-old-limited-edition-2-glass-gift-pack"], ["Glenfiddich", "https://www.glenfiddich.com/"]]
+  },
+  "jack-daniel-s-apple-highball-glass": {
+    tag: "Tennessee Apple · gift pack с highball чаша",
+    category: "Flavoured Tennessee Whiskey Liqueur",
+    origin: "САЩ, Tennessee",
+    lead: "Jack Daniel's Tennessee Apple комбинира Jack Daniel's Tennessee Whiskey с ябълков ликьор и се предлага в комплект с highball чаша.",
+    story: [
+      "Tennessee Apple е направен за лесни long drinks: ябълковият профил е ясен, свеж и достъпен, а whiskey базата добавя ванилия и карамел.",
+      "Highball чашата в комплекта насочва продукта към бързо сервиране с тоник, сода, ginger ale или лимонада."
+    ],
+    tasting: ["Аромат: зелена ябълка, ванилия и лек карамел.", "Вкус: сладко-свежа ябълка, мек whiskey фон и подправка.", "Финал: свеж, плодов и леко сладък."],
+    details: [["Стил", "Apple whiskey liqueur"], ["Комплект", "Бутилка + highball чаша"], ["Разфасовка", "0.700л"], ["Сила", "35% ABV"]],
+    uses: ["Apple Highball с тоник или сода.", "Сервиране с ginger ale.", "Лесен party serve за широка публика."],
+    serve: "50 мл Jack Apple, много лед и охладен тоник или сода. Гарнитура: резен зелена ябълка.",
+    facts: [["Категория", "Flavoured whiskey"], ["Профил", "Зелена ябълка, ванилия, карамел"], ["Опаковка", "Gift Box с highball чаша"], ["Барова роля", "Fast highball serve"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/jack-daniels-tennessee-apple-with-1-glass-whisky"], ["Jack Daniel's", "https://www.jackdaniels.com/"]]
+  },
+  "jack-daniel-s-single-barrel-metal-cage": {
+    tag: "Single Barrel Tennessee Whiskey · metal cage",
+    category: "Tennessee Whiskey",
+    origin: "САЩ, Tennessee",
+    lead: "Jack Daniel's Single Barrel Select е по-интензивен Tennessee whiskey от единична бъчва, тук в подаръчна метална кутия.",
+    story: [
+      "Single Barrel Select идва от отделни бъчви, избрани за по-богат и концентриран профил спрямо класическия Old No. 7. Бутилира се при 45% алк., което дава повече тяло в чашата.",
+      "Металната подаръчна кутия го прави подходящ за premium gifting, но и за back bar позициониране като upgrade Jack Daniel's serve."
+    ],
+    tasting: ["Аромат: препечен дъб, ванилия, карамел и подправка.", "Вкус: плътен, сладко-дъбов, с мед, ядка, карамел и черен пипер.", "Финал: дълъг, топъл и сухо-дъбов."],
+    details: [["Стил", "Single Barrel Tennessee Whiskey"], ["Комплект", "Метална подаръчна кутия"], ["Разфасовка", "0.700л"], ["Сила", "45% ABV"]],
+    uses: ["Premium neat serve.", "Old Fashioned с по-силен oak profile.", "Upsell от Jack Daniel's Old No. 7."],
+    serve: "40 мл neat или върху голям лед. За Old Fashioned: минимална захар, Angostura bitters и портокалова кора.",
+    facts: [["Категория", "Tennessee Whiskey"], ["Тип", "Single Barrel"], ["Опаковка", "Metal cage / tin gift pack"], ["Барова роля", "Premium American whiskey"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/jack-daniels-single-barrel-select-with-tin-box"], ["Jack Daniel's Single Barrel", "https://www.jackdaniels.com/"]]
+  },
+  "jameson-2-glasses": {
+    tag: "Irish Whiskey · gift pack с 2 чаши",
+    category: "Blended Irish Whiskey",
+    origin: "Ирландия",
+    lead: "Jameson Irish Whiskey е тройно дестилирано ирландско уиски с мек и достъпен профил, тук в комплект с две чаши.",
+    story: [
+      "Jameson е класически bar workhorse за Irish whiskey highballs, ginger serves и коктейли. Мекият стил го прави лесен за гости, които не търсят тежко торфено или дъбово уиски.",
+      "Подаръчният комплект с чаши работи добре за промоции и готово сервиране в заведение."
+    ],
+    tasting: ["Аромат: леки флорални нотки, ванилия, шери сладост и зърно.", "Вкус: мек, с ядка, ванилия, сладка подправка и плод.", "Финал: гладък, чист и лесен."],
+    details: [["Стил", "Blended Irish Whiskey"], ["Комплект", "Бутилка + 2 чаши"], ["Разфасовка", "0.700л"], ["Сила", "40% ABV"]],
+    uses: ["Jameson Ginger & Lime.", "Irish Coffee.", "Whiskey Sour и highball меню."],
+    serve: "50 мл Jameson, много лед, ginger ale и резен лайм. Това е най-бързият и разпознаваем bar serve за продукта.",
+    facts: [["Категория", "Irish Whiskey"], ["Дестилация", "Triple distilled"], ["Опаковка", "Gift Box с 2 чаши"], ["Барова роля", "Core Irish whiskey"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/jameson-irish-whiskey-with-2-glasses"], ["Jameson", "https://www.jamesonwhiskey.com/"]]
+  },
+  "tullamore-dew-2-highball-glasses": {
+    tag: "Irish Whiskey · gift pack с 2 highball чаши",
+    category: "Blended Irish Whiskey",
+    origin: "Ирландия",
+    lead: "Tullamore D.E.W. Original е меко тройно дестилирано ирландско уиски, представено в комплект с две highball чаши.",
+    story: [
+      "Tullamore D.E.W. Original комбинира grain, malt и pot still whiskey за балансиран ирландски профил: лек, плодов, мек и подходящ за смесване.",
+      "Двете highball чаши насочват продукта към Tullamore & Ginger, soda serves и бърза барова употреба."
+    ],
+    tasting: ["Аромат: цитрус, зелена ябълка, ванилия и лек малц.", "Вкус: мек, плодов, с карамел, зърно и деликатна подправка.", "Финал: гладък, чист и леко сладък."],
+    details: [["Стил", "Blended Irish Whiskey"], ["Комплект", "Бутилка + 2 highball чаши"], ["Разфасовка", "0.700л"], ["Сила", "40% ABV"]],
+    uses: ["Tullamore & Ginger.", "Irish Whiskey Highball.", "Лека Irish Coffee вариация."],
+    serve: "50 мл Tullamore D.E.W., много лед, ginger ale и резен лайм в highball чаша.",
+    facts: [["Категория", "Irish Whiskey"], ["Дестилация", "Triple distilled"], ["Опаковка", "Gift Box с 2 highball чаши"], ["Барова роля", "Highball Irish whiskey"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/tullamore-dew-2-chashi-tyulamor"], ["Tullamore D.E.W.", "https://www.tullamoredew.com/"]]
+  },
+  "monkey-shoulder-highball-glass": {
+    tag: "Blended Malt Scotch · highball glass",
+    category: "Blended Malt Scotch Whisky",
+    origin: "Шотландия",
+    lead: "Monkey Shoulder е blended malt Scotch, създаден с коктейлна употреба предвид, тук в комплект с highball чаша.",
+    story: [
+      "За разлика от обикновен blended Scotch, Monkey Shoulder е blended malt - комбинация от single malt уискита. Профилът е мек, малцов, ванилов и достатъчно плътен за коктейли.",
+      "Комплектът с highball чаша е директна покана за Monkey Highball и работи отлично в коктейл барове."
+    ],
+    tasting: ["Аромат: ванилия, мед, портокал, малц и лека подправка.", "Вкус: кремообразен, с ванилия, карамел, малц и цитрус.", "Финал: мек, малцов и леко подправъчен."],
+    details: [["Стил", "Blended Malt Scotch"], ["Комплект", "Бутилка + highball чаша"], ["Разфасовка", "0.700л"], ["Сила", "40% ABV"]],
+    uses: ["Monkey Highball.", "Whisky Sour.", "Old Fashioned с по-мек malt profile."],
+    serve: "50 мл Monkey Shoulder, висок лед, охладена сода и портокалова кора.",
+    facts: [["Категория", "Blended Malt Scotch"], ["Профил", "Малц, ванилия, цитрус"], ["Опаковка", "Gift Box с highball чаша"], ["Барова роля", "Cocktail Scotch"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/monkey-sholder-whisky-with-highball-glass"], ["Monkey Shoulder", "https://www.monkeyshoulder.com/"]]
+  },
+  "talisker-skye-campfire-1-mug": {
+    tag: "Island Single Malt · campfire mug",
+    category: "Single Malt Scotch Whisky",
+    origin: "Шотландия, Isle of Skye",
+    lead: "Talisker Skye е островен single malt с морски, пикантен и леко опушен характер, в подаръчен комплект с campfire mug.",
+    story: [
+      "Talisker е известен с морския си стил от Isle of Skye: соленост, пипер, дим и цитрус. Skye е по-достъпна и мека интерпретация, подходяща за гости, които тепърва влизат в island malt профила.",
+      "Campfire чашата подсилва идеята за outdoor, smoky и топъл whisky serve."
+    ],
+    tasting: ["Аромат: морски бриз, цитрус, лек дим и сладък малц.", "Вкус: мек торф, черен пипер, мед, солена минералност и дъб.", "Финал: пикантен, леко опушен и морски."],
+    details: [["Стил", "Island Single Malt"], ["Комплект", "Бутилка + campfire mug"], ["Разфасовка", "0.700л"], ["Сила", "45.8% ABV"]],
+    uses: ["Neat serve за smoky malt гости.", "Talisker Highball със сода.", "Hot whisky serve в mug формат."],
+    serve: "40 мл neat или с няколко капки вода. За highball: сода, лимонова кора и висок лед.",
+    facts: [["Категория", "Single Malt Scotch"], ["Регион", "Isle of Skye"], ["Профил", "Морски, пиперен, леко опушен"], ["Барова роля", "Island malt serve"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/talisker-skye-single-malt-whisky-with-mug"], ["Talisker", "https://www.malts.com/en-row/products/single-malt-whisky/talisker-skye-single-malt-scotch-whisky"]]
+  },
+  "skinos-2-shots": {
+    tag: "Mastiha Spirit · gift pack с 2 shot чаши",
+    category: "Mastiha Spirit",
+    origin: "Гърция, Chios",
+    lead: "Skinos Mastiha Spirit е гръцки мастиха дестилат с характерен аромат на мастикова смола, тук в комплект с две shot чаши.",
+    story: [
+      "Skinos използва mastiha от остров Chios - смола с ясно разпознаваем билково-смолист и леко сладък профил. Това го прави различен от класическите ликьори и много полезен в Mediterranean cocktail меню.",
+      "Подаръчният комплект с shot чаши е подходящ както за chilled serve, така и за барови дегустации."
+    ],
+    tasting: ["Аромат: мастикова смола, билки, борова свежест и лека сладост.", "Вкус: свеж, сладко-билков, смолист и чист.", "Финал: освежаващ, ароматен и леко сух."],
+    details: [["Стил", "Mastiha Spirit"], ["Комплект", "Бутилка + 2 shot чаши"], ["Разфасовка", "0.700л"], ["Сила", "30% ABV"]],
+    uses: ["Chilled shot след вечеря.", "Skinos Sour.", "Mediterranean Spritz с prosecco и сода."],
+    serve: "Сервирайте добре охладен като shot или в Skinos Sour с лимон, захарен сироп и белтък/foam.",
+    facts: [["Категория", "Greek Mastiha"], ["Произход", "Chios, Greece"], ["Опаковка", "Gift Box с 2 shot чаши"], ["Барова роля", "Mediterranean cocktail modifier"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/skinos-mastiha-2-chashi-mastiha"], ["Skinos", "https://skinosmastiha.com/"]]
+  },
+  "jagermeister-3-metal-shots": {
+    tag: "Herbal Liqueur · 3 metal shots",
+    category: "Herbal Liqueur",
+    origin: "Германия",
+    lead: "Jagermeister е германски билков ликьор с 56 ботаники, тук в подаръчен комплект с три метални shot чаши.",
+    story: [
+      "Jagermeister е създаден като комплексен herbal liqueur и е най-разпознаваем като ледено студен shot, но работи и в highballs и herbal cocktails.",
+      "Металните shot чаши в комплекта са напълно в синхрон с препоръчаното силно охладено сервиране."
+    ],
+    tasting: ["Аромат: билки, цитрусова кора, подправки и сладък корен.", "Вкус: сладко-горчив, билков, с канела, анасон, джинджифил и цитрус.", "Финал: дълъг, билков и леко горчив."],
+    details: [["Стил", "Herbal Liqueur"], ["Ботаники", "56 herbs, roots, fruits and spices"], ["Комплект", "Бутилка + 3 metal shots"], ["Сила", "35% ABV"]],
+    uses: ["Ice-cold shot.", "Jager Mule с ginger beer.", "Herbal modifier в коктейли."],
+    serve: "Сервирайте от фризер при много ниска температура в охладена shot чаша.",
+    facts: [["Категория", "Herbal Liqueur"], ["Произход", "Германия"], ["Опаковка", "Gift Box с 3 metal shots"], ["Барова роля", "Shot / herbal cocktail"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/jagermeister-56-herbs-3-metalni-chashi"], ["Jagermeister", "https://www.jagermeister.com/"]]
+  },
+  "jameson-black-barrel-2-glasses": {
+    tag: "Irish Whiskey · Black Barrel · 2 чаши",
+    category: "Blended Irish Whiskey",
+    origin: "Ирландия",
+    lead: "Jameson Black Barrel е по-богата и по-интензивна версия на Jameson, с допълнителен характер от силно обгорени бъчви, в комплект с две чаши.",
+    story: [
+      "Black Barrel е насочен към по-плътно Irish whiskey преживяване: повече ванилия, карамел, препечен дъб и подправка, но без да губи мекотата на Jameson.",
+      "Gift pack форматът го прави силен upgrade продукт за гости, които вече познават класическия Jameson."
+    ],
+    tasting: ["Аромат: ванилия, карамел, препечен дъб, плод и подправка.", "Вкус: по-плътен, с ирис, ядка, подправка и сладък дъб.", "Финал: гладък, богат и по-дълъг от класическия Jameson."],
+    details: [["Стил", "Blended Irish Whiskey"], ["Профил", "Charred barrel richness"], ["Комплект", "Бутилка + 2 чаши"], ["Сила", "40% ABV"]],
+    uses: ["Black Barrel Old Fashioned.", "Premium Jameson Ginger.", "Neat или върху голям лед."],
+    serve: "40 мл върху голям лед или в Old Fashioned с кафява захар, bitters и портокалова кора.",
+    facts: [["Категория", "Irish Whiskey"], ["Профил", "Ванилия, карамел, charred oak"], ["Опаковка", "Gift Box с 2 чаши"], ["Барова роля", "Premium Irish whiskey upsell"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/jameson-black-barrel-with-2-glasses-whisky"], ["Jameson Black Barrel", "https://www.jamesonwhiskey.com/"]]
+  },
+  "the-singleton-dufftown-12-yo-2-glasses": {
+    tag: "Speyside Single Malt · 12 YO · 2 чаши",
+    category: "Single Malt Scotch Whisky",
+    origin: "Шотландия, Speyside",
+    lead: "The Singleton of Dufftown 12 YO е гладък Speyside single malt с плодово-меден профил, представен в подаръчен комплект с две чаши.",
+    story: [
+      "Singleton 12 YO е създаден да бъде достъпен single malt: мек, балансиран, с плодове, ядка, мед и дъбова мекота.",
+      "Комплектът с чаши го прави подходящ за първи single malt подарък и за барове, които искат лесен Speyside malt serve."
+    ],
+    tasting: ["Аромат: зрели плодове, мед, ядка и лек дъб.", "Вкус: мек, сладко-малцов, с ябълка, карамел, ванилия и лека подправка.", "Финал: гладък, среден и леко сух."],
+    details: [["Стил", "Speyside Single Malt"], ["Възраст", "12 години"], ["Комплект", "Бутилка + 2 чаши"], ["Сила", "40% ABV"]],
+    uses: ["Neat single malt serve.", "Whisky flight за начинаещи в single malt.", "Лек highball с premium malt позиция."],
+    serve: "40 мл neat или с няколко капки вода. За по-лека употреба: highball със сода и портокалова кора.",
+    facts: [["Категория", "Single Malt Scotch"], ["Регион", "Speyside"], ["Опаковка", "Gift Box с 2 чаши"], ["Барова роля", "Accessible single malt"]],
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/the-singleton-dufftown-12-yo-2-glasses-whisky"], ["The Singleton", "https://www.thesingleton.com/"]]
+  }
+};
+
+function makeExclusiveProfile(config) {
+  return {
+    tag: config.tag,
+    category: config.category,
+    origin: config.origin,
+    lead: config.lead,
+    story: config.story,
+    tasting: config.tasting,
+    details: config.details || [["Стил", config.category], ["Произход", config.origin], ["Разфасовка", config.volume], ["Сила", config.abv]],
+    uses: config.uses,
+    serve: config.serve,
+    facts: config.facts || [["Категория", config.category], ["Произход", config.origin], ["Сила", config.abv], ["Барова роля", config.role]],
+    sources: config.sources
+  };
+}
+
+Object.assign(verifiedProductProfiles, {
+  "glen-mansion": makeExclusiveProfile({
+    tag: "Blended Scotch Whisky · house serve",
+    category: "Blended Scotch Whisky",
+    origin: "Шотландия",
+    volume: "0.700л",
+    abv: "40% ABV",
+    role: "House Scotch / long drinks",
+    lead: "Glen Mansion е достъпен blended Scotch whisky за барова употреба, подходящ за highball, whisky cola и базови смесени напитки.",
+    story: ["Позицията му е практична: класически шотландски blended стил, 40% алк. и профил, който не доминира прекалено в long drinks.", "За заведение това е работна бутилка за гости, които търсят познат Scotch serve на добра цена."],
+    tasting: ["Аромат: малц, лека зърнена сладост, карамел и сух дъб.", "Вкус: лек до среден, с ванилия, малц и деликатна подправка.", "Финал: чист, кратък до среден, подходящ за миксиране."],
+    uses: ["House Scotch Highball със сода.", "Whisky Cola или Whisky Ginger.", "База за бързи смесени напитки с достъпна цена."],
+    serve: "50 мл Glen Mansion, много лед и охладена сода или ginger ale. Гарнитура: лимонова кора.",
+    sources: [["BoProMas", "https://bopromas.bg/"], ["Glen Mansion DrinkMe", "https://drinkme.bg/product/glen-mansion-blended-scotch-whisky"]]
+  }),
+  "peat-s-beast-single-malt-unchillfiltered": makeExclusiveProfile({
+    tag: "Peated Single Malt Scotch · unchillfiltered",
+    category: "Single Malt Scotch Whisky",
+    origin: "Шотландия",
+    volume: "0.700л",
+    abv: "46% ABV",
+    role: "Smoky single malt serve",
+    lead: "Peat's Beast Single Malt Unchillfiltered е торфен single malt Scotch с директен smoky характер, бутилиран при 46% алк.",
+    story: ["Това е по-достъпният Peat's Beast профил спрямо cask strength изданията: все още опушен и интензивен, но по-лесен за neat serve и highball.", "Unchillfiltered позицията подсказва повече текстура и по-пълно усещане в чашата."],
+    tasting: ["Аромат: торфен дим, пепел, лимонова кора и малц.", "Вкус: сух дим, сладък малц, дъб, пипер и лека цитрусова свежест.", "Финал: опушен, пикантен и продължителен."],
+    uses: ["Neat serve за любители на торфено уиски.", "Smoky Highball със сода.", "Малка доза като smoky modifier в Penicillin."],
+    serve: "40 мл neat или с няколко капки вода. За highball: сода, лимонова кора и голям лед.",
+    sources: [["Peat's Beast", "https://www.peatsbeast.com/"], ["DrinkMe продукт", "https://drinkme.bg/product/peats-beast-single-malt-whisky"]]
+  }),
+  "william-lawson-s": makeExclusiveProfile({
+    tag: "Blended Scotch Whisky · easy mixing",
+    category: "Blended Scotch Whisky",
+    origin: "Шотландия",
+    volume: "0.700л",
+    abv: "40% ABV",
+    role: "Whisky cola / party serves",
+    lead: "William Lawson's е blended Scotch whisky с лек, плодов и лесен за смесване профил.",
+    story: ["Марка с директно, непретенциозно позициониране: Scotch за long drinks, highballs и барове с бърза ротация.", "Подходящ е за места, където whisky cola и whisky ginger са основен обем, а не дегустационен single malt serve."],
+    tasting: ["Аромат: ябълка, малц, ванилия и лек карамел.", "Вкус: мек, плодов, с малцова сладост и лека подправка.", "Финал: кратък, чист и лесен."],
+    uses: ["Whisky Cola.", "Whisky Ginger.", "House Scotch Highball."],
+    serve: "50 мл William Lawson's, много лед, cola или ginger ale и резен лайм.",
+    sources: [["William Lawson's", "https://www.williamlawsons.com/"], ["DrinkMe продукт", "https://drinkme.bg/product/william-lawsons-whisky"]]
+  }),
+  "hetman-classic-vodka": makeExclusiveProfile({
+    tag: "Ukrainian Vodka · mini format",
+    category: "Vodka",
+    origin: "Украйна",
+    volume: "0.200л",
+    abv: "40% ABV",
+    role: "Mini vodka / event serve",
+    lead: "Hetman Classic Vodka е украинска водка с чист зърнен профил, тук в малък 0.200 л формат.",
+    story: ["Classic линията е създадена за неутрално, охладено сервиране и за миксиране без агресивен аромат.", "Малкият формат е удобен за събития, хотелски минибар, дегустации и контролирани порции."],
+    tasting: ["Аромат: чист, леко зърнен и неутрален.", "Вкус: мек, сух и директен.", "Финал: чист и кратък."],
+    uses: ["Охладен shot.", "Vodka Soda.", "Mini-bar и event service."],
+    serve: "Сервирайте добре охладена или с много лед и сода.",
+    sources: [["BoProMas", "https://bopromas.bg/"], ["Hetman DrinkMe", "https://drinkme.bg/product/hetman-classic-vodka"]]
+  }),
+  "hetman-black-and-gold-vodka": makeExclusiveProfile({
+    tag: "Ukrainian Vodka · premium visual serve",
+    category: "Vodka",
+    origin: "Украйна",
+    volume: "0.500л",
+    abv: "40% ABV",
+    role: "Premium vodka serve",
+    lead: "Hetman Black & Gold е премиум визуално позиционирана украинска водка с чист, мек профил.",
+    story: ["Black & Gold работи като по-подаръчна и по-витринна бутилка в Hetman линията.", "Подходяща е за заведения, които искат premium vodka look без да сменят категорията към ароматизирани продукти."],
+    tasting: ["Аромат: чист, фин, с лека зърнена сладост.", "Вкус: мек, неутрален и гладък.", "Финал: сух, чист и балансиран."],
+    uses: ["Premium chilled serve.", "Vodka Martini.", "Vodka Tonic / Soda."],
+    serve: "Силно охладена, 40 мл neat или 50 мл с тоник и лимонова кора.",
+    sources: [["SPYRT Worldwide Hetman", "https://spyrtworldwide.com/hetman/"], ["DrinkMe продукт", "https://drinkme.bg/product/hetman-black-gold-vodka"]]
+  }),
+  "hetman-grain-vodka": makeExclusiveProfile({
+    tag: "Ukrainian Grain Vodka",
+    category: "Vodka",
+    origin: "Украйна",
+    volume: "0.500л",
+    abv: "40% ABV",
+    role: "Clean vodka cocktails",
+    lead: "Hetman Grain Vodka е зърнена украинска водка с чист и гладък характер за коктейлна употреба.",
+    story: ["Зърненият профил носи мека текстура и неутралност, което я прави удобна за класически vodka cocktails.", "Добър избор е за барове, които искат ясна premium vodka алтернатива."],
+    tasting: ["Аромат: леко зърнен, чист и свеж.", "Вкус: мек, сух, с фина сладост.", "Финал: кратък и чист."],
+    uses: ["Espresso Martini.", "Vodka Sour.", "Vodka Soda."],
+    serve: "50 мл с голям лед и сода, или като база за Espresso Martini.",
+    sources: [["SPYRT Worldwide Hetman", "https://spyrtworldwide.com/hetman/"], ["DrinkMe продукт", "https://drinkme.bg/product/hetman-grain-vodka"]]
+  }),
+  "hetman-ice-vodka": makeExclusiveProfile({
+    tag: "Ukrainian Vodka · ice profile",
+    category: "Vodka",
+    origin: "Украйна",
+    volume: "0.700л",
+    abv: "40% ABV",
+    role: "Chilled vodka serve",
+    lead: "Hetman Ice Vodka е чиста украинска водка, ориентирана към силно охладено сервиране и свежи long drinks.",
+    story: ["Ice позиционирането подчертава чистота, студено сервиране и лека минерална свежест.", "В бар меню може да стои като chilled vodka shot или vodka soda избор."],
+    tasting: ["Аромат: чист, свеж и неутрален.", "Вкус: мек, хладен профил, фина зърнена сладост.", "Финал: сух и чист."],
+    uses: ["Chilled shot.", "Vodka Soda.", "Vodka Lemon."],
+    serve: "Дръжте охладена. Сервирайте neat или с много лед, сода и лимон.",
+    sources: [["SPYRT Worldwide Hetman", "https://spyrtworldwide.com/hetman/"], ["DrinkMe продукт", "https://drinkme.bg/product/hetman-ice-vodka"]]
+  }),
+  "hetman-victory-vodka": makeExclusiveProfile({
+    tag: "Ukrainian Vodka · limited visual line",
+    category: "Vodka",
+    origin: "Украйна",
+    volume: "0.700л",
+    abv: "40% ABV",
+    role: "Premium vodka display",
+    lead: "Hetman Victory Vodka е украинска водка с чист профил и силно визуално позициониране.",
+    story: ["Victory линията е подходяща за витрина, тематични сервирания и premium vodka предложения.", "Профилът остава чист и неутрален, което я прави практична за коктейли."],
+    tasting: ["Аромат: чист, неутрален, леко зърнен.", "Вкус: мек, сух и гладък.", "Финал: чист, кратък и балансиран."],
+    uses: ["Premium vodka serve.", "Vodka Martini.", "Vodka Soda / Tonic."],
+    serve: "40 мл силно охладена или 50 мл с тоник и цитрус.",
+    sources: [["SPYRT Worldwide Hetman", "https://spyrtworldwide.com/hetman/"], ["DrinkMe продукт", "https://drinkme.bg/product/hetman-victory-vodka"]]
+  }),
+  "president-silver": makeExclusiveProfile({
+    tag: "President Vodka · Silver",
+    category: "Vodka",
+    origin: "Украйна",
+    volume: "0.700л",
+    abv: "40% ABV",
+    role: "Clean vodka serve",
+    lead: "President Silver е чиста водка с класически неутрален профил за директно сервиране и миксиране.",
+    story: ["Silver позицията е базовата, най-чиста интерпретация в линията President.", "Подходяща е за заведения, които търсят гладка vodka база за highballs и стандартни коктейли."],
+    tasting: ["Аромат: неутрален, леко зърнен.", "Вкус: сух, чист, с мека текстура.", "Финал: кратък и свеж."],
+    uses: ["Vodka Soda.", "Moscow Mule.", "Охладен shot."],
+    serve: "50 мл с лед и сода, гарнирано с лайм.",
+    sources: [["BoProMas", "https://bopromas.bg/"], ["DrinkMe продукт", "https://drinkme.bg/product/president-silver-vodka"]]
+  }),
+  "president-gold": makeExclusiveProfile({
+    tag: "President Vodka · Gold",
+    category: "Vodka",
+    origin: "Украйна",
+    volume: "0.700л",
+    abv: "40% ABV",
+    role: "Premium vodka serve",
+    lead: "President Gold е по-премиум позиционирана водка от линията President, с мек и чист профил.",
+    story: ["Gold вариантът е подходящ за по-високо визуално позициониране на бара и за гости, които търсят premium vodka serve.", "Профилът остава неутрален и гъвкав за коктейли."],
+    tasting: ["Аромат: чист, деликатен, леко сладък.", "Вкус: гладък, мек, с неутрално тяло.", "Финал: чист и балансиран."],
+    uses: ["Vodka Martini.", "Premium Vodka Tonic.", "Chilled neat serve."],
+    serve: "Сервирайте силно охладена или като Martini с dry vermouth и лимонова кора.",
+    sources: [["BoProMas", "https://bopromas.bg/"], ["DrinkMe продукт", "https://drinkme.bg/product/president-gold-vodka"]]
+  }),
+  "president-platinum": makeExclusiveProfile({
+    tag: "President Vodka · Platinum",
+    category: "Vodka",
+    origin: "Украйна",
+    volume: "0.700л",
+    abv: "40% ABV",
+    role: "Premium vodka / display bottle",
+    lead: "President Platinum е най-премиум визуално позиционираният вариант в President линията, с чист и гладък vodka профил.",
+    story: ["Platinum работи като upgrade избор за витрина и premium коктейли.", "Подходяща е за чисти сервирания и drinks, където водката трябва да остане мека и неутрална."],
+    tasting: ["Аромат: чист, фин и неутрален.", "Вкус: гладък, сух, с мека текстура.", "Финал: свеж и чист."],
+    uses: ["Premium Vodka Martini.", "Vodka Soda.", "Чисто охладено сервиране."],
+    serve: "40 мл силно охладена или 50 мл с premium soda и цитрус.",
+    sources: [["BoProMas", "https://bopromas.bg/"], ["DrinkMe продукт", "https://drinkme.bg/product/president-platinum-vodka"]]
+  }),
+  "zoloto-polubotka-elit": makeExclusiveProfile({
+    tag: "Ukrainian Vodka · gift box",
+    category: "Vodka",
+    origin: "Украйна",
+    volume: "0.700л",
+    abv: "40% ABV",
+    role: "Premium vodka gifting",
+    lead: "Zoloto Polubotka Elit е украинска премиум водка в подаръчна опаковка, позиционирана за чисто сервиране и подарък.",
+    story: ["Името и презентацията са насочени към по-луксозен vodka сегмент, с фокус върху гладко, охладено сервиране.", "Подходяща е за подаръчни продажби, VIP маси и premium vodka cocktails."],
+    tasting: ["Аромат: чист, мек, с деликатна зърнена нотка.", "Вкус: гладък, неутрален и сух.", "Финал: чист и елегантен."],
+    uses: ["Premium chilled shot.", "Vodka Martini.", "VIP bottle service."],
+    serve: "Сервирайте силно охладена в малка чаша или като dry Martini.",
+    sources: [["BoProMas", "https://bopromas.bg/"], ["DrinkMe продукт", "https://drinkme.bg/product/zoloto-polubotka-elit-vodka"]]
+  }),
+  "iganoff": makeExclusiveProfile({
+    tag: "Vodka · classic neutral profile",
+    category: "Vodka",
+    origin: "Европейски съюз",
+    volume: "0.700л",
+    abv: "40% ABV",
+    role: "House vodka / mixed drinks",
+    lead: "Iganoff е класическа водка с неутрален профил, подходяща за house serve и бързи барови коктейли.",
+    story: ["Позиционирана е като работна vodka бутилка за заведения, където са важни цена, чистота и гъвкавост.", "Подходяща е за long drinks и коктейли, при които ароматът идва от миксера или плодовете."],
+    tasting: ["Аромат: неутрален, чист.", "Вкус: сух, лек, директен.", "Финал: кратък и чист."],
+    uses: ["Vodka Soda.", "Vodka Orange.", "Moscow Mule."],
+    serve: "50 мл с много лед и избран миксер - сода, портокалов сок или ginger beer.",
+    sources: [["BoProMas", "https://bopromas.bg/"], ["DrinkMe продукт", "https://drinkme.bg/product/iganoff-vodka"]]
+  }),
+  "oginski": makeExclusiveProfile({
+    tag: "Vodka · Polish-style profile",
+    category: "Vodka",
+    origin: "Полша",
+    volume: "0.500л",
+    abv: "40% ABV",
+    role: "Chilled vodka serve",
+    lead: "Oginski е водка с класически чист профил, подходяща за охладено сервиране и стандартни vodka cocktails.",
+    story: ["Марката е позиционирана в полския vodka стил: неутралност, чистота и сух финал.", "Форматът 0.500 л е удобен за заведения, които търсят контролирана наличност или по-малки партиди."],
+    tasting: ["Аромат: чист, деликатен, зърнен.", "Вкус: сух, мек и неутрален.", "Финал: чист и кратък."],
+    uses: ["Chilled shot.", "Vodka Martini.", "Vodka Tonic."],
+    serve: "Сервирайте охладена или с тоник и лимонова кора.",
+    sources: [["BoProMas", "https://bopromas.bg/"], ["DrinkMe продукт", "https://drinkme.bg/product/oginski-vodka"]]
+  }),
+  "gold-of-mauritius-dark-rum": makeExclusiveProfile({
+    tag: "Mauritian Dark Rum · gift box",
+    category: "Dark Rum",
+    origin: "Мавриций",
+    volume: "0.700л",
+    abv: "40% ABV",
+    role: "Premium rum serve",
+    lead: "Gold of Mauritius Dark Rum е премиум ром от Мавриций с богат, мек и леко препечен профил.",
+    story: ["Марката използва островната традиция на Мавриций в захарната тръстика и ром стила, с профил към ванилия, ядки и тропическа сладост.", "Подходящ е както за neat serve, така и за premium rum cocktails."],
+    tasting: ["Аромат: ванилия, ядки, дъб, банан и карамел.", "Вкус: мек, сладко-дъбов, с тропически плод и препечена нотка.", "Финал: топъл, гладък и леко сладък."],
+    uses: ["Rum Old Fashioned.", "Dark Rum Daiquiri.", "Neat serve към десерт."],
+    serve: "50 мл върху голям лед или Rum Old Fashioned с demerara и orange bitters.",
+    sources: [["Gold of Mauritius", "https://litchquor.com/gold-of-mauritius/"], ["DrinkMe продукт", "https://drinkme.bg/product/gold-of-mauritius-dark-rum"]]
+  }),
+  "gold-of-mauritius-emerald-edition": makeExclusiveProfile({
+    tag: "Mauritian Rum · Emerald Edition",
+    category: "Dark Rum",
+    origin: "Мавриций",
+    volume: "0.700л",
+    abv: "40% ABV",
+    role: "Premium rum / sipping",
+    lead: "Gold of Mauritius Emerald Edition е премиум издание от Мавриций с мек тропически ром профил.",
+    story: ["Emerald Edition е визуално по-луксозна линия в семейството Gold of Mauritius и работи добре като back bar акцент.", "Стилът е подходящ за гости, които харесват мек, сладко-дъбов ром."],
+    tasting: ["Аромат: карамел, ванилия, тропически плод и дъб.", "Вкус: гладък, с ядка, банан, мед и лека подправка.", "Финал: мек, топъл и балансиран."],
+    uses: ["Sipping rum.", "Premium Mai Tai twist.", "Rum Old Fashioned."],
+    serve: "40-50 мл neat или върху голям лед с портокалова кора.",
+    sources: [["Gold of Mauritius", "https://litchquor.com/gold-of-mauritius/"], ["DrinkMe продукт", "https://drinkme.bg/product/gold-of-mauritius-dark-rum-emerald-edition"]]
+  }),
+  "castro-craft-coffee-liqueur": makeExclusiveProfile({
+    tag: "Greek Coffee Liqueur · craft",
+    category: "Coffee Liqueur",
+    origin: "Гърция",
+    volume: "0.500л",
+    abv: "25% ABV",
+    role: "Espresso Martini / dessert cocktails",
+    lead: "CASTRO Cubes Coffee е гръцки craft кафе ликьор с плътен десертен профил за коктейли и after-dinner сервирания.",
+    story: ["Кафе профилът е директен и полезен за барове, които правят Espresso Martini, White Russian и десертни drinks.", "0.500 л форматът е удобен за craft коктейлни програми."],
+    tasting: ["Аромат: кафе, какао, карамел и лека ванилия.", "Вкус: сладко кафе, шоколадова нотка и плътна текстура.", "Финал: десертен, кафеен и мек."],
+    uses: ["Espresso Martini.", "White Russian twist.", "Десертен serve върху лед."],
+    serve: "30 мл в Espresso Martini с водка и прясно еспресо.",
+    sources: [["Castro Spirits", "https://castrospirits.gr/"], ["DrinkMe продукт", "https://drinkme.bg/product/castro-cubes-coffee"]]
+  }),
+  "castro-craft-limoncello": makeExclusiveProfile({
+    tag: "Greek Limoncello · craft",
+    category: "Limoncello",
+    origin: "Гърция",
+    volume: "0.500л",
+    abv: "20% ABV",
+    role: "Spritz / chilled digestif",
+    lead: "CASTRO Limoncello е свеж лимонов ликьор за добре охладено сервиране, spritz и летни коктейли.",
+    story: ["Лимоновият профил го прави лесен за digestif и low-ABV коктейли.", "В бар може да работи като бърза база за Limoncello Spritz или кисело-сладки летни drinks."],
+    tasting: ["Аромат: лимонова кора, цитрусова свежест и сладост.", "Вкус: сладко-кисел лимон, гладка текстура.", "Финал: свеж, цитрусов и чист."],
+    uses: ["Limoncello Spritz.", "Chilled digestif.", "Лимонов Sour twist."],
+    serve: "Сервирайте силно охладено или с prosecco и сода в spritz.",
+    sources: [["Castro Spirits", "https://castrospirits.gr/"], ["DrinkMe продукт", "https://drinkme.bg/product/castro-limoncello"]]
+  }),
+  "castro-mediterranean-tentoura": makeExclusiveProfile({
+    tag: "Greek Tentoura Liqueur",
+    category: "Spiced Liqueur",
+    origin: "Гърция",
+    volume: "0.700л",
+    abv: "20% ABV",
+    role: "Spiced cocktail modifier",
+    lead: "CASTRO Mediterranean Tentoura е гръцки подправъчен ликьор с канела, карамфил и десертна топлина.",
+    story: ["Tentoura е традиционен гръцки ликьорен стил с подправки, подходящ за after-dinner serve.", "В коктейли работи като cinnamon-spice modifier към кафе, ром и whiskey drinks."],
+    tasting: ["Аромат: канела, карамфил, сладки подправки и карамел.", "Вкус: сладък, топъл, пикантен и плътен.", "Финал: дълъг, подправъчен и десертен."],
+    uses: ["After-dinner serve върху лед.", "Coffee cocktails.", "Rum или whisky spice modifier."],
+    serve: "30-40 мл охладено или върху лед; в коктейли използвайте 10-20 мл като подправъчен слой.",
+    sources: [["Castro Spirits", "https://castrospirits.gr/"], ["DrinkMe продукт", "https://drinkme.bg/product/castro-mediterranean-tentoura-liquor"]]
+  }),
+  "castro-craft-mastiha": makeExclusiveProfile({
+    tag: "Greek Mastiha Liqueur",
+    category: "Mastiha Liqueur",
+    origin: "Гърция",
+    volume: "0.500л",
+    abv: "20% ABV",
+    role: "Mediterranean cocktails",
+    lead: "CASTRO Mediterranean Mastiha е гръцки мастиха ликьор със свеж смолисто-билков профил.",
+    story: ["Мастихата носи характерна смолиста свежест, която се отличава силно от стандартните плодови ликьори.", "Полезна е за Mediterranean sour, spritz и авторски коктейли."],
+    tasting: ["Аромат: мастикова смола, билки, борова свежест.", "Вкус: сладко-билков, смолист и свеж.", "Финал: чист, ароматен и леко сух."],
+    uses: ["Mastiha Sour.", "Mediterranean Spritz.", "Chilled digestif."],
+    serve: "Сервирайте охладено или в sour с лимон и захарен сироп.",
+    sources: [["Castro Spirits", "https://castrospirits.gr/"], ["DrinkMe продукт", "https://drinkme.bg/product/castro-mediterranean-mastiha-liquor"]]
+  }),
+  "gran-torino-bianco": makeExclusiveProfile({
+    tag: "Italian Vermouth · Bianco",
+    category: "Vermouth",
+    origin: "Италия",
+    volume: "1.0л",
+    abv: "14.9% ABV",
+    role: "Aperitif / spritz",
+    lead: "Gran Torino Bianco е италиански бял вермут за aperitif сервиране, spritz и low-ABV коктейли.",
+    story: ["Bianco стилът е по-сладък и ароматен, с билки, ванилия и цитрусова свежест.", "Подходящ е за барове, които искат достъпен vermouth компонент за long drinks."],
+    tasting: ["Аромат: билки, ванилия, цитрус и бяло грозде.", "Вкус: сладък, леко билков, свеж.", "Финал: мек и ароматен."],
+    uses: ["Vermouth tonic.", "Bianco Spritz.", "Aperitif върху лед."],
+    serve: "80 мл върху лед с тоник и лимонова кора.",
+    sources: [["BoProMas", "https://bopromas.bg/"], ["DrinkMe продукт", "https://drinkme.bg/product/gran-torino-bianco"]]
+  }),
+  "gran-torino-rosso": makeExclusiveProfile({
+    tag: "Italian Vermouth · Rosso",
+    category: "Vermouth",
+    origin: "Италия",
+    volume: "1.0л",
+    abv: "14.9% ABV",
+    role: "Negroni / aperitif",
+    lead: "Gran Torino Rosso е червен италиански вермут за Negroni, Americano и aperitif сервиране.",
+    story: ["Rosso профилът носи карамел, билки, подправки и сладко-горчив баланс.", "Това е работен vermouth за класически барови рецепти."],
+    tasting: ["Аромат: билки, карамел, портокалова кора и подправки.", "Вкус: сладко-билков, леко горчив, с червен плод.", "Финал: ароматен и балансиран."],
+    uses: ["Negroni.", "Americano.", "Vermouth on the rocks."],
+    serve: "В Negroni: равни части gin, bitter и Gran Torino Rosso.",
+    sources: [["BoProMas", "https://bopromas.bg/"], ["DrinkMe продукт", "https://drinkme.bg/product/gran-torino-rosso"]]
+  }),
+  "gran-torino-extra-dry": makeExclusiveProfile({
+    tag: "Italian Vermouth · Extra Dry",
+    category: "Dry Vermouth",
+    origin: "Италия",
+    volume: "1.0л",
+    abv: "18% ABV",
+    role: "Martini / dry aperitif",
+    lead: "Gran Torino Extra Dry е сух вермут за Martini, aperitif сервиране и класически барови коктейли.",
+    story: ["Extra Dry стилът е по-сух, билков и цитрусов, с по-малко сладост от bianco и rosso.", "Задължителен работен продукт за Martini, Bamboo и dry vermouth highballs."],
+    tasting: ["Аромат: сухи билки, цитрус, бяло вино и лека горчивина.", "Вкус: сух, свеж, билков.", "Финал: чист и леко горчив."],
+    uses: ["Dry Martini.", "Bamboo.", "Dry Vermouth & Soda."],
+    serve: "Охладете след отваряне. За Martini използвайте 10-20 мл според желания dry стил.",
+    sources: [["BoProMas", "https://bopromas.bg/"], ["DrinkMe продукт", "https://drinkme.bg/product/gran-torino-extra-dry"]]
+  }),
+  "gran-torino-rosso-superiore": makeExclusiveProfile({
+    tag: "Italian Vermouth · Rosso Superiore",
+    category: "Vermouth",
+    origin: "Италия",
+    volume: "0.750л",
+    abv: "18% ABV",
+    role: "Premium vermouth cocktails",
+    lead: "Gran Torino Rosso Superiore е по-интензивен червен вермут за premium Negroni, Manhattan вариации и aperitif сервиране.",
+    story: ["Superiore позицията носи по-плътен и по-силен vermouth профил.", "Подходящ е за коктейли, в които вермутът трябва да се усеща като основен ароматен компонент."],
+    tasting: ["Аромат: билки, горчив портокал, карамел, подправки.", "Вкус: плътен, сладко-горчив и подправъчен.", "Финал: дълъг, билков и топъл."],
+    uses: ["Premium Negroni.", "Manhattan twist.", "Aperitif върху лед."],
+    serve: "60-80 мл върху лед с портокалова кора или в Negroni с по-плътна структура.",
+    sources: [["BoProMas", "https://bopromas.bg/"], ["DrinkMe продукт", "https://drinkme.bg/product/gran-torino-rosso-superiore"]]
+  }),
+  "gran-torino-bitter": makeExclusiveProfile({
+    tag: "Italian Bitter · 25%",
+    category: "Bitter Aperitif",
+    origin: "Италия",
+    volume: "1.0л",
+    abv: "25% ABV",
+    role: "Negroni / Spritz bitter",
+    lead: "Gran Torino Bitter е италиански bitter aperitif за Negroni, Americano и Spritz.",
+    story: ["Профилът е ярко горчиво-цитрусов и билков, създаден за класически aperitivo коктейли.", "В бар е директна bitter база за Negroni-style drinks."],
+    tasting: ["Аромат: горчив портокал, билки, корени и подправки.", "Вкус: горчиво-сладък, цитрусов и билков.", "Финал: дълъг, горчив и освежаващ."],
+    uses: ["Negroni.", "Americano.", "Bitter Spritz."],
+    serve: "За Spritz: 60 мл bitter, prosecco, сода и портокал.",
+    sources: [["BoProMas", "https://bopromas.bg/"], ["DrinkMe продукт", "https://drinkme.bg/product/gran-torino-bitter"]]
+  }),
+  "gran-torino-aperitivo": makeExclusiveProfile({
+    tag: "Italian Aperitivo · 11%",
+    category: "Aperitivo",
+    origin: "Италия",
+    volume: "1.0л",
+    abv: "11% ABV",
+    role: "Spritz / low-ABV cocktails",
+    lead: "Gran Torino Aperitivo е лек италиански aperitivo за spritz, long drinks и нискоалкохолни коктейли.",
+    story: ["По-ниската сила го прави удобен за дневни и летни менюта.", "Профилът е цитрусов, леко горчив и лесен за комбиниране с prosecco и сода."],
+    tasting: ["Аромат: портокал, билки и лека сладост.", "Вкус: свеж, цитрусов, умерено горчив.", "Финал: лек и освежаващ."],
+    uses: ["Aperitivo Spritz.", "Aperitivo Soda.", "Low-ABV коктейли."],
+    serve: "60 мл aperitivo, 90 мл prosecco, сода и резен портокал.",
+    sources: [["BoProMas", "https://bopromas.bg/"], ["DrinkMe продукт", "https://drinkme.bg/product/gran-torino-aperitivo"]]
+  }),
+  "alexandridi-ouzo": makeExclusiveProfile({
+    tag: "Greek Ouzo · classic anise",
+    category: "Ouzo",
+    origin: "Гърция",
+    volume: "0.200л",
+    abv: "40% ABV",
+    role: "Greek aperitif",
+    lead: "Alexandridi Ouzo е гръцки анасонов аперитив за класическо сервиране с вода, лед и мезе.",
+    story: ["Ouzo стилът е силно свързан с анасон, средиземноморска кухня и бавно aperitif сервиране.", "Малкият формат е удобен за проба, маси с мезета и контролирани порции."],
+    tasting: ["Аромат: анасон, билки и лека сладост.", "Вкус: свеж анасон, сладка подправка и чист спиртен гръб.", "Финал: сух, билков и освежаващ."],
+    uses: ["С вода и лед.", "Към морски дарове и мезета.", "Ouzo Lemonade long drink."],
+    serve: "Сервирайте с лед и студена вода; напитката естествено помътнява.",
+    sources: [["Alexandridi", "https://alexandridi.gr/"], ["DrinkMe продукт", "https://drinkme.bg/product/alexandridi-ouzo"]]
+  }),
+  "alexandridi-double-distilled-ouzo-100": makeExclusiveProfile({
+    tag: "Greek Ouzo · double distilled",
+    category: "Ouzo",
+    origin: "Гърция",
+    volume: "0.050л",
+    abv: "42% ABV",
+    role: "Premium ouzo tasting",
+    lead: "Alexandridi Double Distilled Ouzo 100% е по-интензивен анасонов ouzo стил, подходящ за дегустация и чист aperitif serve.",
+    story: ["Double distilled позицията подчертава по-чист и концентриран анасонов профил.", "Мини форматът е подходящ за дегустация, welcome serve или тематични гръцки менюта."],
+    tasting: ["Аромат: силен анасон, билки, сладка подправка.", "Вкус: концентриран, чист, анасонов и свеж.", "Финал: дълъг, сух и билков."],
+    uses: ["Premium ouzo tasting.", "С вода и лед.", "Greek pairing menu."],
+    serve: "Сервирайте охладено с малко вода и лед или като дегустационен shot.",
+    sources: [["Alexandridi", "https://alexandridi.gr/"], ["DrinkMe продукт", "https://drinkme.bg/product/alexandridi-double-distilled-ouzo-100"]]
+  }),
+  "bernard-remy-carte-blanche": makeExclusiveProfile({
+    tag: "Champagne · Carte Blanche",
+    category: "Champagne",
+    origin: "Франция, Champagne",
+    volume: "0.375л / 0.750л",
+    abv: "12% ABV",
+    role: "Champagne aperitif",
+    lead: "Bernard Remy Carte Blanche е класическо Champagne за aperitif, събития и by-the-glass позициониране.",
+    story: ["Carte Blanche е достъпен вход към къщата Bernard Remy с фокус върху свежест и плод.", "Форматите 0.375 л и 0.750 л дават гъвкавост за маси, welcome drink и малки резервации."],
+    tasting: ["Аромат: бели плодове, цитрус, лека бриош нотка.", "Вкус: свеж, сух, с ябълка, круша и фина пенливост.", "Финал: чист и елегантен."],
+    uses: ["Aperitif.", "Welcome drink.", "Pairing със солени хапки и морски дарове."],
+    serve: "Охладете до 7-9°C и сервирайте във flute или wine glass.",
+    sources: [["Champagne Bernard Remy", "https://www.champagne-bernard-remy.com/"], ["DrinkMe продукт", "https://drinkme.bg/product/bernard-remy-carte-blanche"]]
+  }),
+  "bernard-remy-brut-rose": makeExclusiveProfile({
+    tag: "Champagne · Brut Rose",
+    category: "Rose Champagne",
+    origin: "Франция, Champagne",
+    volume: "0.375л / 0.750л",
+    abv: "12% ABV",
+    role: "Rose champagne / food pairing",
+    lead: "Bernard Remy Brut Rose е розе Champagne с червен плод, свежест и елегантна пенливост.",
+    story: ["Розе стилът добавя ягода, малина и по-гастрономичен характер спрямо класическия brut.", "Подходящ е за aperitif, романтични поводи и pairing с леки десерти или морски дарове."],
+    tasting: ["Аромат: ягода, малина, червена ябълка и цитрус.", "Вкус: свеж, плодов, сух и балансиран.", "Финал: чист, червеноплодов и елегантен."],
+    uses: ["Aperitif.", "Pairing с сьомга, салати, плодови десерти.", "Празничен rose serve."],
+    serve: "Сервирайте при 7-9°C в wine glass, за да се отвори плодът.",
+    sources: [["Champagne Bernard Remy", "https://www.champagne-bernard-remy.com/"], ["DrinkMe продукт", "https://drinkme.bg/product/bernard-remy-brut-rose"]]
+  }),
+  "bernard-remy-blanc-de-noirs": makeExclusiveProfile({
+    tag: "Champagne · Blanc de Noirs",
+    category: "Champagne",
+    origin: "Франция, Champagne",
+    volume: "0.750л",
+    abv: "12% ABV",
+    role: "Fuller champagne serve",
+    lead: "Bernard Remy Blanc de Noirs е Champagne от тъмни сортове грозде, с по-плътен и винен профил.",
+    story: ["Blanc de Noirs стилът обичайно носи повече тяло, костилков плод и структура.", "Подходящ е за pairing със солени ястия, птиче месо и по-богати хапки."],
+    tasting: ["Аромат: зряла ябълка, костилков плод, бриош и лека подправка.", "Вкус: по-плътен, свеж, с фин мус и плодова структура.", "Финал: сух, дълъг и гастрономичен."],
+    uses: ["Food pairing Champagne.", "Premium aperitif.", "Сервиране към бели меса и зрели сирена."],
+    serve: "Охладено до 8-10°C в по-широка champagne/wine чаша.",
+    sources: [["Champagne Bernard Remy", "https://www.champagne-bernard-remy.com/"], ["DrinkMe продукт", "https://drinkme.bg/product/bernard-remy-blanc-de-noirs"]]
+  }),
+  "bernard-remy-grand-cru": makeExclusiveProfile({
+    tag: "Champagne · Grand Cru",
+    category: "Champagne Grand Cru",
+    origin: "Франция, Champagne",
+    volume: "0.750л",
+    abv: "12% ABV",
+    role: "Premium champagne",
+    lead: "Bernard Remy Grand Cru е по-премиум Champagne позиция с фокус върху елегантност, минералност и фин перлаж.",
+    story: ["Grand Cru обозначението носи по-висока престижност в Champagne категорията.", "Това е подходяща бутилка за VIP маси, специални поводи и premium wine pairing."],
+    tasting: ["Аромат: цитрус, бели цветя, бриош и минералност.", "Вкус: сух, фин, с ябълка, лимон, ядка и кремообразен мус.", "Финал: дълъг, чист и минерален."],
+    uses: ["Premium aperitif.", "VIP bottle service.", "Pairing с морски дарове и хайвер стил хапки."],
+    serve: "Сервирайте при 8-10°C в wine glass.",
+    sources: [["Champagne Bernard Remy", "https://www.champagne-bernard-remy.com/"], ["DrinkMe продукт", "https://drinkme.bg/product/bernard-remy-grand-cru"]]
+  }),
+  "bernard-remy-prestige": makeExclusiveProfile({
+    tag: "Champagne · Prestige",
+    category: "Champagne",
+    origin: "Франция, Champagne",
+    volume: "0.750л",
+    abv: "12% ABV",
+    role: "Premium celebration serve",
+    lead: "Bernard Remy Prestige е по-елегантна Champagne cuvee за празнично и premium сервиране.",
+    story: ["Prestige позицията е насочена към по-специални поводи, с по-богата структура и по-изразена елегантност.", "Подходяща е за ресторанти и барове, които искат достъпна premium Champagne алтернатива."],
+    tasting: ["Аромат: бриош, цитрус, бял плод и лека ядка.", "Вкус: свеж, сух, с кремообразен перлаж и зрял плод.", "Финал: елегантен, чист и продължителен."],
+    uses: ["Празничен champagne serve.", "Pairing меню.", "Premium by-the-bottle предложение."],
+    serve: "Охладете до 8-10°C и сервирайте в wine glass.",
+    sources: [["Champagne Bernard Remy", "https://www.champagne-bernard-remy.com/"], ["DrinkMe продукт", "https://drinkme.bg/product/bernard-remy-prestige"]]
+  }),
+  "bernard-remy-millesime-2016": makeExclusiveProfile({
+    tag: "Champagne · Millesime 2016",
+    category: "Vintage Champagne",
+    origin: "Франция, Champagne",
+    volume: "0.750л",
+    abv: "12% ABV",
+    role: "Vintage champagne",
+    lead: "Bernard Remy Millesime 2016 е vintage Champagne от конкретна реколта, подходящо за premium и гастрономични сервирания.",
+    story: ["Millesime означава, че Champagne-то е от една реколта, което го прави по-специфично и подходящо за разговор с клиента.", "Реколта 2016 е силен избор за специални поводи, pairing и по-висок клас champagne предложение."],
+    tasting: ["Аромат: зрял цитрус, ябълка, бриош, медена нотка и минералност.", "Вкус: сух, структуриран, с фина киселинност и кремообразен мус.", "Финал: дълъг, минерален и елегантен."],
+    uses: ["Vintage Champagne serve.", "Pairing с морски дарове, птиче месо и зрели сирена.", "Специални поводи и VIP маси."],
+    serve: "Сервирайте при 9-10°C в wine glass, не прекалено студено.",
+    sources: [["Champagne Bernard Remy", "https://www.champagne-bernard-remy.com/"], ["DrinkMe продукт", "https://drinkme.bg/product/bernard-remy-millesime-2016"]]
+  })
+});
 
 const productOfferRules = [
   {
@@ -8775,11 +9574,11 @@ const catalogImageAliases = [
 
 function catalogImageForSlug(slug) {
   const mappedImage = catalogProductImages[slug];
-  if (mappedImage && mappedImage.startsWith('https://drinkme.bg/')) return mappedImage;
+  if (mappedImage && /^https:\/\//.test(mappedImage)) return mappedImage;
   const alias = catalogImageAliases.find(item =>
     item.prefixes.some(prefix => slug === prefix || slug.startsWith(`${prefix}-`))
   );
-  return alias && alias.image.startsWith('https://drinkme.bg/')
+  return alias && /^https:\/\//.test(alias.image)
     ? alias.image
     : fallbackCatalogImage;
 }
@@ -8853,6 +9652,18 @@ Object.entries(products).forEach(([slug, product]) => {
   productDatabase[slug] = record;
 });
 
+Object.entries(verifiedProductProfiles).forEach(([slug, profile]) => {
+  const record = productDatabase[slug];
+  if (!record) return;
+  Object.assign(record, profile, {
+    slug,
+    image: record.image,
+    variants: record.variants,
+    relatedProductSlugs: record.relatedProductSlugs,
+    packageOfferIds: record.packageOfferIds
+  });
+});
+
 Object.values(productDatabase).forEach(record => {
   record.relatedProductSlugs = Object.values(productDatabase)
     .filter(candidate => candidate.brand === record.brand && candidate.slug !== record.slug)
@@ -8890,4 +9701,5 @@ window.CATALOG_PRODUCT_IMAGES = catalogProductImages;
 window.CATALOG_VARIANT_DATA = catalogVariantData;
 window.PRODUCT_OFFER_RULES = productOfferRules;
 window.PRODUCT_DATABASE = productDatabase;
+window.PRODUCT_AUDIT_NOTES = productAuditNotes;
 })();
