@@ -9235,6 +9235,48 @@ Object.assign(verifiedProductProfiles, {
     serve: "Сервирайте охладено с малко вода и лед или като дегустационен shot.",
     sources: [["Alexandridi", "https://alexandridi.gr/"], ["DrinkMe продукт", "https://drinkme.bg/product/alexandridi-double-distilled-ouzo-100"]]
   }),
+  "liquor-coffee": makeExclusiveProfile({
+    tag: "Greek Coffee Liqueur · Craft",
+    category: "Coffee Liqueur",
+    origin: "Гърция",
+    volume: "0.500л",
+    abv: "25% ABV",
+    role: "Espresso Martini / dessert cocktails",
+    lead: "ALEXANDRIDI Coffee Craft е гръцки кафе ликьор с профил на еспресо, черен шоколад, карамелизирана захар и ванилия.",
+    story: ["DrinkMe посочва продукта като ликьор на Alexandridi Distillery, 0.500 л и 25% ABV.", "За бар е директна база за Espresso Martini, coffee highball и after-dinner serves."],
+    tasting: ["Аромат: еспресо, черен шоколад и ванилия.", "Вкус: печено кафе, карамелизирана захар, какао и лека ядковост.", "Финал: гладък, кафеен и леко горчив."],
+    uses: ["Espresso Martini.", "White Russian twist.", "Affogato или dessert cocktail."],
+    serve: "25-30 мл в Espresso Martini или 40 мл върху лед към десерт.",
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/alexandridi-coffee-craft-liquor"]]
+  }),
+  "cappuccino-craft-liquor": makeExclusiveProfile({
+    tag: "Greek Cappuccino Liqueur · Craft",
+    category: "Cream Coffee Liqueur",
+    origin: "Гърция",
+    volume: "0.500л",
+    abv: "25% ABV",
+    role: "Creamy coffee cocktails",
+    lead: "ALEXANDRIDI Cappuccino Craft е кремав кафе ликьор с разпенено мляко, прясно смляно кафе, ванилия, канела и шоколад.",
+    story: ["DrinkMe посочва продукта като ликьор на Alexandridi Distillery, 0.500 л и 25% ABV.", "Позиционира се лесно в десертни коктейли, кремави coffee drinks и after-dinner предложения."],
+    tasting: ["Аромат: разпенено мляко, кафе и ванилия.", "Вкус: еспресо, сладка сметана, канела и шоколад.", "Финал: мек, дълготраен и кафеено-сладък."],
+    uses: ["Creamy Espresso Martini.", "Cappuccino White Russian.", "Десертен serve върху лед."],
+    serve: "40 мл върху лед или 20-30 мл като кремав coffee modifier.",
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/alexandridi-cappuccino-craft-liquor"]]
+  }),
+  "limoncello": makeExclusiveProfile({
+    tag: "Greek Limoncello Liqueur · Craft",
+    category: "Limoncello Liqueur",
+    origin: "Гърция",
+    volume: "0.500л",
+    abv: "25% ABV",
+    role: "Spritz / Sour / chilled digestif",
+    lead: "ALEXANDRIDI Limoncello Craft е свеж лимонов ликьор с ярък цитрус, захаросана лимонова кора и чист финал.",
+    story: ["DrinkMe посочва продукта като ликьор на Alexandridi Distillery, 0.500 л и 25% ABV.", "В барова карта стои добре като Limoncello Spritz, летен Sour twist или силно охладен digestif."],
+    tasting: ["Аромат: свеж лимон, цитрусов цвят и фин билков нюанс.", "Вкус: сладък лимон, захаросан цитрус и лека тръпчивост.", "Финал: свеж, чист и лимоново-сладък."],
+    uses: ["Limoncello Spritz.", "Limoncello Sour.", "Охладен digestif."],
+    serve: "40 мл силно охладено или 50 мл с prosecco, сода и лимонова кора.",
+    sources: [["DrinkMe продукт", "https://drinkme.bg/product/alexandridi-limoncello-craft-liquor"]]
+  }),
   "bernard-remy-carte-blanche": makeExclusiveProfile({
     tag: "Champagne · Carte Blanche",
     category: "Champagne",
@@ -9432,7 +9474,10 @@ const productBrandRules = [
   {
     "brand": "Alexandridi",
     "prefixes": [
-      "alexandridi"
+      "alexandridi",
+      "cappuccino-craft-liquor",
+      "liquor-coffee",
+      "limoncello"
     ],
     "exclusive": true
   },
