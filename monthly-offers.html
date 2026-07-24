@@ -29,7 +29,10 @@
     color: var(--cream);
     line-height: 1.6;
     font-size: 15px;
+    overflow-x: hidden;
   }
+
+  img { max-width: 100%; }
 
   body.modal-open { overflow: hidden; }
 
@@ -55,6 +58,37 @@
     align-items: center;
     text-decoration: none;
   }
+
+  .nav-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    border: 1px solid rgba(200,164,93,0.32);
+    background: rgba(255,255,255,0.045);
+    color: var(--gold);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .nav-toggle-box,
+  .nav-toggle-box::before,
+  .nav-toggle-box::after {
+    display: block;
+    width: 21px;
+    height: 2px;
+    background: currentColor;
+    transition: transform .25s ease;
+  }
+  .nav-toggle-box { position: relative; }
+  .nav-toggle-box::before,
+  .nav-toggle-box::after { content: ''; position: absolute; left: 0; }
+  .nav-toggle-box::before { top: -7px; }
+  .nav-toggle-box::after { top: 7px; }
+  .nav.is-open .nav-toggle-box { background: transparent; }
+  .nav.is-open .nav-toggle-box::before { top: 0; transform: rotate(45deg); }
+  .nav.is-open .nav-toggle-box::after { top: 0; transform: rotate(-45deg); }
 
   .nav-brand img {
     display: block;
@@ -434,6 +468,26 @@
     transition: transform 0.35s ease;
   }
 
+  .offer-card.monthly-feature {
+    grid-column: 1 / -1;
+    min-height: 620px;
+  }
+
+  .offer-card.monthly-feature .offer-image {
+    height: 420px;
+  }
+
+  .offer-card.monthly-feature .offer-image::before { display: none; }
+
+  .offer-card.monthly-feature .offer-image img {
+    width: 100%;
+    max-width: none;
+    max-height: 420px;
+    object-fit: cover;
+    object-position: center;
+    filter: none;
+  }
+
   .offer-card:hover .offer-image img,
   .offer-card:focus-visible .offer-image img {
     transform: translateY(-4px) rotate(-2deg);
@@ -656,6 +710,39 @@
     font-size: 13px;
   }
 
+  .modal-list.monthly-product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .modal.monthly-modal {
+    width: min(980px, 100%);
+  }
+
+  .modal.monthly-modal .modal-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .modal.monthly-modal .modal-image {
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+    background: #f4f3f1;
+  }
+
+  .modal.monthly-modal .modal-image::before { display: none; }
+
+  .modal.monthly-modal .modal-image img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: contain;
+    filter: none;
+  }
+
   .modal-price-panel {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -708,11 +795,39 @@
   }
 
   @media (max-width: 900px) {
-    .nav-links { display: none; }
+    .nav { flex-wrap: wrap; gap: 10px; }
+    .nav-toggle { display: inline-flex; margin-left: auto; }
+    .nav-links {
+      display: none;
+      order: 3;
+      flex: 0 0 100%;
+      width: 100%;
+      flex-direction: column;
+      gap: 0;
+      padding-top: 8px;
+      border-top: 1px solid rgba(200,164,93,0.14);
+    }
+    .nav.is-open .nav-links { display: flex; }
+    .nav-links li { width: 100%; }
+    .nav-links a,
+    .nav-links .nav-promo {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 13px 12px;
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid rgba(255,255,255,0.055);
+      color: var(--silver-light);
+      box-shadow: none;
+    }
+    .nav-links .nav-promo { color: var(--gold); }
     .rules-grid { grid-template-columns: repeat(2, 1fr); }
     .offers-grid { grid-template-columns: 1fr; }
     .modal-layout { grid-template-columns: 1fr; }
     .modal-image { min-height: 260px; }
+    .offer-card.monthly-feature .offer-image { height: 300px; }
+    .modal-list.monthly-product-list { grid-template-columns: 1fr; }
   }
 
   @media (max-width: 640px) {
@@ -764,7 +879,10 @@
   <a class="nav-brand" href="index.html" aria-label="BoProMas">
     <img src="assets/brand/bopromas-logo-transparent.png" alt="BoProMas">
   </a>
-  <ul class="nav-links">
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="offersNavigation" aria-label="Отвори менюто">
+    <span class="nav-toggle-box" aria-hidden="true"></span>
+  </button>
+  <ul class="nav-links" id="offersNavigation">
     <li><a class="nav-promo" href="#offers">Месечни промоции</a></li>
     <li><a href="index.html">Каталог</a></li>
     <li><a href="#rules">Правила</a></li>
@@ -842,6 +960,27 @@
   const modalClose = document.getElementById('modalClose');
   const heroCall = document.getElementById('heroCall');
   const heroTag = document.getElementById('heroTag');
+  const nav = document.querySelector('.nav');
+  const navToggle = nav?.querySelector('.nav-toggle');
+  const navLinks = nav?.querySelector('.nav-links');
+
+  const closeNavigation = () => {
+    nav?.classList.remove('is-open');
+    navToggle?.setAttribute('aria-expanded', 'false');
+    navToggle?.setAttribute('aria-label', 'Отвори менюто');
+  };
+
+  navToggle?.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+    navToggle.setAttribute('aria-label', isOpen ? 'Затвори менюто' : 'Отвори менюто');
+  });
+  navLinks?.addEventListener('click', event => {
+    if (event.target.closest('a')) closeNavigation();
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900) closeNavigation();
+  });
 
   heroCall.href = phoneHref;
   heroCall.textContent = `Обади се ${data.phoneDisplay || ''}`.trim();
@@ -875,6 +1014,7 @@
       .forEach(offer => {
     const card = document.createElement('button');
     card.className = 'offer-card';
+    if (offer.type === 'monthly') card.classList.add('monthly-feature');
     card.id = offer.id;
     card.type = 'button';
     card.setAttribute('aria-label', `Виж детайли за ${offer.title}`);
@@ -929,6 +1069,10 @@
   }
 
   function openModal(offer) {
+    modal.querySelector('.modal')?.classList.toggle(
+      'monthly-modal',
+      offer.type === 'monthly' || offer.modalLayout === 'vertical'
+    );
     document.getElementById('modalImage').src = offer.image;
     document.getElementById('modalImage').alt = offer.title;
     document.getElementById('modalBadge').textContent = offer.badge || offerTypeLabel(offer);
@@ -967,6 +1111,7 @@
 
     const includes = document.getElementById('modalIncludes');
     includes.textContent = '';
+    includes.classList.toggle('monthly-product-list', (offer.includes || []).length > 8);
     (offer.includes || []).forEach(text => {
       const item = document.createElement('li');
       item.textContent = text;

@@ -30,7 +30,10 @@
     color: var(--cream);
     line-height: 1.6;
     font-size: 15px;
+    overflow-x: hidden;
   }
+
+  img { max-width: 100%; }
 
   body.modal-open { overflow: hidden; }
 
@@ -361,6 +364,8 @@
     appearance: none;
     font-family: inherit;
     min-height: 382px;
+    display: flex;
+    flex-direction: column;
     scroll-snap-align: start;
     border: 1px solid rgba(255,255,255,0.055);
     border-left: 3px solid rgba(200,164,93,0.18);
@@ -425,35 +430,49 @@
   .promo-image {
     position: relative;
     z-index: 1;
-    height: 154px;
+    width: 100%;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 18px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.035);
   }
 
-  .promo-image::before {
-    content: '';
-    position: absolute;
-    width: 148px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(200,164,93,0.28), rgba(200,164,93,0.08) 52%, transparent 72%);
-  }
+  .promo-image::before { display: none; }
 
   .promo-image img {
     position: relative;
     z-index: 1;
-    max-width: 150px;
-    max-height: 150px;
-    object-fit: contain;
-    filter: drop-shadow(0 26px 24px rgba(0,0,0,0.5));
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
+    filter: none;
     transition: transform 0.35s ease;
   }
 
   .promo-card:hover .promo-image img,
   .promo-card:focus-visible .promo-image img {
     transform: translateY(-4px) rotate(-2deg);
+  }
+
+  .promo-card.monthly-feature .promo-image {
+    height: 300px;
+  }
+
+  .promo-card.monthly-feature .promo-image::before { display: none; }
+
+  .promo-card.monthly-feature .promo-image img {
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
+    filter: none;
   }
 
   .promo-title {
@@ -496,6 +515,8 @@
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
+    display: block;
+    margin-top: auto;
   }
 
   .promo-more-row {
@@ -659,6 +680,39 @@
     background: rgba(200,164,93,0.075);
     border-left: 3px solid rgba(200,164,93,0.55);
     font-size: 13px;
+  }
+
+  .modal-list.monthly-product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .modal.monthly-modal {
+    width: min(980px, 100%);
+  }
+
+  .modal.monthly-modal .modal-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .modal.monthly-modal .modal-image {
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+    background: #f4f3f1;
+  }
+
+  .modal.monthly-modal .modal-image::before { display: none; }
+
+  .modal.monthly-modal .modal-image img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: contain;
+    filter: none;
   }
 
   .modal-actions {
@@ -986,6 +1040,18 @@
     padding: 80px 40px;
     max-width: 1100px;
     margin: 0 auto;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 
   .category-block {
@@ -1491,6 +1557,39 @@
     align-items: center;
   }
 
+  .nav-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    border: 1px solid rgba(200,164,93,0.32);
+    background: rgba(255,255,255,0.045);
+    color: var(--gold);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .nav-toggle-box,
+  .nav-toggle-box::before,
+  .nav-toggle-box::after {
+    display: block;
+    width: 21px;
+    height: 2px;
+    background: currentColor;
+    transition: transform .25s ease, opacity .2s ease;
+  }
+
+  .nav-toggle-box { position: relative; }
+  .nav-toggle-box::before,
+  .nav-toggle-box::after { content: ''; position: absolute; left: 0; }
+  .nav-toggle-box::before { top: -7px; }
+  .nav-toggle-box::after { top: 7px; }
+
+  .nav.is-open .nav-toggle-box { background: transparent; }
+  .nav.is-open .nav-toggle-box::before { top: 0; transform: rotate(45deg); }
+  .nav.is-open .nav-toggle-box::after { top: 0; transform: rotate(-45deg); }
+
   .excl-card.brand-card {
     aspect-ratio: auto;
     min-height: 372px;
@@ -1810,6 +1909,77 @@
     margin-bottom: 40px;
   }
 
+  .catalog-tools {
+    display: grid;
+    grid-template-columns: minmax(260px, 1.6fr) minmax(170px, .8fr) minmax(150px, .7fr) auto;
+    gap: 10px;
+    align-items: center;
+    margin: 34px 0 16px;
+    padding: 16px;
+    border: 1px solid rgba(200,164,93,0.22);
+    background: rgba(255,255,255,0.035);
+  }
+
+  .catalog-tool-search { position: relative; }
+
+  .catalog-tool-search::before {
+    content: '⌕';
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-52%);
+    color: var(--gold);
+    font-size: 20px;
+    pointer-events: none;
+  }
+
+  .catalog-tools input,
+  .catalog-tools select,
+  .catalog-clear {
+    width: 100%;
+    min-height: 46px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: var(--navy-mid);
+    color: var(--white);
+    font: 500 13px 'Inter', sans-serif;
+  }
+
+  .catalog-tools input {
+    padding: 0 16px 0 46px;
+  }
+
+  .catalog-tools select {
+    padding: 0 38px 0 14px;
+    cursor: pointer;
+  }
+
+  .catalog-tools input:focus,
+  .catalog-tools select:focus {
+    outline: 1px solid var(--gold);
+    border-color: var(--gold);
+  }
+
+  .catalog-clear {
+    width: auto;
+    padding: 0 18px;
+    color: var(--gold-light);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .catalog-clear:hover { background: var(--gold); color: var(--navy); }
+
+  .catalog-results-meta {
+    min-height: 18px;
+    margin-bottom: 18px;
+    color: var(--silver);
+    font-size: 11px;
+    letter-spacing: .6px;
+  }
+
   .filter-btn {
     background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255,255,255,0.08);
@@ -1844,6 +2014,11 @@
     .hero { padding: 100px 24px 80px; }
     section, .price-section { padding: 60px 24px; }
     .promo-section { padding: 60px 0; }
+    .catalog-tools { grid-template-columns: 1fr; padding: 12px; }
+    .catalog-clear { width: 100%; }
+    .promo-image,
+    .promo-card.monthly-feature .promo-image { height: 260px; }
+    .modal-list.monthly-product-list { grid-template-columns: 1fr; }
     .promo-head,
     .excl-head { align-items: flex-start; flex-direction: column; padding: 0 24px; }
     .promo-carousel,
@@ -1880,11 +2055,12 @@
     }
     .call-button span { display: none; }
     .nav {
-      align-items: flex-start;
+      align-items: center;
       flex-wrap: wrap;
       padding: 12px 18px;
       gap: 10px;
     }
+    .nav-toggle { display: inline-flex; margin-left: auto; }
     .nav-brand img {
       width: 128px;
       height: 38px;
@@ -1894,7 +2070,31 @@
       flex-basis: 100%;
       max-width: none;
     }
-    .nav-links { display: none; }
+    .nav-links {
+      display: none;
+      order: 4;
+      flex: 0 0 100%;
+      width: 100%;
+      flex-direction: column;
+      gap: 0;
+      padding: 8px 0 4px;
+      border-top: 1px solid rgba(200,164,93,0.14);
+    }
+    .nav.is-open .nav-links { display: flex; }
+    .nav-links li { width: 100%; }
+    .nav-links a,
+    .nav-links .nav-promo {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 13px 12px;
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid rgba(255,255,255,0.055);
+      color: var(--silver-light);
+      box-shadow: none;
+    }
+    .nav-links .nav-promo { color: var(--gold); }
     .intro-strip { gap: 24px; }
     .intro-divider { display: none; }
     .excl-card-name,
@@ -1956,12 +2156,15 @@
   <div class="nav-brand">
     <img src="assets/brand/bopromas-logo-transparent.png" alt="BoProMas">
   </div>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNavigation" aria-label="Отвори менюто">
+    <span class="nav-toggle-box" aria-hidden="true"></span>
+  </button>
   <form class="nav-search" id="catalogSearchForm" role="search" aria-label="Търсене в каталога">
     <input id="catalogSearchInput" type="search" placeholder="Търси продукт..." autocomplete="off">
     <button type="submit" aria-label="Търси">⌕</button>
     <div class="nav-search-results" id="catalogSearchResults" aria-live="polite"></div>
   </form>
-  <ul class="nav-links">
+  <ul class="nav-links" id="primaryNavigation">
     <li><a class="nav-promo" href="monthly-offers.html">Месечни промоции</a></li>
     <li><a href="#exclusive">Ексклузивни марки</a></li>
     <li><a href="#catalog">Каталог</a></li>
@@ -1999,7 +2202,7 @@
   </div>
   <div class="intro-divider"></div>
   <div class="intro-item">
-    <strong>800+</strong>
+    <strong id="catalogTotalCount">551</strong>
     <span>Артикула</span>
   </div>
   <div class="intro-divider"></div>
@@ -2174,8 +2377,31 @@
   <div class="price-section">
     <div class="section-eyebrow">Пълен асортимент</div>
     <div class="section-title">Ценова <em>листа</em></div>
-    <div class="section-desc">Всички артикули са от ценова листа на едро 01.06.2026 г. Цените са с включена доставка за София. Минимална поръчка 80 € с ДДС.</div>
+    <div class="section-desc">Всички <span id="catalogDescriptionCount">551</span> артикула са от ценова листа на едро 01.08.2026 г. Цените са с включена доставка за София. Минимална поръчка 80 € с ДДС.</div>
 
+    <div class="catalog-tools" role="search" aria-label="Търсене и филтриране на ценовата листа">
+      <label class="catalog-tool-search">
+        <span class="sr-only">Търси продукт</span>
+        <input id="catalogInlineSearch" type="search" placeholder="Търси по име, марка, обем..." autocomplete="off">
+      </label>
+      <label>
+        <span class="sr-only">Категория</span>
+        <select id="catalogCategoryFilter" aria-label="Филтър по категория">
+          <option value="all">Всички категории</option>
+        </select>
+      </label>
+      <label>
+        <span class="sr-only">Тип предложение</span>
+        <select id="catalogBadgeFilter" aria-label="Филтър по тип предложение">
+          <option value="all">Всички артикули</option>
+          <option value="promo">Само PROMO</option>
+          <option value="new">Само нови</option>
+          <option value="exclusive">Само ексклузивни</option>
+        </select>
+      </label>
+      <button class="catalog-clear" id="catalogClearFilters" type="button">Изчисти</button>
+    </div>
+    <div class="catalog-results-meta" id="catalogResultsMeta" aria-live="polite"></div>
     <div class="filter-tabs" id="catalogFilterTabs"></div>
     <div id="catalogContent"></div>
     <div class="catalog-empty" id="catalogEmpty">Няма намерени продукти по това търсене.</div>
@@ -2259,7 +2485,7 @@
     <div class="contact-callout">
       <div class="callout-title">Условия за доставка</div>
       <div class="callout-text">
-        Всички цени са с включена доставка за София и включено ДДС. Пълната ценова листа включва над 800 артикула — при интерес за конкретен продукт, който не виждате тук, свържете се с нас.
+        Всички цени са с включена доставка за София и включено ДДС. В сайта са публикувани всички <span id="catalogCalloutCount">551</span> артикула от актуалната ценова листа.
       </div>
       <div class="min-order">
         <div>
@@ -2272,7 +2498,7 @@
 </div>
 
 <footer class="footer">
-  <p>© 2026 „БоПромас" ООД · <a href="https://www.bopromas.bg">www.bopromas.bg</a> · <a href="https://www.drinkme.bg">www.drinkme.bg</a> · Ценова листа 01.06.2026</p>
+  <p>© 2026 „БоПромас" ООД · <a href="https://www.bopromas.bg">www.bopromas.bg</a> · <a href="https://www.drinkme.bg">www.drinkme.bg</a> · Ценова листа 01.08.2026</p>
 </footer>
 
 <a class="call-button" href="tel:+359897898245" aria-label="Обадете се на +359 897 898 245">
@@ -2336,9 +2562,10 @@ function renderMonthlyPromoCarousel() {
   const data = window.MONTHLY_OFFERS_DATA;
   if (!carousel || !data?.offers?.length) return;
 
-  data.offers.slice(0, 4).forEach(offer => {
+  data.offers.forEach(offer => {
     const card = document.createElement('button');
     card.className = 'promo-card';
+    if (offer.type === 'monthly') card.classList.add('monthly-feature');
     card.type = 'button';
     card.setAttribute('aria-label', `Виж повече за ${offer.title}`);
     card.innerHTML = `
@@ -2366,6 +2593,10 @@ function openHomePromoModal(offer) {
   const data = window.MONTHLY_OFFERS_DATA || {};
   const modal = document.getElementById('homePromoModal');
   if (!modal) return;
+  modal.querySelector('.modal')?.classList.toggle(
+    'monthly-modal',
+    offer.type === 'monthly' || offer.modalLayout === 'vertical'
+  );
   const phoneHref = `tel:${data.phoneHref || '+359897898245'}`;
   const viberHref = data.viberHref || 'viber://chat?number=%2B359897898245';
 
@@ -2403,6 +2634,7 @@ function openHomePromoModal(offer) {
 
   const includes = document.getElementById('homePromoIncludes');
   includes.textContent = '';
+  includes.classList.toggle('monthly-product-list', (offer.includes || []).length > 8);
   (offer.includes || []).forEach(text => {
     const item = document.createElement('li');
     item.textContent = text;
@@ -2547,14 +2779,31 @@ function renderCatalog() {
   const categories = window.CATALOG_CATEGORIES || [];
   const tabs = document.getElementById('catalogFilterTabs');
   const content = document.getElementById('catalogContent');
+  const categoryFilter = document.getElementById('catalogCategoryFilter');
   if (!tabs || !content || !categories.length) return;
+
+  const totalItems = categories.reduce((total, category) => total + category.items.length, 0);
+  ['catalogTotalCount', 'catalogDescriptionCount', 'catalogCalloutCount'].forEach(id => {
+    const node = document.getElementById(id);
+    if (node) node.textContent = totalItems.toLocaleString('bg-BG');
+  });
 
   tabs.textContent = '';
   content.textContent = '';
+  if (categoryFilter) {
+    categoryFilter.length = 1;
+    categories.forEach(category => {
+      const option = document.createElement('option');
+      option.value = category.id;
+      option.textContent = `${category.name} (${category.items.length})`;
+      categoryFilter.appendChild(option);
+    });
+  }
 
   const allButton = document.createElement('button');
   allButton.className = 'filter-btn active';
   allButton.type = 'button';
+  allButton.dataset.category = 'all';
   allButton.textContent = 'Всички';
   allButton.addEventListener('click', () => filterCat('all', allButton));
   tabs.appendChild(allButton);
@@ -2563,6 +2812,7 @@ function renderCatalog() {
     const button = document.createElement('button');
     button.className = 'filter-btn';
     button.type = 'button';
+    button.dataset.category = category.id;
     button.textContent = category.name;
     button.addEventListener('click', () => filterCat(category.id, button));
     tabs.appendChild(button);
@@ -2619,6 +2869,10 @@ function renderCatalog() {
       row.dataset.previewVolume = item.volume;
       row.dataset.previewAbv = item.abv;
       row.dataset.previewPrice = item.eurVat;
+      row.dataset.catalogBadges = [
+        ...(item.badges || []),
+        item.isExclusive ? 'ЕКСКЛУЗИВЕН' : ''
+      ].join(' ').toLowerCase();
       if (item.image) row.dataset.previewImage = item.image;
       if (item.slug) row.dataset.previewSlug = item.slug;
 
@@ -2887,23 +3141,73 @@ function renderSearchSuggestions(query) {
 }
 
 function applyCatalogSearch(query) {
-  const value = String(query || '').trim().toLowerCase();
+  const input = document.getElementById('catalogInlineSearch');
+  if (input) input.value = query || '';
+  applyCatalogFilters();
+}
+
+function normalizeCatalogSearch(value) {
+  return String(value || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+}
+
+function applyCatalogFilters() {
+  const value = normalizeCatalogSearch(document.getElementById('catalogInlineSearch')?.value);
+  const category = document.getElementById('catalogCategoryFilter')?.value || 'all';
+  const badge = document.getElementById('catalogBadgeFilter')?.value || 'all';
   const empty = document.getElementById('catalogEmpty');
+  const meta = document.getElementById('catalogResultsMeta');
   let totalMatches = 0;
 
   document.querySelectorAll('.category-block').forEach(block => {
     let blockMatches = 0;
     block.querySelectorAll('.price-table tbody tr').forEach(row => {
-      const isMatch = !value || rowSearchText(row).includes(value);
+      const textMatch = !value || normalizeCatalogSearch(rowSearchText(row)).includes(value);
+      const labels = row.dataset.catalogBadges || '';
+      const badgeMatch = badge === 'all'
+        || (badge === 'promo' && labels.includes('promo'))
+        || (badge === 'new' && labels.includes('ново'))
+        || (badge === 'exclusive' && labels.includes('ексклузивен'));
+      const isMatch = textMatch && badgeMatch;
       row.classList.toggle('search-hidden', !isMatch);
       if (isMatch) blockMatches += 1;
     });
 
-    totalMatches += blockMatches;
-    block.classList.toggle('hidden', blockMatches === 0);
+    const categoryMatch = category === 'all' || block.dataset.cat === category;
+    if (categoryMatch) totalMatches += blockMatches;
+    block.classList.toggle('hidden', !categoryMatch || blockMatches === 0);
   });
 
   if (empty) empty.classList.toggle('active', totalMatches === 0);
+  if (meta) meta.textContent = `${totalMatches.toLocaleString('bg-BG')} ${totalMatches === 1 ? 'намерен артикул' : 'намерени артикула'}`;
+
+  document.querySelectorAll('.filter-btn').forEach(button => {
+    button.classList.toggle('active', button.dataset.category === category);
+  });
+}
+
+function setupCatalogFilters() {
+  const search = document.getElementById('catalogInlineSearch');
+  const category = document.getElementById('catalogCategoryFilter');
+  const badge = document.getElementById('catalogBadgeFilter');
+  const clear = document.getElementById('catalogClearFilters');
+  if (!search || !category || !badge || !clear) return;
+
+  search.addEventListener('input', applyCatalogFilters);
+  category.addEventListener('change', applyCatalogFilters);
+  badge.addEventListener('change', applyCatalogFilters);
+  clear.addEventListener('click', () => {
+    search.value = '';
+    category.value = 'all';
+    badge.value = 'all';
+    applyCatalogFilters();
+    search.focus();
+  });
+
+  applyCatalogFilters();
 }
 
 function setupCatalogSearch() {
@@ -3000,20 +3304,9 @@ function makeCatalogRowsClickable() {
 }
 
 function filterCat(cat, btn) {
-  const searchInput = document.getElementById('catalogSearchInput');
-  if (searchInput) searchInput.value = '';
-  const empty = document.getElementById('catalogEmpty');
-  if (empty) empty.classList.remove('active');
-  document.querySelectorAll('.price-table tbody tr').forEach(row => row.classList.remove('search-hidden'));
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.category-block').forEach(block => {
-    if (cat === 'all' || block.dataset.cat === cat) {
-      block.classList.remove('hidden');
-    } else {
-      block.classList.add('hidden');
-    }
-  });
+  const category = document.getElementById('catalogCategoryFilter');
+  if (category) category.value = cat;
+  applyCatalogFilters();
 }
 
 function setupHomePromoModal() {
@@ -3032,13 +3325,43 @@ function setupHomePromoModal() {
   });
 }
 
+function setupMobileNavigation() {
+  const nav = document.querySelector('.nav');
+  const toggle = nav?.querySelector('.nav-toggle');
+  const links = nav?.querySelector('.nav-links');
+  if (!nav || !toggle || !links) return;
+
+  const close = () => {
+    nav.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Отвори менюто');
+  };
+
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    toggle.setAttribute('aria-label', isOpen ? 'Затвори менюто' : 'Отвори менюто');
+  });
+  links.addEventListener('click', event => {
+    if (event.target.closest('a')) close();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') close();
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) close();
+  });
+}
+
 setupHomePromoModal();
+setupMobileNavigation();
 renderMonthlyPromoCarousel();
 renderExclusiveBrandCarousel();
 setupCarouselControls('exclusiveCarousel');
 renderCatalog();
 makeCatalogRowsClickable();
 setupCatalogSearch();
+setupCatalogFilters();
 </script>
 </body>
 </html>

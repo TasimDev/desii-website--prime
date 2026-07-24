@@ -219,14 +219,14 @@ window.EXCLUSIVE_BRANDS = {
     origin: "Гърция",
     image: "assets/products/alexandridi-cappuccino.png",
     accent: ["#251614", "#8a4a2d", "#e2b86b"],
-    short: "Гръцки craft ликьори с кафе, капучино и лимончело профили за Espresso Martini, Spritz, Sour и dessert cocktails.",
+    short: "Гръцки craft ликьори с кафе, капучино, лимончело, тинтура и мастиха за коктейли и digestif сервиране.",
     story: [
-      "Alexandridi Craft Liqueurs е гръцка линия ликьори на Alexandridi Distillery с ясни барови вкусове: Coffee, Cappuccino и Limoncello.",
+      "Alexandridi Craft Liqueurs е гръцка линия ликьори с Coffee, Cappuccino, Limoncello, Tentoura и Mastiha.",
       "DrinkMe позиционира продуктите в категория ликьор, 0.500 л и 25% ABV, което ги прави удобни за коктейлна карта, десертни сервирания и бързи signature предложения.",
       "Coffee и Cappuccino работят естествено в Espresso Martini, White Russian twist и after-dinner drinks, а Limoncello дава свежа цитрусова база за Spritz, Sour и летни highballs."
     ],
-    highlights: ["Coffee, Cappuccino и Limoncello профили", "0.500 л и 25% ABV според DrinkMe продуктовите страници", "Подходящи за Espresso Martini, Spritz и dessert cocktails", "Отделна гръцка craft liqueur позиция до Alexandridi Ouzo"],
-    products: ["liquor-coffee", "cappuccino-craft-liquor", "limoncello"]
+    highlights: ["Пет различни craft вкуса", "Всички позиции са в разфасовка 0.500 л", "Подходящи за Espresso Martini, Spritz, Sour и digestif", "Mastiha е 27% ABV; останалите са 25% ABV"],
+    products: ["alexandridi-coffee-craft-liquor", "alexandridi-limoncello-craft-liquor", "alexandridi-cappuccino-craft-liquor", "alexandridi-tentoura-craft-liquor", "alexandridi-mastiha-craft-liquor"]
   },
   "castro-liquor": {
     name: "Castro Liquor",

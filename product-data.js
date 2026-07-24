@@ -3988,7 +3988,7 @@ const catalogCategories = [
         "stock": "in"
       },
       {
-        "name": "CAPPUCCINO CRAFT LIQUOR",
+        "name": "ALEXANDRIDI COFFEE CRAFT LIQUOR",
         "packaging": "Стандартна",
         "volume": "0.500л",
         "abv": "25%",
@@ -3999,7 +3999,63 @@ const catalogCategories = [
         "badges": [
           "НОВО"
         ],
-        "slug": ""
+        "slug": "alexandridi-coffee-craft-liquor"
+      },
+      {
+        "name": "ALEXANDRIDI LIMONCELLO CRAFT LIQUOR",
+        "packaging": "Стандартна",
+        "volume": "0.500л",
+        "abv": "25%",
+        "case": "6",
+        "eurNoVat": "6.74",
+        "eurVat": "8.09",
+        "bgnVat": "15.82",
+        "badges": [
+          "НОВО"
+        ],
+        "slug": "alexandridi-limoncello-craft-liquor"
+      },
+      {
+        "name": "ALEXANDRIDI CAPPUCCINO CRAFT LIQUOR",
+        "packaging": "Стандартна",
+        "volume": "0.500л",
+        "abv": "25%",
+        "case": "6",
+        "eurNoVat": "6.74",
+        "eurVat": "8.09",
+        "bgnVat": "15.82",
+        "badges": [
+          "НОВО"
+        ],
+        "slug": "alexandridi-cappuccino-craft-liquor"
+      },
+      {
+        "name": "ALEXANDRIDI TENTOURA CRAFT LIQUOR",
+        "packaging": "Стандартна",
+        "volume": "0.500л",
+        "abv": "25%",
+        "case": "6",
+        "eurNoVat": "6.74",
+        "eurVat": "8.09",
+        "bgnVat": "15.82",
+        "badges": [
+          "НОВО"
+        ],
+        "slug": "alexandridi-tentoura-craft-liquor"
+      },
+      {
+        "name": "ALEXANDRIDI MASTIHA CRAFT LIQUOR",
+        "packaging": "Стандартна",
+        "volume": "0.500л",
+        "abv": "27%",
+        "case": "6",
+        "eurNoVat": "9.74",
+        "eurVat": "11.69",
+        "bgnVat": "22.87",
+        "badges": [
+          "НОВО"
+        ],
+        "slug": "alexandridi-mastiha-craft-liquor"
       },
       {
         "name": "CASTRO Mediterranean Tentoura",
@@ -7614,6 +7670,11 @@ const catalogProductImages = {
   "cannabis-sativa-liquor": "https://www.topdrinks.de/media/catalog/product/L/_/L_04_725_00_1_27bf.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460",
   "cannabis-sativa-vodka": "https://www.topdrinks.de/media/catalog/product/L/_/L_09_002_00_1_63a3.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460",
   "cappuccino-craft-liquor": "https://drinkme.bg/cdn/img/products/432/alexandridi-cappuccino-craft-68adadfdb61f4.jpeg?width=600&height=600&v=1777632372",
+  "alexandridi-coffee-craft-liquor": "https://drinkme.bg/cdn/img/products/286/alexandridi-coffee-craft-688cbd769bf5b.jpeg?width=600&height=600&v=1777632367",
+  "alexandridi-limoncello-craft-liquor": "https://drinkme.bg/cdn/img/products/287/alexandridi-limoncello-craft-688cbe68ec191.jpeg?width=600&height=600&v=1777632367",
+  "alexandridi-cappuccino-craft-liquor": "https://drinkme.bg/cdn/img/products/432/alexandridi-cappuccino-craft-68adadfdb61f4.jpeg?width=600&height=600&v=1777632372",
+  "alexandridi-tentoura-craft-liquor": "https://drinkme.bg/cdn/img/products/289/alexandridi-tentoura-craft-688cc022a2205.jpeg?width=600&height=600&v=1777632367",
+  "alexandridi-mastiha-craft-liquor": "https://drinkme.bg/cdn/img/products/290/alexandridi-mastiha-craft-688cc0ef0607e.jpeg?width=600&height=600&v=1777632367",
   "captain-morgan-dark-rum": "https://drinkme.bg/cdn/img/products/32/captain-morgan-6851337f1a28a.jpeg?width=600&height=600&v=1777632366",
   "captain-morgan-original-spiced-gold": "https://drinkme.bg/cdn/img/products/32/captain-morgan-6851337f1a28a.jpeg?width=600&height=600&v=1777632366",
   "captain-morgan-white-rum": "https://drinkme.bg/cdn/img/products/32/captain-morgan-6851337f1a28a.jpeg?width=600&height=600&v=1777632366",
@@ -8096,6 +8157,11 @@ const catalogVariantData = {
   "cannabis-sativa-liquor|Стандартна|0.700л": {"image": "https://www.topdrinks.de/media/catalog/product/L/_/L_04_725_00_1_27bf.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460", "productUrl": "https://drinkme.bg/product/cannabis-sativa-fibre-hemp-liqueur-07l", "officialAbv": "14.5%"},
   "cannabis-sativa-vodka|Стандартна|0.700л": {"image": "https://www.topdrinks.de/media/catalog/product/L/_/L_09_002_00_1_63a3.png?canvas=460%3A512&fit=bounds&height=512&optimize=medium&width=460", "productUrl": "https://drinkme.bg/product/cannabis-sativa-fibre-hemp-vodka-07l", "officialAbv": "37.5%"},
   "cappuccino-craft-liquor|Стандартна|0.500л": {"image": "https://drinkme.bg/cdn/img/products/432/alexandridi-cappuccino-craft-68adadfdb61f4.jpeg?width=600&height=600&v=1777632372", "productUrl": "https://drinkme.bg/product/alexandridi-cappuccino-craft-liquor", "officialAbv": "25.0%"},
+  "alexandridi-coffee-craft-liquor|Стандартна|0.500л": {"image": "https://drinkme.bg/cdn/img/products/286/alexandridi-coffee-craft-688cbd769bf5b.jpeg?width=600&height=600&v=1777632367", "productUrl": "https://drinkme.bg/product/alexandridi-coffee-craft-liquor", "officialAbv": "25.0%"},
+  "alexandridi-limoncello-craft-liquor|Стандартна|0.500л": {"image": "https://drinkme.bg/cdn/img/products/287/alexandridi-limoncello-craft-688cbe68ec191.jpeg?width=600&height=600&v=1777632367", "productUrl": "https://drinkme.bg/product/alexandridi-limoncello-craft-liquor", "officialAbv": "25.0%"},
+  "alexandridi-cappuccino-craft-liquor|Стандартна|0.500л": {"image": "https://drinkme.bg/cdn/img/products/432/alexandridi-cappuccino-craft-68adadfdb61f4.jpeg?width=600&height=600&v=1777632372", "productUrl": "https://drinkme.bg/product/alexandridi-cappuccino-craft-liquor", "officialAbv": "25.0%"},
+  "alexandridi-tentoura-craft-liquor|Стандартна|0.500л": {"image": "https://drinkme.bg/cdn/img/products/289/alexandridi-tentoura-craft-688cc022a2205.jpeg?width=600&height=600&v=1777632367", "productUrl": "https://drinkme.bg/product/alexandridi-tentoura-craft-liquor", "officialAbv": "25.0%"},
+  "alexandridi-mastiha-craft-liquor|Стандартна|0.500л": {"image": "https://drinkme.bg/cdn/img/products/290/alexandridi-mastiha-craft-688cc0ef0607e.jpeg?width=600&height=600&v=1777632367", "productUrl": "https://drinkme.bg/product/alexandridi-mastiha-craft-liquor", "officialAbv": "27.0%"},
   "captain-morgan-dark-rum|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/31/captain-morgan-6851329020992.jpeg?width=600&height=600&v=1780643714", "productUrl": "https://drinkme.bg/product/captain-morgan-dark-rum", "officialAbv": "40.0%"},
   "captain-morgan-original-spiced-gold|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/30/captain-morgan-68512e8997539.jpeg?width=600&height=600&v=1777632366", "productUrl": "https://drinkme.bg/product/captain-morgan-spiced-rum", "officialAbv": "35.0%"},
   "captain-morgan-white-rum|Стандартна|0.700л": {"image": "https://drinkme.bg/cdn/img/products/32/captain-morgan-6851337f1a28a.jpeg?width=600&height=600&v=1777632366", "productUrl": "https://drinkme.bg/product/captain-morgan-white-rum", "officialAbv": "37.5%"},
@@ -9635,6 +9701,48 @@ function catalogVariantKey(slug, item) {
 function officialVariantFor(slug, item) {
   return catalogVariantData[catalogVariantKey(slug, item)] || null;
 }
+
+// Products newly introduced in the wholesale price list dated 01.08.2026.
+// Prices follow the PDF; product pages and images are verified on DrinkMe.bg.
+productBrandRules.push(
+  { brand: "The Balvenie", prefixes: ["balvenie", "the-balvenie"] },
+  { brand: "Dictador", prefixes: ["dictador"] },
+  { brand: "Ardbeg", prefixes: ["ardbeg"] },
+  { brand: "Glen Deveron", prefixes: ["glen-deveron"] },
+  { brand: "The GlenAllachie", prefixes: ["glenallachie"] },
+  { brand: "Molinari", prefixes: ["sambuca-molinari"] },
+  { brand: "Bols", prefixes: ["triple-sec-bols"] },
+  { brand: "Yeni Rakı", prefixes: ["yeni-raki"] }
+);
+
+const august2026CatalogAdditions = [
+  ["gift", "BALVENIE 12 YO Double Wood + 2 GLASSES", "Gift Box", "0.700л", "40.0%", "6", "54.99", "65.99", "129.07", "balvenie-12-yo-double-wood-2-glasses", "https://drinkme.bg/product/the-balvenie-12-years-double-wood-2-glasses-0700l", "https://drinkme.bg/cdn/img/products/1216/the-balvenie-12-years-doublewood2-glasses-6a2bdaabc706b.png?width=800&height=800&v=1781258923"],
+  ["gift", "DICTADOR 10 YO + GLASS", "Gift Box", "0.700л", "40.0%", "6", "29.99", "35.99", "70.39", "dictador-10-yo-glass", "https://drinkme.bg/product/dictador-ten-years-old-colombian-rum-with-glass-0700l", "https://drinkme.bg/cdn/img/products/1222/dictador-ten--one-glass-6a2bd45021973.png?width=800&height=800&v=1781257296"],
+  ["gift", "DICTADOR 20 YO + Mini XO", "Gift Box", "0.700л", "40.0%", "6", "54.16", "64.99", "127.11", "dictador-20-yo-mini-xo", "https://drinkme.bg/product/dictador-twenty-years-insolent-mini-07l", "https://drinkme.bg/cdn/img/products/1234/dictador-twenty-years--insolent-mini-6a2ab5bf6c3d6.png?width=800&height=800&v=1781183935"],
+  ["whiskey", "ARDBEG AN OA", "Gift Box", "0.700л", "46.6%", "6", "45.83", "54.99", "107.55", "ardbeg-an-oa", "https://drinkme.bg/product/ardbeg-an-oa-islay-single-malt-scotch-whisky-0700l", "https://drinkme.bg/cdn/img/products/1169/ardbeg-an-oa-islay-single-malt-6a324f767ebf3.png?width=800&height=800&v=1781682038"],
+  ["whiskey", "GLEN DEVERON 16 YO", "", "1.0л", "40.0%", "6", "55.83", "66.99", "131.02", "glen-deveron-16-yo", "https://drinkme.bg/product/glen-deveron-16-years-07l", "https://drinkme.bg/cdn/img/products/1258/glen-deveron-16-years-6a2a90f6a614c.png?width=800&height=800&v=1781174518"],
+  ["whiskey", "GLENALLACHIE 12 YO Moscatel Wood Finish", "Gift Box", "0.700л", "48.0%", "6", "52.49", "62.99", "123.20", "glenallachie-12-yo-moscatel-wood-finish", "https://drinkme.bg/product/the-glenallachie-12-years-old-moscatel-wood-finish-single-malt-scotch-whiskey-0700l", "https://drinkme.bg/cdn/img/products/1263/the-glenallachie-12-years-moscatel-wood-single-malt-6a2a756d305b4.png?width=800&height=800&v=1781167469"],
+  ["whiskey", "JACK DANIEL'S McLAREN", "Gift Box", "0.700л", "40.0%", "6", "21.66", "25.99", "50.83", "jack-daniel-s-mclaren", "https://drinkme.bg/product/jack-daniels-old-no-7-brand-mclxjd-tennesse-07l", "https://drinkme.bg/cdn/img/products/1312/jack-daniels-no--7-brand-mclxjd-tennesse-6a352dac513d2.png?width=800&height=800&v=1781869996"],
+  ["whiskey", "THE BALVENIE The Creation of a Classic", "Gift Box", "0.700л", "43.0%", "6", "56.66", "67.99", "132.98", "the-balvenie-creation-of-a-classic", "https://drinkme.bg/product/the-balvenie-the-creation-of-a-classic-single-malt-whisky-0700l", "https://drinkme.bg/cdn/img/products/1228/the-balvenie-the-creation-of-a-classic-6a2bba4540cbb.png?width=800&height=800&v=1781250629"],
+  ["liquor", "SAMBUCA MOLINARI", "", "0.700л", "40.0%", "6", "11.91", "14.29", "27.95", "sambuca-molinari", "https://drinkme.bg/product/sambuca-molinari-07l", "https://drinkme.bg/cdn/img/products/1310/sambuca-molinari-6a34f6160a028.png?width=800&height=800&v=1781855766"],
+  ["liquor", "TRIPLE SEC BOLS", "", "0.700л", "38.0%", "6", "9.99", "11.99", "23.45", "triple-sec-bols", "https://drinkme.bg/product/bols-triple-sec-liqueur-07l", "https://drinkme.bg/cdn/img/products/1317/bols-triple-sec-liqueur-6a3531525dd04.png?width=800&height=800&v=1781870930"],
+  ["rakia", "YENI RAKI", "", "0.700л", "40.0%", "6", "11.66", "13.99", "27.36", "yeni-raki", "https://drinkme.bg/product/yeni-raki-0700l", "https://drinkme.bg/cdn/img/products/1309/yeni-raki-0-700l-6a34f358e663c.png?width=800&height=800&v=1781855064"]
+];
+
+august2026CatalogAdditions.forEach(row => {
+  const [categoryId, name, packaging, volume, abv, caseSize, eurNoVat, eurVat, bgnVat, slug, productUrl, image] = row;
+  const category = catalogCategories.find(candidate => candidate.id === categoryId);
+  if (!category || category.items.some(candidate => candidate.slug === slug)) return;
+  category.items.push({
+    name, packaging, volume, abv, case: caseSize, eurNoVat, eurVat, bgnVat,
+    badges: ["НОВО"], slug, image, productUrl,
+    sourceStatus: "verified-on-drinkme"
+  });
+  catalogProductImages[slug] = image;
+  catalogVariantData[catalogVariantKey(slug, { packaging, volume })] = {
+    image, productUrl, sourceStatus: "verified-on-drinkme"
+  };
+});
 
 const productDatabase = {};
 catalogCategories.forEach(category => {
