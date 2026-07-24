@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>БоПромас — Оферта за Коктейл Барове</title>
+<title>БоПромас — Ценова оферта</title>
 <meta name="description" content="БоПромас — актуални цени, месечни промоции и селекция от напитки за барове, ресторанти и професионални клиенти.">
 <link rel="canonical" href="https://www.bopromas.bg/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="bg_BG">
 <meta property="og:site_name" content="БоПромас">
-<meta property="og:title" content="БоПромас — Оферта за коктейл барове">
+<meta property="og:title" content="БоПромас — Ценова оферта">
 <meta property="og:description" content="Актуални цени, месечни промоции и селекция от напитки за професионални клиенти.">
 <meta property="og:url" content="https://www.bopromas.bg/">
-<meta property="og:image" content="https://www.bopromas.bg/assets/brand/hero_image.png">
-<meta property="og:image:width" content="1600">
-<meta property="og:image:height" content="758">
+<meta property="og:image" content="https://www.bopromas.bg/assets/brand/social-share.png">
+<meta property="og:image:width" content="1731">
+<meta property="og:image:height" content="909">
 <meta property="og:image:alt" content="БоПромас — селекция от напитки за барове и ресторанти">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="БоПромас — Оферта за коктейл барове">
+<meta name="twitter:title" content="БоПромас — Ценова оферта">
 <meta name="twitter:description" content="Актуални цени, месечни промоции и селекция от напитки за професионални клиенти.">
-<meta name="twitter:image" content="https://www.bopromas.bg/assets/brand/hero_image.png">
+<meta name="twitter:image" content="https://www.bopromas.bg/assets/brand/social-share.png">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -282,8 +282,10 @@
 
   /* ─── MONTHLY PROMOS ─── */
   .promo-section {
-    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
-    padding: 80px 0;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(200,164,93,0.09), transparent 34%),
+      linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+    padding: 88px 0 82px;
     border-bottom: 1px solid rgba(200,164,93,0.12);
   }
 
@@ -298,8 +300,8 @@
     justify-content: space-between;
     align-items: flex-end;
     gap: 28px;
-    max-width: 1100px;
-    margin: 0 auto 34px;
+    max-width: 1380px;
+    margin: 0 auto 42px;
     padding: 0 40px;
   }
 
@@ -322,69 +324,69 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 54px;
-    height: 68px;
-    border: 1px solid rgba(200,164,93,0.34);
-    background: rgba(12,15,19,0.84);
+    width: 52px;
+    height: 52px;
+    border: 1px solid rgba(200,164,93,0.42);
+    border-radius: 50%;
+    background: rgba(12,15,19,0.92);
     backdrop-filter: blur(10px);
     color: var(--gold);
-    font-size: 34px;
+    font-size: 30px;
     line-height: 1;
     cursor: pointer;
     pointer-events: auto;
-    box-shadow: 0 18px 42px rgba(0,0,0,0.38);
-    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    box-shadow: 0 14px 34px rgba(0,0,0,0.42);
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
   }
 
-  .promo-arrow[data-carousel-dir="-1"] { left: 18px; }
-  .promo-arrow[data-carousel-dir="1"] { right: 18px; }
+  .promo-arrow[data-carousel-dir="-1"] { left: 14px; }
+  .promo-arrow[data-carousel-dir="1"] { right: 14px; }
 
   .promo-arrow:hover {
-    background: rgba(200,164,93,0.12);
-    color: var(--gold-light);
+    transform: translateY(-50%) scale(1.06);
+    background: var(--gold);
+    color: var(--navy);
     border-color: var(--gold);
+  }
+
+  .promo-arrow:disabled {
+    opacity: 0.25;
+    cursor: default;
+    transform: translateY(-50%);
   }
 
   .promo-carousel {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: minmax(286px, calc((100vw - 154px) / 3.6));
-    gap: 2px;
+    grid-auto-columns: clamp(340px, 29vw, 420px);
+    gap: 22px;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     scroll-snap-type: inline mandatory;
-    scrollbar-width: thin;
-    scrollbar-color: rgba(200,164,93,0.5) rgba(255,255,255,0.06);
-    padding: 0 72px 12px;
+    scrollbar-width: none;
+    padding: 10px 78px 26px;
   }
 
   .carousel-frame {
     position: relative;
-    width: 100%;
+    width: min(1540px, 100%);
+    margin: 0 auto;
     overflow: hidden;
   }
 
   .promo-carousel::-webkit-scrollbar {
-    height: 8px;
-  }
-
-  .promo-carousel::-webkit-scrollbar-track {
-    background: rgba(255,255,255,0.06);
-  }
-
-  .promo-carousel::-webkit-scrollbar-thumb {
-    background: rgba(200,164,93,0.5);
+    display: none;
   }
 
   .promo-card {
     appearance: none;
     font-family: inherit;
-    min-height: 382px;
+    min-height: 650px;
     display: flex;
     flex-direction: column;
     scroll-snap-align: start;
-    border: 1px solid rgba(255,255,255,0.055);
-    border-left: 3px solid rgba(200,164,93,0.18);
+    border: 1px solid rgba(200,164,93,0.16);
+    border-radius: 16px;
     background:
       linear-gradient(145deg, rgba(255,255,255,0.052), rgba(255,255,255,0.012) 42%),
       var(--navy);
@@ -392,7 +394,7 @@
     text-decoration: none;
     text-align: left;
     cursor: pointer;
-    padding: 26px;
+    padding: 22px;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
@@ -414,7 +416,7 @@
   .promo-card:focus-visible {
     transform: translateY(-6px);
     border-color: rgba(200,164,93,0.28);
-    border-left-color: var(--gold);
+    border-color: rgba(200,164,93,0.58);
     background:
       linear-gradient(145deg, rgba(255,255,255,0.074), rgba(255,255,255,0.018) 42%),
       var(--navy-soft);
@@ -432,6 +434,7 @@
     position: relative;
     z-index: 1;
     display: inline-flex;
+    align-self: flex-start;
     background: rgba(200,164,93,0.12);
     border: 1px solid rgba(200,164,93,0.22);
     color: var(--gold);
@@ -439,21 +442,23 @@
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 5px 8px;
-    margin-bottom: 14px;
+    padding: 7px 10px;
+    margin-bottom: 16px;
+    border-radius: 999px;
   }
 
   .promo-image {
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 300px;
+    height: 310px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
     overflow: hidden;
     background: rgba(255,255,255,0.035);
+    border-radius: 10px;
   }
 
   .promo-image::before { display: none; }
@@ -473,11 +478,11 @@
 
   .promo-card:hover .promo-image img,
   .promo-card:focus-visible .promo-image img {
-    transform: translateY(-4px) rotate(-2deg);
+    transform: scale(1.035);
   }
 
   .promo-card.monthly-feature .promo-image {
-    height: 300px;
+    height: 310px;
   }
 
   .promo-card.monthly-feature .promo-image::before { display: none; }
@@ -496,7 +501,7 @@
     z-index: 1;
     display: block;
     font-family: 'Playfair Display', serif;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.18;
     color: var(--white);
     margin-bottom: 10px;
@@ -533,6 +538,8 @@
     text-transform: uppercase;
     display: block;
     margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(200,164,93,0.14);
   }
 
   .promo-more-row {
@@ -2022,7 +2029,7 @@
   .price-table tr.search-hidden { display: none; }
 
   @media (max-width: 1050px) {
-    .promo-carousel { grid-auto-columns: minmax(280px, calc((100vw - 118px) / 1.8)); }
+    .promo-carousel { grid-auto-columns: minmax(320px, calc((100vw - 146px) / 2)); }
     .excl-grid { grid-auto-columns: minmax(290px, calc((100vw - 118px) / 2.25)); }
   }
 
@@ -2039,12 +2046,13 @@
     .excl-head { align-items: flex-start; flex-direction: column; padding: 0 24px; }
     .promo-carousel,
     .excl-grid {
-      grid-auto-columns: minmax(270px, 78vw);
-      padding: 0 52px 12px;
+      grid-auto-columns: minmax(280px, 84vw);
+      padding: 8px 46px 20px;
     }
+    .promo-card { min-height: 620px; padding: 18px; }
     .promo-arrow {
-      width: 40px;
-      height: 56px;
+      width: 42px;
+      height: 42px;
       font-size: 28px;
     }
     .promo-arrow[data-carousel-dir="-1"] { left: 6px; }
@@ -2191,7 +2199,7 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-tag">Оферта за коктейл барове · София · 2026</div>
+  <div class="hero-tag">Ценова оферта · София · 2026</div>
   <img class="hero-logo" src="assets/brand/bopromas-logo-transparent.png" alt="BoProMas">
   <div class="hero-sub">Вносител и дистрибутор на премиум спиртни напитки</div>
   <div class="gold-line"></div>
@@ -2747,15 +2755,31 @@ function setupCarouselControls(targetId) {
   const carousel = document.getElementById(targetId);
   if (!carousel) return;
 
-  document.querySelectorAll(`[data-carousel-target="${targetId}"]`).forEach(button => {
+  const buttons = [...document.querySelectorAll(`[data-carousel-target="${targetId}"]`)];
+
+  const updateButtons = () => {
+    const maxScroll = Math.max(0, carousel.scrollWidth - carousel.clientWidth);
+    buttons.forEach(button => {
+      const direction = Number(button.dataset.carouselDir) || 1;
+      button.disabled = direction < 0
+        ? carousel.scrollLeft <= 2
+        : carousel.scrollLeft >= maxScroll - 2;
+    });
+  };
+
+  buttons.forEach(button => {
     button.addEventListener('click', () => {
       const direction = Number(button.dataset.carouselDir) || 1;
       const card = carousel.querySelector('a, button, .promo-card, .excl-card');
-      const gap = 2;
+      const gap = Number.parseFloat(getComputedStyle(carousel).columnGap) || 0;
       const step = card ? card.getBoundingClientRect().width + gap : 300;
       carousel.scrollBy({ left: direction * step, behavior: 'smooth' });
     });
   });
+
+  carousel.addEventListener('scroll', updateButtons, { passive: true });
+  window.addEventListener('resize', updateButtons);
+  requestAnimationFrame(updateButtons);
 }
 
 function categoryPreviewImage(name, category) {
